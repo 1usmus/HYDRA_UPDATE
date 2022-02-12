@@ -1,5 +1,5 @@
 * HYDRA 1.1C PRO - what's new?
-* ----------------------------------------------------
+* -------------------------------------------
 * - Saves the position of the application window at the moment of closing. 
 * - New MessageBox.
 * - Pause/Resume for "CCD CO test" and "CORE CO test".
