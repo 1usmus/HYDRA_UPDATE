@@ -1,39 +1,39 @@
 * HYDRA 1.1C PRO - what's new?
-* ----------------------------
-* Saves the position of the application window at the moment of closing. 
-* New MessageBox.
-* Pause/Resume for "CCD CO test" and "CORE CO test".
-* Added new MessageBoxes for some important operations.
-* Seamless log (during the 1st calendar day all logs will be merged into 1).
-* Added CO SSE offset control (overboost control mechanism for ultralight tasks). Also allow you to get an extra frequency.
-* Added video card information.
-* Fixed bug of incorrectly saving core numbers for "Overriding best cores".
-* Fix infinity loop during diagnostic ( frequency decrease after each unsuccessful attempt).
-* Improved data safety for the "CORE CO test (if the "Phoenix" function is triggered, the data will be duplicated in all 4 ini-files for improved preservation).
-* Removed all annoying standard MessageBoxes.
-* Removed possibility to load data for the "COMPARE" mode if there are no previous experiments.
-* Resume "HYBRID OC" or "Overriding best cores" after "COMPARE" process is finished (if these functions were enabled before "COMPARE" started).
-* Fixed bug when "Overriding best core"s broke "BOOST TEST" results.
-* Resume "Overriding best core"s after "BOOST TEST" process is finished (if this function was enabled before the start of "BOOST TEST").
-* Redesigned function of restoring performance counter settings from system backup storage (possibly fix the bug when the game profile doesn't want to turn on).
-* Improved feature to disable "Overriding best core" when user runs "DIAGNOSTIC".
-* The timeout time for reading CPPC tags is doubled (5s -> 10s). Should help solve a problem where the tags did not have time to load and threw an exception.
-* Fixed bug related to excessive core load during "CORE CO testing" (the error could have caused the diagnostic operation to be interrupted due to the temperature).
-* The CO curve now has smoother transitions between the offsets and the standard table (should have a positive effect on the stability).
-* Small adjustments to the basic settings.
-* Fixed a glitch where you could activate "HYBRID OC" or "SAVE PROFILES" if the offset table value was incorrect or missing.
-* The protection system will not work if the diagnostic or "HYBRID OC" is not running.
-* Removed "RESERVED CO" because this value does not mean correct information. Added simple presets for UEFI CO at the end of diagnostics.
-* Fixed bug with abnormally high "DELTA" after starting "Phoenix".
-* Fixed a bug when interface elements were unlocked too early after pressing the "STOP" button.
-* Fixed a bug with huge numbers in cells with core numbers for "Overriding best cores" after "DIAGNOSTIC".
-* Small optimizations for "Overriding best cores".
-* Added notifications about critical errors during HYDRA startup.
-* "Turn Off PC after diagnostic" now works correctly if "Phoenix" was used.
-* Information about the last failure received additional recommendations (recommendations for interaction with "SSE CO offset").
-* Fixed a bug where checking for updates during disconnected internet would not allow to start HYDRA.
-* Added additional information to the tooltips.
-* Improved check for a new version.
-* Checking permissions for creating and overwriting temporary files.
-* Fixed a bug, that made it impossible to load a previously saved result in "COMPARE" mode.
-* Temporary return of game profile triggers from 1.1A.
+* ------------------------------------------
+* - Saves the position of the application window at the moment of closing. 
+* - New MessageBox.
+* - Pause/Resume for "CCD CO test" and "CORE CO test".
+* - Added new MessageBoxes for some important operations.
+* - Seamless log (during the 1st calendar day all logs will be merged into 1).
+* - Added CO SSE offset control (overboost control mechanism for ultralight tasks). Also allow you to get an extra frequency.
+* - Added video card information.
+* - Fixed bug of incorrectly saving core numbers for "Overriding best cores".
+* - Fix infinity loop during diagnostic ( frequency decrease after each unsuccessful attempt).
+* - Improved data safety for the "CORE CO test (if the "Phoenix" function is triggered, the data will be duplicated in all 4 ini-files for improved preservation).
+* - Removed all annoying standard MessageBoxes.
+* - Removed possibility to load data for the "COMPARE" mode if there are no previous experiments.
+* - Resume "HYBRID OC" or "Overriding best cores" after "COMPARE" process is finished (if these functions were enabled before "COMPARE" started).
+* - Fixed bug when "Overriding best core"s broke "BOOST TEST" results.
+* - Resume "Overriding best core"s after "BOOST TEST" process is finished (if this function was enabled before the start of "BOOST TEST").
+* - Redesigned function of restoring performance counter settings from system backup storage (possibly fix the bug when the game profile doesn't want to turn on).
+* - Improved feature to disable "Overriding best core" when user runs "DIAGNOSTIC".
+* - The timeout time for reading CPPC tags is doubled (5s -> 10s). Should help solve a problem where the tags did not have time to load and threw an exception.
+* - Fixed bug related to excessive core load during "CORE CO testing" (the error could have caused the diagnostic operation to be interrupted due to the temperature).
+* - The CO curve now has smoother transitions between the offsets and the standard table (should have a positive effect on the stability).
+* - Small adjustments to the basic settings.
+* - Fixed a glitch where you could activate "HYBRID OC" or "SAVE PROFILES" if the offset table value was incorrect or missing.
+* - The protection system will not work if the diagnostic or "HYBRID OC" is not running.
+* - Removed "RESERVED CO" because this value does not mean correct information. Added simple presets for UEFI CO at the end of diagnostics.
+* - Fixed bug with abnormally high "DELTA" after starting "Phoenix".
+* - Fixed a bug when interface elements were unlocked too early after pressing the "STOP" button.
+* - Fixed a bug with huge numbers in cells with core numbers for "Overriding best cores" after "DIAGNOSTIC".
+* - Small optimizations for "Overriding best cores".
+* - Added notifications about critical errors during HYDRA startup.
+* - "Turn Off PC after diagnostic" now works correctly if "Phoenix" was used.
+* - Information about the last failure received additional recommendations (recommendations for interaction with "SSE CO offset").
+* - Fixed a bug where checking for updates during disconnected internet would not allow to start HYDRA.
+* - Added additional information to the tooltips.
+* - Improved check for a new version.
+* - Checking permissions for creating and overwriting temporary files.
+* - Fixed a bug, that made it impossible to load a previously saved result in "COMPARE" mode.
+* - Temporary return of game profile triggers from 1.1A.
