@@ -1,41 +1,41 @@
 * ----------------------------------------
 * HYDRA 1.1D PRO (1104) - what's new?
 * ----------------------------------------
-* Disabled messages about successful backup of profiles and successful saving of profiles.
-* Once again, the mechanism for activating the game profile has been redesigned. The new mechanism saves precious CPU time, which is so important for performance for profiles that involve all cores.
-* Fixed a bug where Prime95 could not get affinity during diagnostics.
-* Fixed a bug when the application opens in the upper left corner of the screen after damaging Settings.ini and Settings_Backup.ini.
-* Added the ability to adjust cycle time for diagnostics (instead of "Enhance accuracy"). Convenient if you want to make a rough diagnosis by setting the cycle time of 30-60 seconds.
-* Fixed a critical bug where "Overriding best cores" did not restore the original affinity mask for a process (which resulted in a significant drop in performance ).
-* Fixed incorrect display of video card name for some systems.
-* Now HYDRA checks if "Settings.ini / Settings_Backup.ini" has the same version (build) as the application itself. If the versions do not match, an automatic reset will be performed. This has a great effect on stability.
-* "Overriding best cores" is able to control two processes at the same time.
-* Changed "Overriding best cores" rules for 5600X (overriding is possible only for 4 cores). The reason is simple - it makes no sense.
-* C6 state of the cores is switched only when the application is started. Previously, the function did not work at all.
-* Fixed system crash when user started "COMPARE" while running "HYBRID OC".
-* Added peak frequency information for "BOOST TEST".
-* Increased stability when using the "AVX1 CO offset" table. New rule for "HYBRID OC" mechanisms: prohibit the use of "AVX1 CO offset" if the load level on one of the cores exceeds the "AVX2 threshold".
-* Adjusting the base SSE CO offset values (for MT 50 -> 75).
-* Improved "HYBRID OC". Soft profile switching, calibration and new rules. Positive impact on performance and stability.
-* Timer for "CUSTOM profiles". The user can set the activity time for each profile.
-* Fixed bug when profiles "CUSTOM#1" and "CUSTOM#2" were not highlighted during work.
-* Changing the AVX operation for the "CORE CO test".
-* Added new MessageBoxe with information about updates and changes.
-* Prohibit pressing the "Restoring all settings to their default values" button for modes: "DIAGNOSTIC", "COMPARE", "BOOST TEST".
-* The information MessageBoxes can be moved.
-* Added button to check for updates.
-* Fixed a bug when it took a long time to create a screenshot.
-* Fixed bug when tests number 2 and 3 did not work during diagnostics.
-* Improved data safety for "CCD CO test".
-* Fixed a rare bug, where "CCD CO tets" could get caught in an endless series of reboots and "Phoenix" runs.
-* Improved stability for the  "Search best voltages".
-* Fixed a bug, where in some cases users saw "CCD#3" in the "Information about the last failure".
-* Fixed a rare bug, where users saw an incomprehensible message in the log before the basic information.
-* "TEMP.ini" files are cleared after the end of the diagnostic process to prevent conflicts with subsequent diagnostics and application of "Phoenix".
-* Added a loading screen.
-* Added AMD PBO2 tab to control related functions (CO, EDC,TDC, PPT, FIT, Max CCLK frequency and Tj Max).
-* Some adjustments to the GUI.
-* Optimize application load time (up to -30%).
+* - Disabled messages about successful backup of profiles and successful saving of profiles.
+* - Once again, the mechanism for activating the game profile has been redesigned. The new mechanism saves precious CPU time, which is so important for performance for profiles that involve all cores.
+* - Fixed a bug where Prime95 could not get affinity during diagnostics.
+* - Fixed a bug when the application opens in the upper left corner of the screen after damaging Settings.ini and Settings_Backup.ini.
+* - Added the ability to adjust cycle time for diagnostics (instead of "Enhance accuracy"). Convenient if you want to make a rough diagnosis by setting the cycle time of 30-60 seconds.
+* - Fixed a critical bug where "Overriding best cores" did not restore the original affinity mask for a process (which resulted in a significant drop in performance ).
+* - Fixed incorrect display of video card name for some systems.
+* - Now HYDRA checks if "Settings.ini / Settings_Backup.ini" has the same version (build) as the application itself. If the versions do not match, an automatic reset will be performed. This has a great effect on stability.
+* - "Overriding best cores" is able to control two processes at the same time.
+* - Changed "Overriding best cores" rules for 5600X (overriding is possible only for 4 cores). The reason is simple - it makes no sense.
+* - C6 state of the cores is switched only when the application is started. Previously, the function did not work at all.
+* - Fixed system crash when user started "COMPARE" while running "HYBRID OC".
+* - Added peak frequency information for "BOOST TEST".
+* - Increased stability when using the "AVX1 CO offset" table. New rule for "HYBRID OC" mechanisms: prohibit the use of "AVX1 CO offset" if the load level on one of the cores exceeds the "AVX2 threshold".
+* - Adjusting the base SSE CO offset values (for MT 50 -> 75).
+* - Improved "HYBRID OC". Soft profile switching, calibration and new rules. Positive impact on performance and stability.
+* - Timer for "CUSTOM profiles". The user can set the activity time for each profile.
+* - Fixed bug when profiles "CUSTOM#1" and "CUSTOM#2" were not highlighted during work.
+* - Changing the AVX operation for the "CORE CO test".
+* - Added new MessageBoxe with information about updates and changes.
+* - Prohibit pressing the "Restoring all settings to their default values" button for modes: "DIAGNOSTIC", "COMPARE", "BOOST TEST".
+* - The information MessageBoxes can be moved.
+* - Added button to check for updates.
+* - Fixed a bug when it took a long time to create a screenshot.
+* - Fixed bug when tests number 2 and 3 did not work during diagnostics.
+* - Improved data safety for "CCD CO test".
+* - Fixed a rare bug, where "CCD CO tets" could get caught in an endless series of reboots and "Phoenix" runs.
+* - Improved stability for the  "Search best voltages".
+* - Fixed a bug, where in some cases users saw "CCD#3" in the "Information about the last failure".
+* - Fixed a rare bug, where users saw an incomprehensible message in the log before the basic information.
+* - "TEMP.ini" files are cleared after the end of the diagnostic process to prevent conflicts with subsequent diagnostics and application of "Phoenix".
+* - Added a loading screen.
+* - Added AMD PBO2 tab to control related functions (CO, EDC,TDC, PPT, FIT, Max CCLK frequency and Tj Max).
+* - Some adjustments to the GUI.
+* - Optimize application load time (up to -30%).
 * ----------------------------------------
 * HYDRA 1.1C PRO (1103) - what's new?
 * ----------------------------------------
