@@ -2,7 +2,7 @@
 * HYDRA 1.1D PRO (1104) - what's new?
 * ----------------------------------------
 * - Added a loading screen.
-* - Added AMD PBO2 tab to control related functions (CO, EDC,TDC, PPT, FIT, Max CCLK frequency and Tj Max). Cezanne - not ready yet.
+* - Added AMD PBO2 tab to control related functions (CO, EDC,TDC, PPT, FIT, Max CCLK frequency and Tj Max). Cezanne - only CO.
 * - Fixed a critical bug where "Overriding best cores" did not restore the original affinity mask for a process (which resulted in a significant drop in performance).
 * - C6 state of the cores is switched only when the application is started. Previously, the function did not work at all.
 * - Added peak frequency information for "BOOST TEST".
