@@ -1,4 +1,18 @@
 * ----------------------------------------
+* HYDRA 1.1E PRO (1105) - what's new?
+* ----------------------------------------
+* - Added HYDRA ASSISTANT for "DIAGNOSTIC" and troubleshooting after an crash.
+* - Added option to disable HYDRA ASSISTANT.
+* - Added new type of diagnostics - automatic CO search for PBO2 (AMD PBO2 tab).
+* - Added test to compare frequencies, voltages, power consumption and temperatures after finding the ideal PBO2 CO values.
+* - The screen scaling factor is taken into account for the window position keeping function.
+* - Some graphic changes.
+* - Fixed incorrect operation of the "RESET" function for PBO2 CO.
+* - Fixed a bug where the HYDRA app would launch without focus on the foreground.
+* - Fixed a bug where Prime95 could shut itself off during long diagnostic cycles.
+* - Fixed a bug where "PAUSE" did not work correctly during CORE CO diagnostics.
+* - Closing HYDRA interrupts Prime95 / Cinebench only when the diagnostic process is running.
+* ----------------------------------------
 * HYDRA 1.1D PRO (1104) - what's new?
 * ----------------------------------------
 * - Added a loading screen.
