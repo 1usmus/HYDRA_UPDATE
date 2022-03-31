@@ -1,6 +1,7 @@
 * ----------------------------------------
 * HYDRA 1.1E PRO (1105) - what's new?
 * ----------------------------------------
+* - Support for new Ryzen processors (B2 stepping is also supported).
 * - Added HYDRA ASSISTANT for "DIAGNOSTIC" and troubleshooting after an crash.
 * - Added option to disable HYDRA ASSISTANT ("SETTINGS" tab).
 * - Added new type of diagnostics - automatic CO search for PBO2 ("AMD PBO2" tab).
