@@ -5,7 +5,7 @@
 * - Added HYDRA ASSISTANT for "DIAGNOSTIC" and troubleshooting after an crash.
 * - Added option to disable HYDRA ASSISTANT ("SETTINGS" tab).
 * - Added new type of diagnostics - automatic CO search for PBO2 ("AMD PBO2" tab).
-* - Added test to compare frequencies, voltages, power consumption and temperatures after finding the ideal PBO2 CO values.* 
+* - Added test to compare frequencies, voltages, power consumption and temperatures after finding the ideal PBO2 CO values.
 * - The screen scaling factor is taken into account for the window position keeping function.
 * - Some graphic changes.
 * - Fixed incorrect operation of the "RESET" function for AMD PBO2.
