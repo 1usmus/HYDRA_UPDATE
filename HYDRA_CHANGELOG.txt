@@ -1,4 +1,40 @@
 * ----------------------------------------
+* HYDRA 1.1F PRO (1106) - what's new?
+* ----------------------------------------
+* - The information about the switched off cores and CCDs has become more clear.
+* - HYBRID OC tab. Color indication of cores that are active (orange) and those that are sleeping (green).
+* - Added information about PBO2 limits (THM, TDC, EDC and PPT).
+* - Added information about the memory controller (FCLK effective frequency , MEMCLK effective frequency and UCLK effective frequency).
+* - Added information about DRAM bandwidth (UMC RD and UMC WR).
+* - Added information about current AMD Curve Optimizer values.
+* - EDC throttler - information about the current level of CPU load.
+* - Added information about HOT SPOT and L3 CACHE temperatures.
+* - The best cores (by CPPC) are marked with an asterisk.
+* - Added possibility to customize sensors (value processing and visibility).
+* - Information from 23 sensors is available for each core.
+* - Monitoring has been optimized, reducing the use of CPU time.
+* - Reserved space for GPU monitoring.
+* - HYBRID OC tab. The CO tables for HYBRID OC are now combined with the PROFILES tab for greater ease of use.
+* - HYBRID OC tab. The color indication of voltages for the profiles will help you determine which voltage is energy efficient and which is not.
+* - HYBRID OC tab. CO tables can be hidden for visual comfort.
+* - HYBRID OC tab. HYBRID OC got a frequency limiter for each of the cores. These values are filled in automatically during diagnostics.
+* - AMD PBO2 tab. Added ability to enable/disable AMD PBO2 (it was impossible to choose what to do in the previous version).
+* - AMD PBO2 tab. Added the ability to zero the CO values for each CCD individually.
+* - AMD PBO2 now becomes part of the HYBRID OC profiles (I will talk about the future merge in May) therefore backup creation or download functions are now supported.
+* - The search for CO values has been significantly refined with the new approach (pdf - guide is attached to the post). Of course, calibrations are planned.
+* - Improved diagnostics customization: selection of voltages for testing as well as FFT MAX (previously FFT MAX = FFT MIN).
+* - Added 3 presets with diagnostic settings (LIGHT, NORMAL and HEAVY) for users who want ease of use.
+* - By default, the user gets the most optimal settings for testing. 1-click concept.
+* - If you were using AMD PBO2 but it crashed HYDRA ASSISTANT will help you to solve the problem the next time you start the application.
+* - A new PHOENIX (restore the diagnostic process after a failure) was created to secure diagnostic data.  Only available for AMD PBO2 diagnostics. Temporarily.
+* - For all types of diagnostics, the "stay awake" function is enabled by default to avoid the screen turning off or the system falling asleep.
+* - Fixed and finalized PBO control for Cezanne processors.
+* - The screen zoom factor is used to correctly load the location of the application.
+* - Added a large number of tooltips. 
+* - COMPARE tab. Now the user has the ability to compare not only the default system state with HYBRID OC, but also the default state with AMD PBO2.
+* - COMPARE tab. For more information the graphs have a caption which comparison mode was used.
+* - COMPARE tab. Also added is a graph with temperature comparison.
+* ----------------------------------------
 * HYDRA 1.1E PRO (1105) - what's new?
 * ----------------------------------------
 * - Support for new Ryzen processors (B2 stepping is also supported).
