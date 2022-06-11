@@ -20,6 +20,7 @@
 * - Improve the stability of the "HYBRID OC".
 * - Improved frequency limitation function for cores relative to the values specified by the user.
 * - Redesigned timers for "CUSTOM" profiles. Fixed incorrect operation due to regional OS settings.
+* - "HYDRA ASSISTANT" now does not delete the windows log in order to preserve the possibility of alternate reading of CPPC. The disadvantage is the "HYDRA ASSISTANT" window every time HYDRA restarts after a crash.
 * - Corrected some descriptions.
 * ----------------------------------------
 * HYDRA 1.1G PRO (1107) - what's new?
