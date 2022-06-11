@@ -6,86 +6,86 @@
 * - In case of a failure during diagnostics, "Phoenix" takes action to reduce the CO not only for the testing core, but also for all other cores that were active.
 * - Fixed a rare problem with an infinite loop during diagnostics.
 * - The diagnostics settings tab will get the ability to set a starting CO for each core instead of a CO for each CCD.
-* - Ability to disable the use of global PCI bus mutex. There are situations when RGB control software blocks this mutex and HYBRID OC is very slow.
-* - Fix incorrect display of percentage change in frequency for the COMPARE tab.
-* - Fixed HYBRID OC crash when part of profiles was disabled.
-* - Correction of configuration data for HYDRA ASSISTANT.
-* - Resolved the problem when changes in profiles were not used during COMPARE mode.
+* - Ability to disable the use of global PCI bus mutex. There are situations when RGB control software blocks this mutex and "HYBRID OC" is very slow.
+* - Fix incorrect display of percentage change in frequency for the "COMPARE" tab.
+* - Fixed "HYBRID OC" crash when part of profiles was disabled.
+* - Correction of configuration data for "HYDRA ASSISTANT".
+* - Resolved the problem when changes in profiles were not used during "COMPARE" mode.
 * - Improved diagnostic accuracy.
 * - Fixed the bug when the computer can fall asleep during some diagnostic tests.
-* - Fixed bug when HYBRID OC would not turn off during diagnostics startup.
-* - Fixed bug of incorrect loading GAME CO offset at application startup.
-* - Improved low-threaded performance when using HYBRID OC.
-* - Improved profile holding for HYBRID OC.
-* - Improve the stability of the HYBRID OC.
+* - Fixed bug when "HYBRID OC" would not turn off during diagnostics startup.
+* - Fixed bug of incorrect loading "GAME CO offset" at application startup.
+* - Improved low-threaded performance when using "HYBRID OC".
+* - Improved profile holding for "HYBRID OC".
+* - Improve the stability of the "HYBRID OC".
 * - Improved frequency limitation function for cores relative to the values specified by the user.
-* - Redesigned timers for CUSTOM profiles. Fixed incorrect operation due to regional OS settings.
+* - Redesigned timers for "CUSTOM" profiles. Fixed incorrect operation due to regional OS settings.
 * - Corrected some descriptions.
 * ----------------------------------------
 * HYDRA 1.1G PRO (1107) - what's new?
 * ----------------------------------------
-* - A brand new simpler DIAGNOSTIC, built from the scratch. The key feature is that all types of diagnostics have been combined into one. 
+* - A brand new simpler "DIAGNOSTIC", built from the scratch. The key feature is that all types of diagnostics have been combined into one. 
 * - "Phoenix" recovery function was also created from scratch.
 * - New feature to find the ideal voltages individually for your system by target temperature and power consumption.
 * - Added support for internal BCLK control. Note: Only for systems that do not have an external BCLK.
 * - Added real-time monitoring of BCLK frequency. BCLK frequency is taken into account during the formation of some monitoring values.
 * - CCD usage monitoring added.
-* - Dynamic PBO2 function has been added. Changes AMD CO in real time relative to load. More performance in a multi-threaded load.
-* - Some HYBRID OC profiles operate with more threads than before.
-* - Several optimizations for HYBRID OC, which allow to reduce false profile switching and loss of frequency.
+* - "Dynamic PBO2" function has been added. Changes "AMD CO" in real time relative to load. More performance in a multi-threaded load.
+* - Some "HYBRID OC" profiles operate with more threads than before.
+* - Several optimizations for "HYBRID OC", which allow to reduce false profile switching and loss of frequency.
 * - Some profiles have received "waiting" cores, which are designed to minimize performance loss when switching contexts.
-* - COMPARE tab. The percentage difference between the default and tuned state. 
-* - COMPARE tab. The normalization of the scales has been changed for better visual comfort.
+* - "COMPARE" tab. The percentage difference between the default and tuned state. 
+* - "COMPARE" tab. The normalization of the scales has been changed for better visual comfort.
 * - Corrects the default values for the configuration files.
 * - Visual changes to the graphical shell. 
 * - Removed some unnecessary settings.
 * - Some changes in the function of generating configuration files for Prime95.
 * - Fixed a bug where the startup screen was not centered on the first startup.
-* - Fixed an issue where AMD CO values were not always displayed correctly in the monitoring table.
+* - Fixed an issue where "AMD CO" values were not always displayed correctly in the monitoring table.
 * - Fixed some monitoring problems for 5600/5700/5800 CPUs with two CCD's.
 * - Resolved the problems associated with the uncorrected creation of screenshots.
 * ----------------------------------------
 * HYDRA 1.1F PRO (1106) - what's new?
 * ----------------------------------------
 * - The information about the switched off cores and CCDs has become more clear.
-* - HYBRID OC tab. Color indication of cores that are active (orange) and those that are sleeping (green).
+* - "HYBRID OC" tab. Color indication of cores that are active (orange) and those that are sleeping (green).
 * - Added information about PBO2 limits (THM, TDC, EDC and PPT).
 * - Added information about the memory controller (FCLK effective frequency , MEMCLK effective frequency and UCLK effective frequency).
 * - Added information about DRAM bandwidth (UMC RD and UMC WR).
 * - Added information about current AMD Curve Optimizer values.
-* - EDC throttler - information about the current level of CPU load.
-* - Added information about HOT SPOT and L3 CACHE temperatures.
+* - "EDC throttler" - information about the current level of CPU load.
+* - Added information about "HOT SPOT" and "L3 CACHE" temperatures.
 * - The best cores (by CPPC) are marked with an asterisk.
 * - Added possibility to customize sensors (value processing and visibility).
 * - Information from 23 sensors is available for each core.
 * - Monitoring has been optimized, reducing the use of CPU time.
 * - Reserved space for GPU monitoring.
-* - HYBRID OC tab. The CO tables for HYBRID OC are now combined with the PROFILES tab for greater ease of use.
-* - HYBRID OC tab. The color indication of voltages for the profiles will help you determine which voltage is energy efficient and which is not.
-* - HYBRID OC tab. CO tables can be hidden for visual comfort.
-* - HYBRID OC tab. HYBRID OC got a frequency limiter for each of the cores. These values are filled in automatically during diagnostics.
-* - AMD PBO2 tab. Added ability to enable/disable AMD PBO2 (it was impossible to choose what to do in the previous version).
-* - AMD PBO2 tab. Added the ability to zero the CO values for each CCD individually.
-* - AMD PBO2 now becomes part of the HYBRID OC profiles (I will talk about the future merge in May) therefore backup creation or download functions are now supported.
+* - "HYBRID OC" tab. The CO tables for "HYBRID OC" are now combined with the "PROFILES" tab for greater ease of use.
+* - "HYBRID OC" tab. The color indication of voltages for the profiles will help you determine which voltage is energy efficient and which is not.
+* - "HYBRID OC" tab. CO tables can be hidden for visual comfort.
+* - "HYBRID OC" tab. "HYBRID OC" got a frequency limiter for each of the cores. These values are filled in automatically during diagnostics.
+* - "AMD PBO2" tab. Added ability to enable/disable AMD PBO2 (it was impossible to choose what to do in the previous version).
+* - "AMD PBO2" tab. Added the ability to zero the CO values for each CCD individually.
+* - "AMD PBO2" now becomes part of the "HYBRID OC" profiles (I will talk about the future merge in May) therefore backup creation or download functions are now supported.
 * - The search for CO values has been significantly refined with the new approach (pdf - guide is attached to the post). Of course, calibrations are planned.
 * - Improved diagnostics customization: selection of voltages for testing as well as FFT MAX (previously FFT MAX = FFT MIN).
 * - Added 3 presets with diagnostic settings (LIGHT, NORMAL and HEAVY) for users who want ease of use.
 * - By default, the user gets the most optimal settings for testing. 1-click concept.
-* - If you were using AMD PBO2 but it crashed HYDRA ASSISTANT will help you to solve the problem the next time you start the application.
-* - A new PHOENIX (restore the diagnostic process after a failure) was created to secure diagnostic data.  Only available for AMD PBO2 diagnostics. Temporarily.
+* - If you were using AMD PBO2 but it crashed "HYDRA ASSISTANT" will help you to solve the problem the next time you start the application.
+* - Updated "Phoenix" (restore the diagnostic process after a failure) was created to secure diagnostic data. Only available for AMD PBO2 diagnostics. Temporarily.
 * - For all types of diagnostics, the "stay awake" function is enabled by default to avoid the screen turning off or the system falling asleep.
 * - Fixed and finalized PBO control for Cezanne processors.
 * - The screen zoom factor is used to correctly load the location of the application.
 * - Added a large number of tooltips. 
-* - COMPARE tab. Now the user has the ability to compare not only the default system state with HYBRID OC, but also the default state with AMD PBO2.
-* - COMPARE tab. For more information the graphs have a caption which comparison mode was used.
-* - COMPARE tab. Also added is a graph with temperature comparison.
+* - "COMPARE" tab. Now the user has the ability to compare not only the default system state with "HYBRID OC", but also the default state with AMD PBO2.
+* - "COMPARE" tab. For more information the graphs have a caption which comparison mode was used.
+* - "COMPARE" tab. Also added is a graph with temperature comparison.
 * ----------------------------------------
 * HYDRA 1.1E PRO (1105) - what's new?
 * ----------------------------------------
 * - Support for new Ryzen processors (B2 stepping is also supported).
-* - Added HYDRA ASSISTANT for "DIAGNOSTIC" and troubleshooting after an crash.
-* - Added option to disable HYDRA ASSISTANT ("SETTINGS" tab).
+* - Added "HYDRA ASSISTANT" for diagnostic and troubleshooting after an crash.
+* - Added option to disable "HYDRA ASSISTANT" ("SETTINGS" tab).
 * - Added new type of diagnostics - automatic CO search for PBO2 ("AMD PBO2" tab).
 * - Added test to compare frequencies, voltages, power consumption and temperatures after finding the ideal PBO2 CO values.
 * - The screen scaling factor is taken into account for the window position keeping function.
@@ -100,7 +100,7 @@
 * HYDRA 1.1D PRO (1104) - what's new?
 * ----------------------------------------
 * - Added a loading screen.
-* - Added AMD PBO2 tab to control related functions (Curve Optimizer, EDC,TDC, PPT, FIT, Max CCLK frequency and Tj Max). Cezanne - only Curve Optimizer.
+* - Added "AMD PBO2" tab to control related functions (Curve Optimizer, EDC,TDC, PPT, FIT, Max CCLK frequency and Tj Max). Cezanne - only Curve Optimizer.
 * - Fixed a critical bug where "Overriding best cores" did not restore the original affinity mask for a process (which resulted in a significant drop in performance).
 * - C6 state of the cores is switched only when the application is started. Previously, the function did not work at all.
 * - Added peak frequency information for "BOOST TEST".
@@ -118,7 +118,7 @@
 * - Changed "Overriding best cores" rules for 5600X (overriding is possible only for 4 cores). The reason is simple - it makes no sense.
 * - Fixed system crash when user started "COMPARE" while running "HYBRID OC".
 * - Increased stability when using the "AVX1 CO offset" table. New rule for "HYBRID OC" mechanisms: prohibit the use of "AVX1 CO offset" if the load level on one of the cores exceeds the "AVX2 threshold".
-* - Adjusting the base SSE CO offset values (for MT 50 -> 75).
+* - Adjusting the base "SSE CO offset" values (for MT 50 -> 75).
 * - Fixed bug when profiles "CUSTOM#1" and "CUSTOM#2" were not highlighted during work.
 * - Changing the AVX operation for the "CORE CO test".
 * - Prohibit pressing the "Restoring all settings to their default values" button for modes: "DIAGNOSTIC", "COMPARE", "BOOST TEST".
