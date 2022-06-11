@@ -1,4 +1,50 @@
 * ----------------------------------------
+* HYDRA 1.1H PRO (1108) - what's new?
+* ----------------------------------------
+* - The "Hey, Phoenix, wake up" function allows you to manually continue diagnostics if for some reason it has stopped.
+* - Improved preservation of diagnostic files. Added additional logs, which are written at different intervals.
+* - In case of a failure during diagnostics, "Phoenix" takes action to reduce the CO not only for the testing core, but also for all other cores that were active.
+* - Fixed a rare problem with an infinite loop during diagnostics.
+* - The diagnostics settings tab will get the ability to set a starting CO for each core instead of a CO for each CCD.
+* - Ability to disable the use of global PCI bus mutex. There are situations when RGB control software blocks this mutex and HYBRID OC is very slow.
+* - Fix incorrect display of percentage change in frequency for the COMPARE tab.
+* - Fixed HYBRID OC crash when part of profiles was disabled.
+* - Correction of configuration data for HYDRA ASSISTANT.
+* - Resolved the problem when changes in profiles were not used during COMPARE mode.
+* - Improved diagnostic accuracy.
+* - Fixed the bug when the computer can fall asleep during some diagnostic tests.
+* - Fixed bug when HYBRID OC would not turn off during diagnostics startup.
+* - Fixed bug of incorrect loading GAME CO offset at application startup.
+* - Improved low-threaded performance when using HYBRID OC.
+* - Improved profile holding for HYBRID OC.
+* - Improve the stability of the HYBRID OC.
+* - Improved frequency limitation function for cores relative to the values specified by the user.
+* - Redesigned timers for CUSTOM profiles. Fixed incorrect operation due to regional OS settings.
+* - Corrected some descriptions.
+* ----------------------------------------
+* HYDRA 1.1G PRO (1107) - what's new?
+* ----------------------------------------
+* - A brand new simpler DIAGNOSTIC, built from the scratch. The key feature is that all types of diagnostics have been combined into one. 
+* - "Phoenix" recovery function was also created from scratch.
+* - New feature to find the ideal voltages individually for your system by target temperature and power consumption.
+* - Added support for internal BCLK control. Note: Only for systems that do not have an external BCLK.
+* - Added real-time monitoring of BCLK frequency. BCLK frequency is taken into account during the formation of some monitoring values.
+* - CCD usage monitoring added.
+* - Dynamic PBO2 function has been added. Changes AMD CO in real time relative to load. More performance in a multi-threaded load.
+* - Some HYBRID OC profiles operate with more threads than before.
+* - Several optimizations for HYBRID OC, which allow to reduce false profile switching and loss of frequency.
+* - Some profiles have received "waiting" cores, which are designed to minimize performance loss when switching contexts.
+* - COMPARE tab. The percentage difference between the default and tuned state. 
+* - COMPARE tab. The normalization of the scales has been changed for better visual comfort.
+* - Corrects the default values for the configuration files.
+* - Visual changes to the graphical shell. 
+* - Removed some unnecessary settings.
+* - Some changes in the function of generating configuration files for Prime95.
+* - Fixed a bug where the startup screen was not centered on the first startup.
+* - Fixed an issue where AMD CO values were not always displayed correctly in the monitoring table.
+* - Fixed some monitoring problems for 5600/5700/5800 CPUs with two CCD's.
+* - Resolved the problems associated with the uncorrected creation of screenshots.
+* ----------------------------------------
 * HYDRA 1.1F PRO (1106) - what's new?
 * ----------------------------------------
 * - The information about the switched off cores and CCDs has become more clear.
