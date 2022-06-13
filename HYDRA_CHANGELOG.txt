@@ -1,4 +1,13 @@
 * ----------------------------------------
+* HYDRA 1.1H2 PRO (1109) - what's new?
+* ----------------------------------------
+* - The ideal volt search can now be configured by additional parameters such as EDC and TDC (4 parameters in total).
+* - A number of stability improvements for diagnostics and "Phoenix".
+* - If there are no CPPC tags, HYDRA will not start and thus will not damage the configuration files.
+* - User can safely remove "inpoutx64.dll" if some anti-cheat scolds HYDRA.
+* - Some improvement for "CUSTOM" profiles.
+* - Added hints and made corrections to some descriptions.
+* ----------------------------------------
 * HYDRA 1.1H PRO (1108) - what's new?
 * ----------------------------------------
 * - The "Hey, Phoenix, wake up" function allows you to manually continue diagnostics if for some reason it has stopped.
