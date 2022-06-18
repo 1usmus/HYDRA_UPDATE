@@ -1,4 +1,16 @@
 * ----------------------------------------
+* HYDRA 1.1H3 PRO (1110) - what's new?
+* ----------------------------------------
+* - Increased speed of diagnostics (+30-40%) for situations when the user does not use AMD CO.
+* - Fixed bug when user tried to set thermal limit more than 90 degrees, but got limit of 9 degrees as a result.
+* - At the request of the community, the maximum thermal limit has been increased to 95 degrees.
+* - Adjusting the values that "HYDRA ASSISTANT" sets before diagnostics to reduce the number of cases when the HYDRA security system stopped the diagnostics.
+* - Fixed a bug where the "5T+" profile was not switching on on CPUs with 1CCD.
+* - If there is a failure in the system, but "Using PBO2" or "HYBRID OC" is turned off, the user will not get an annoying window asking to perform actions with CO.
+* - "HYDRA ASSISTANT" does not suggest selecting a preset with voltages if "Find best VID" is activated.
+* - Fixed bug when profile creation was interrupted due to "invalid VID value".
+* - Added exception handling when during profile creation the optimal voltage search function gave excessive values relative to the voltages at which the diagnostics was performed.
+* ----------------------------------------
 * HYDRA 1.1H2 PRO (1109) - what's new?
 * ----------------------------------------
 * - The ideal volt search can now be configured by additional parameters such as EDC and TDC (4 parameters in total).
