@@ -1,4 +1,11 @@
 * ----------------------------------------
+* HYDRA 1.2A PRO (1200) - what's new?
+* ----------------------------------------
+* - "RX-TUNER". Control of AMD graphics cards based on RDNA2 architecture (temporarily). Unlimited number of profiles, simultaneous control of up to 6 adapters.
+* - The "SETTINGS" tab - all settings in one box for easy interaction with the application.
+* - Now inpoutx64.dll is not used to monitor BCLK, which in turn should have a positive effect on the interaction of HYDRA with anti-cheats.
+* - Other minor fixes and optimizations.
+* ----------------------------------------
 * HYDRA 1.1H3 PRO (1110) - what's new?
 * ----------------------------------------
 * - Increased speed of diagnostics (+30-40%) for situations when the user does not use AMD CO.
