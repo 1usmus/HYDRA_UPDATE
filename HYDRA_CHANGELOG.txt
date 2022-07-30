@@ -1,4 +1,26 @@
 * ----------------------------------------
+* HYDRA 1.2C PRO (1202) - what's new?
+* ----------------------------------------
+* - Added automatic GPU "UNDERVOLTING" for RDNA2 video cards (6xx0 series). Added diagnostic center with a huge amount of parameters.
+* - Added "Phoenix" for GPU diagnostic processes.
+* - Added a protection system for the GPU diagnostic process.
+* - Added a feature that allows you to compare the GPU "UNDERVOLTING" with the default state.
+* - Improved support for processors of unique configurations that have 2 CCDs instead of 1.
+* - Improved overall stability of "HYBRID OC". Improved frequency stability.
+* - Improved stability of the "GAME" profile.
+* - Improved performance of low-threaded "HYDRID OC" profiles when they have dynamic mode turned off.
+* - "HYDRA ASSITANT" was modified and the parameters that the helper sets depending on the user answer were changed.
+* - Optimizing the GPU profile storage structure.
+* - Added an option to set a delayed start time for HYDRA after rebooting or starting the system.
+* - A number of optimizations for application to reduce CPU time usage.
+* - GUI improvements and changed some descriptions.
+* - Added rule to disable "RX-TUNER" during CPU diagnostics.
+* - Fixed bug that didn't allow to load the whole backup of GPU profiles.
+* - Fixed bug when it was impossible to use "PROFILE CREATION" function.
+* - Fixed bug where automatic switching of GPU profiles could be activated if requirements were partially fulfilled.
+* - Fixed bug when user without RDNA2 video card could get into "RX-TUNER" tab.
+* - Also updated the online guide.
+* ----------------------------------------
 * HYDRA 1.2B PRO (1201) - what's new?
 * ----------------------------------------
 * - Added "MANUAL OC" profile for "HYBRID OC".
