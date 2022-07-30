@@ -14,6 +14,7 @@
 * - Added an option to set a delayed start time for HYDRA after rebooting or starting the system.
 * - A number of optimizations for application to reduce CPU time usage.
 * - GUI improvements and changed some descriptions.
+* - Improved accuracy for the "BOOST" test.
 * - Added rule to disable "RX-TUNER" during CPU diagnostics.
 * - Fixed bug that didn't allow to load the whole backup of GPU profiles.
 * - Fixed bug when it was impossible to use "PROFILE CREATION" function.
