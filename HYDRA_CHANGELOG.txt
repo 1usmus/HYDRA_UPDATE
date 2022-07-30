@@ -1,33 +1,33 @@
 * ----------------------------------------
 * HYDRA 1.2B PRO (1201) - what's new?
 * ----------------------------------------
-* - Added MANUAL OC profile for HYBRID OC.
-* - Added fan curve control for RX-TUNER.
+* - Added "MANUAL OC" profile for "HYBRID OC".
+* - Added fan curve control for "RX-TUNER".
 * - Added the ability to set the penalty size when searching for Curve Optimizer values.
-* - HYDRA ASSISTANT has been significantly refined so that the user can solve the problem of a system crash without instructions or outside help.
-* - If the user has used HYDRA ASSISTANT after the system crash, you can find information about all the changes made in the HYDRA log.
-* - HYDRA ASSISTANT may offer to recreate profiles automatically or to clear the system log so that the assistant is not called again after restarting the application.
-* - Improved stability and performance of the HYBRID OC.
-* - Improved HYBRID OC wake up function after system sleep.
+* - "HYDRA ASSISTANT" has been significantly refined so that the user can solve the problem of a system crash without instructions or outside help.
+* - If the user has used "HYDRA ASSISTANT" after the system crash, you can find information about all the changes made in the HYDRA log.
+* - "HYDRA ASSISTANT" may offer to recreate profiles automatically or to clear the system log so that the assistant is not called again after restarting the application.
+* - Improved stability and performance of the "HYBRID OC".
+* - Improved "HYBRID OC" wake up function after system sleep.
 * - Updated graphic effects of user interaction with the buttons.
-* - Improved user interface for the HYBRID OC tab.
+* - Improved user interface for the "HYBRID OC" tab.
 * - Calibrated the default values for diagnostics. 
 * - Improved accuracy of profile creation.
-* - In the RX-TUNER tab, there is information next to the adapter as to whether it is active or not.
-* - The available processes for the CUSTOM profile are sorted by the amount of memory used operationally.
+* - In the "RX-TUNER" tab, there is information next to the adapter as to whether it is active or not.
+* - The available processes for the "CUSTOM" profile are sorted by the amount of memory used operationally.
 * - A link-button for the new online guide has been added to the menu with information about the app.
 * - Added an indication of statistics for profiles which are used in AMD boost mode.
 * - Throttle activation time by the HYDRA protection system is now set in seconds instead of cycles for more convenience. 
-* - Added new rule, autoloading of GPU or CPU profiles will not happen as long as HYDRA ASSISTANT requires the user to decide.
-* - HYDRA ASSISTANT will remove from the list of problematic cores all the cores that are duplicated (OS bug), this will avoid "double" action of the assistant.
+* - Added new rule, autoloading of GPU or CPU profiles will not happen as long as "HYDRA ASSISTANT" requires the user to decide.
+* - "HYDRA ASSISTANT" will remove from the list of problematic cores all the cores that are duplicated (OS bug), this will avoid "double" action of the assistant.
 * - The log displays only the cores that the user has selected for diagnostics.
 * - Fixed a critical bug when HYDRA refused to start with some GPUs. 
-* - Fixed rare bug when HYBRID OC could turn off when switching tabs in menu. 
-* - Fixed a bug where enabling Overriding best cores caused the application to crash on startup.
-* - Fixed a bug when RX-TUNER could cause the application to crash while creating a backup of profiles.
+* - Fixed rare bug when "HYBRID OC" could turn off when switching tabs in menu. 
+* - Fixed a bug where enabling "Overriding best cores" caused the application to crash on startup.
+* - Fixed a bug when "RX-TUNER" could cause the application to crash while creating a backup of profiles.
 * - Fixed a bug that prevented the color indication of core activity.
-* - Fixed a bug where warning windows would appear when deactivating the internal BCLK.
-* - Fixed a bug where CO LT values could be lost for cores that did not need diagnostics.
+* - Fixed a bug where warning windows would appear when deactivating the "internal BCLK".
+* - Fixed a bug where "CO LT" values could be lost for cores that did not need diagnostics.
 * ----------------------------------------
 * HYDRA 1.2A PRO (1200) - what's new?
 * ----------------------------------------
