@@ -1,4 +1,39 @@
 * ----------------------------------------
+* HYDRA 1.2В PRO (1203) - what's new?
+* ----------------------------------------
+* - Fixed memory leak problem.
+* - A number of other fixes aimed at improving the application's stability.
+* - Support for processors with only the second CCD active has finally been implemented. This is a terrible headache.
+* - Added driver information for AMD video cards, added some important information to diagnostic logs.
+* - Changed some maximum limits for a number of settings that could previously cause inaccurate user input.  
+* - Added a lot of information to "HYDRA CPU DIAGNOSTIC CENTER" and "HYDRA GPU DIAGNOSTIC CENTER" tooltips.
+* - When HYDRA is closed, the "AMD PBO2" custom settings that are set in the BIOS are set.
+* - Increased the display limits of GPU monitoring values.
+* - Fixed the behavior of the increase, decrease, and reset CO buttons for the "AMD PBO2" tab.
+* - "HYDRA CPU DIAGNOSTIC CENTER" and "HYDRA GPU DIAGNOSTIC CENTER" are slightly revised. Unrelevant elements were removed and new elements were added.
+* - "HYBRID OC". Improved stability for low-threaded workloads.  
+* - "HYBRID OC". Some tables do not contain unnecessary information, improving visual comfort.
+* - "HYBRID OC". Fixed problem with "GAME" profile sticking after turning off "CUSTOM" profile.
+* - Fixing a number of bugs and errors that were interrupting the "HYDRA ASSISTANT's" work.  
+* - The "AMD CO" values search stage now also finds "HYBRID OC CO" values at the same time. Removed individual CO search stages as they are now meaningless. Huge time and nerve saving.
+* - Improved stability of CPU diagnostics. The problem of temperature spikes in some stages has been solved.
+* - Using user "AMD PBO2" values to search "AMD COs".
+* - Some fixes and improvements to the "PROFILE CREATION" stage.
+* - Ryzen 7 5800X3D supports "FIND AMD PBO2 CO".
+* - "MC test" to find "HYBRID OC CO" now knows how to tell the user that the DRAM is unstable.  
+* - Support for the latest version of Prime95 has been implemented.
+* - Added button to reset to default settings for "HYDRA CPU DIAGNOSTIC CENTER". 
+* - Added support for the new version of MSI Kombustor, which is now compatible with drivers 22.7.1 and newer.
+* - "DO UNDERVOLTING" mode has been updated, now the user can also optimize a number of power settings. A number of optimizations of the algorithm.
+* - "DO OVERCLOCKING" mode is now available in test mode. Full overclocking will be implemented next month through curves, not the tools AMD offers.
+* - "HYDRA GPU DIAGNOSTIC CENTER". Delta frequency was removed from the tests because it could cause frequency throttling and worsen the results.
+* - Fixed a number of errors that interrupted the passage of the GPU diagnosis.
+* - Added automatic application restart after video driver crash. Faster and more user-friendly.
+* - "RX-TUNER". Added a huge number of hidden settings for the video card (recall, all for the 6000 series). Earlier you saw something similar in the MPT.
+* - Possibility to use MPT and "RX-TUNER" simultaneously. No conflict.
+* - "RX-TUNER". Fixing bugs that prevented the fan curve from working properly.
+* - "RX-TUNER". Added a status bar that notifies the user about which GPU-profile is currently active.
+* ----------------------------------------
 * HYDRA 1.2C PRO (1202) - what's new?
 * ----------------------------------------
 * - Added automatic GPU "UNDERVOLTING" for RDNA2 video cards (6xx0 series). Added diagnostic center with a huge amount of parameters.
