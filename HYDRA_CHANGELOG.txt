@@ -1,5 +1,5 @@
 * ----------------------------------------
-* HYDRA 1.2В PRO (1203) - what's new?
+* HYDRA 1.2D PRO (1203) - what's new?
 * ----------------------------------------
 * - Fixed memory leak problem.
 * - A number of other fixes aimed at improving the application's stability.
