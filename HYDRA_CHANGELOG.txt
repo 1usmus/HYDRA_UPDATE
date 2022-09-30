@@ -1,4 +1,29 @@
 * ----------------------------------------
+* HYDRA 1.2E PRO (1204) - what's new?
+* ----------------------------------------
+* - Reduced CPU time usage for "HYBRID OC".
+* - Rebalanced the CPU profiles, some profiles began to cover more threads.
+* - Improved stability of "HYBRID OC".
+* - Replaced "SSE CO ofsset" control to "Light load offset" (settings tab). Simpler control.The unit of measure is MHz.
+* - Added a "temperature curve" (THM value) for profiles that run in AMD standard boost mode. You can set the desired temperature for any of the profiles.
+* - "CUSTOM" profiles can run in AMD standard boost mode using the temperature curve.
+* - Improved stability of "GAME" profile activation/deactivation.
+* - Added "AMD CO" activation button for "HYBRID OC" page.
+* - Improving the usability of the graphical interface for the "HYBRID OC" tab.
+* - The "HYDRA ASSISTANT" has a higher chance of fixing the problem than before.
+* - The number of questions that made it difficult for the user has been reduced for "HYDRA ASSISTANT".
+* - Improve stability and rebalance some start values to avoid interrupting the diagnostic process for the CPU.
+* - Additional diagnostic information was added to the log. The log is cleaner.
+* - GPU diagnostic with updated interface.
+* - Undervoltings or overclocking processes for the GPU are now performed with respect to the volt-particle curve, where possible.
+* Changes for the output to the log during diagnostics. The log is cleaner.
+* - When changing settings, users often forgot to save it. The save profiles button lights up when there are any unsaved changes. Similarly, for PowerPlay settings, the button with the lightning icon.
+* - Changing the GPU Core VID does not reset the maximum power consumption offset to 0. Fixed.
+* - Added "AVFS management" for Core and Soc.
+* - Added "Core Curve Control". Now you don't need knowledge to improve frequency or power consumption.
+* - Removed useless settings that cluttered the interface for the "RX-TUNER" tab.
+* - Fixed a rare bug where applying new PowerPlay table values (lightning icon) could crash the interface for the "HYBRID OC" tab.
+* ----------------------------------------
 * HYDRA 1.2D PRO (1203) - what's new?
 * ----------------------------------------
 * - Fixed memory leak problem.
