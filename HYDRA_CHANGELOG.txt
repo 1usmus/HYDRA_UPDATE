@@ -16,7 +16,7 @@
 * - Additional diagnostic information was added to the log. The log is cleaner.
 * - GPU diagnostic with updated interface.
 * - Undervoltings or overclocking processes for the GPU are now performed with respect to the volt-particle curve, where possible.
-* Changes for the output to the log during diagnostics. The log is cleaner.
+* - Changes for the output to the log during diagnostics. The log is cleaner.
 * - When changing settings, users often forgot to save it. The save profiles button lights up when there are any unsaved changes. Similarly, for PowerPlay settings, the button with the lightning icon.
 * - Changing the GPU Core VID does not reset the maximum power consumption offset to 0. Fixed.
 * - Added "AVFS management" for Core and Soc.
