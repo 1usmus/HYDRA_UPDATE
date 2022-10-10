@@ -1,4 +1,17 @@
 * ----------------------------------------
+* HYDRA 1.2F PRO (1205) - what's new?
+* ----------------------------------------
+* - Added support "RX-TUNER" for Zen 1, Zen 1+, Zen 2 and Intel processors.
+* - Changed settings for CPU diagnostic from undervolting to overclocking.
+* - Added new features for "RX-TUNER": "Idle" and "Throttler/Response" features.
+* - Fixed low frequency in "GAME" profile.
+* - Fixed low response app during GPU diagnostic.
+* - Improved stability of GPU diagnostics.
+* - Improved application stability when user applies new "PowerPlay" settings.
+* - "GAME" profile now works correctly with custom "THM" value if boost mode from AMD is chosen.
+* - A redesign of the GUI and new functions for the "HYDRA CPU DIAGNOSTIC CENTER" and "HYDRA GPU DIAGNOSTIC CENTER". Simpler is better.
+* - Some bug fixes for "PROFILE CREATION" function if 1 CCD processor is used.
+* ----------------------------------------
 * HYDRA 1.2E PRO (1204) - what's new?
 * ----------------------------------------
 * - Reduced CPU time usage for "HYBRID OC".
