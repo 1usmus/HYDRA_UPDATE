@@ -1,4 +1,20 @@
 * ----------------------------------------
+* HYDRA 1.2G PRO (1206) - what's new?
+* ----------------------------------------
+* - "HOC mode". This function manages the set of AVX and SSE offsets that were previously. This is more convenient and easier.
+* - The AVX and SSE offsets that were on the "HYBRID OC" tab have been moved to the settings tab.
+* - Accordingly, "HYDRA ASSISTANT" has received other options to solve problems after a crash, actively uses the "HOC mode" parameter.
+* - Added support for Zen 4 processors for monitoring and partial support for "HYBRID OC".
+* - Implemented first "RMP" profiles for RX 6700 XT and RX 6800 XT.
+* - Implemented a mechanism for user uploading profiles to HYDRA created in MPT. Just copy the .mpt file into the appropriate RMP folder. 
+* - The integration of "DCFR" ("DRAM Calculator for Ryzen") into the HYDRA project has started. It's more options, it's easier, and it's a new format. Both for DDR5 and DDR4.
+* - Added possibility to use offset voltages for SOC during GPU overclocking or undervolting.
+* - Some fixes and improvements for the "Tweaks" function ("HYDRA GPU DIAGNOSTIC CENTER").
+* - Improved undervolting or overclocking operations for the GPU. The method used to change the AVFS parameter instead of curves.
+* - Fixed a bug that did not allow to activate "Idle", "Throttler" and "Response" Features correctly ("RX-TUNER" tab).
+* - Added "PowerPlay" table auto-reactivation after each reboot or system startup(the only way to make all functions work correctly).
+* - Added visual cues when selecting applications for "CUSTOM" profiles.
+* ----------------------------------------
 * HYDRA 1.2F PRO (1205) - what's new?
 * ----------------------------------------
 * - Added support "RX-TUNER" for Zen 1, Zen 1+, Zen 2 and Intel processors.
