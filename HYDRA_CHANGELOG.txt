@@ -1,4 +1,8 @@
 * ----------------------------------------
+* HYDRA 1.2H PRO (1207) - what's new?
+* ----------------------------------------
+* - A list of changes will be added soon!!!
+* ----------------------------------------
 * HYDRA 1.2G PRO (1206) - what's new?
 * ----------------------------------------
 * - "HOC mode". This function manages the set of AVX and SSE offsets that were previously. This is more convenient and easier.
