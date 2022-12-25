@@ -1,7 +1,40 @@
 * ----------------------------------------
+* HYDRA 1.3A PRO (1300) - what's new?
+* ----------------------------------------
+* - Added "SAFE" profiles for DDR5 memory (Hynix M-die).
+* - Added "SAFE" profiles for DDR4 memory (Micron E-die, Samsung B-die).
+* - Profiles for DDR5/DDR4 can be applied in 1 click. The user can also set any value he wants in the preset field.
+* - The button to apply DRAM values becomes active if the user has entered his values.
+* - Improved DDR5 support.
+* - Added "RMP" undervolting profiles.
+* - Improved performance of "RMP" profiles for RX 6800 / 6800XT / 6900XT / 6950XT.
+* - Fixed bug that crashed the system with RX 6900 XT after applying "RMP" profile.
+* - Significant changes have been made to the AMD Curve Optimizer value search. The value check has several phases.
+* - Simplified interface for "HYDRA CPU DIAGNOSTIC CENTER".
+* - Added test package for DRAM - "MEMbench". It allows you to. Evaluate performance after optimization of timings, latency with random access and read/write speeds. 
+* - Fixed a bug for Cezanne processors that prevented getting monitoring data.
+* - Improved stability of HYDRA driver loading during application startup. Now there will be no empty interface and CPU frequency drops to 550MHz when the driver starts incorrectly.
+* - Fixed bug when after enabling /disabling iGPU it was not possible to get monitoring data for dGPU.
+* - Fixed a bug with an inconsistent indication of the diagnostic step number.
+* - Fixed a bug with non-corrected CO reset to 0.
+* - "PROFILES CREATION" correctly fills in the values of maximum permissible frequencies (Zen 3).
+* - Correcting the start values for the processor diagnostics.
+* - Improved detection of 7600X / 7800X CPUs that have two CCDs.
+* - Fixed a bug where the system having an active shutdown function after diagnostics shut down if the user pressed the STOP button.
+* - Changed frequency limiter behavior for "HYBRID OC". In some cases, the user will get a higher operating frequency.
+* - Removed delay during user interruption of "PROFILE CREATION".
+* - Other minor bugs fixed.
+* ----------------------------------------
 * HYDRA 1.2H PRO (1207) - what's new?
 * ----------------------------------------
-* - A list of changes will be added soon!!!
+* - "RMP" profiles for all video cards.
+* - Search CO for Zen 4 in range from 0 to -60, and also do CO search relative to PBO settings and maximum temperature. Ryzen Master can't do any of the above.  
+* - Additional test Cinebench R23 1T is introduced into diagnostics to check stability of found CO in light load.  
+* - "DCFR" is a favorite calculator for DRAM. You can apply a profile in 1 click (new timings, signals and misc settings).
+* - Improved Zen 4 support for "HYBRID OC". 
+* - Added possibility to ask HYDRA to turn off computer after diagnostics. Or vice versa. The control is on the LOGGING tab.
+* - Improved stability and performance "BOOST TEST".
+* - Other minor bugs fixed.
 * ----------------------------------------
 * HYDRA 1.2G PRO (1206) - what's new?
 * ----------------------------------------
