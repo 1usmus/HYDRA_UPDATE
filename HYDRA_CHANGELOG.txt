@@ -1,7 +1,16 @@
 * ----------------------------------------
 * HYDRA 1.3B PRO (1301) - what's new?
 * ----------------------------------------
-* Info coming soon!
+* - "Overriding the best cores" with new features.
+* - Increased CO limit for Zen 4, max -80(!). For diagnostic too.
+* - "Dynamic PBO: has lost one control, so it's easier, fixed bugs and added support for Zen 4.
+* - Quite a large diagnostic reform. Added a new test - all cores when searching for CO for cores. EDC/TDC limits for diagnostics are disabled by default (in the corresponding fields you can see 0) because the key limits are PPT and temperature.  
+* - "COMPARE" mode now has automatic graph normalization + new CPU's list.
+* - DDR5 profiles for Hynix M-die (OPTIMAL and FAST preset).
+* - "PROFILE CREATION" now partially uses other tests to reduce the chance of a system crash.
+* - "BOOST TEST" works better because it is attached to the T0 thread.
+* - Improving the usability of the interface.
+* - Reducing the application's resource usage.
 * ----------------------------------------
 * HYDRA 1.3A PRO (1300) - what's new?
 * ----------------------------------------
