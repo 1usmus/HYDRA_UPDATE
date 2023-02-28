@@ -5,6 +5,7 @@
 * - Reducing the load on the processor when communicating with SMU.  
 * - Improved stability of communication with SMU.
 * - Added DDR5 preset for 6200 frequency (Hynix-M chips).
+* - "HYBRID OC" is finally available for Zen 4 without limitation. So, for example, you can get a boost of 5850MHz for your Ryzen 5 7600, bypassing all restrictions from AMD. 
 * - Reworked CPU diagnostic, new test, new settings, FIT deleted (for lack of necessity), added Fmax. Special thanks to ManniX.
 * - For Zen 3, added ManniX author's diagnostic preset. It is located in "HYDRA CPU DIAGNOSTIC CENTER" - > "Settings preset".
 * - Fmax (AMD PBO2 tab) for Zen 4 now works. That is, you can increase the maximum boost of the processor without visiting the BIOS.
