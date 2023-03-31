@@ -1,4 +1,36 @@
 * ----------------------------------------
+* HYDRA 1.3E PRO (1304) - what's new?
+* ----------------------------------------
+* - Basic support for RX 7000 graphics cards. Only the "RX-TUNER" tab is currently available.
+* - Support and operability of the new Ryzen 7XX0 X3D processors has been verified.
+* - Technology "suspend/resume" for CPU diagnostic. Higher CO accuracy, less reboots during CPU diagnostic.
+* - New configuration settings for CPU diagnostic.
+* - Heawy preset by @a3a3e11o for Zen 4 diagnostic.
+* - Changed the maximum allowable voltage for CPU diagnostic from 1375 to 1400mV.
+* - Fix "CB23 test" for CPU diagnostic.
+* - Added a test to check the stability of the 1T-4T profile during diagnostics if the "CB23 test" checkbox is enabled.
+* - "FIND CCD CO VALUES" - new algorithm of testing.
+* - "Allcore test" (CPU diagnostic) temporarily unavailable due to modernization.
+* - Improved data "persistence" for CPU diagnostic.
+* - Updated Prime95, now 30.11b1 version.
+* - Fix "RMP" crash with -43.75 core offset.
+* - PCI-mutex timeout chaged, 50ms > 100ms. "PCI-MUTEX holding time has expired" warning you should see less often.
+* - Improved stability for "HYBRID OC" with response speed more than 10ms.
+* - Improved stability "BOOST TEST" for some CPU's.
+* - Fixed a rare bug where disabling "RX-TUNER" profiles did not reset to default settings.
+* - Fixed bug that sometimes enabled HYBRID OC after testing in COMPARE mode if it was switched off before testing.
+* - Some app optimizations and minor bug fixing.
+* ----------------------------------------
+* HYDRA 1.3D PRO (1303) - what's new?
+* ----------------------------------------
+* - New presets and configuration files for CPU diagnostics.
+* - Now there is a separate target temp to diagnostic the core, and a separate target temp to diagnostic all cores.
+* - Fixes some problems with inability to activate "RMP" on some cards. Nevertheless, I observe a strange behavior of RX graphics cards on W11, they have much worse performance than on W10.
+* Improved granularity of some "RMP" settings.
+* The conflict check button is on the "LOGGING" page.
+* - The PCI-mutex related problem will also go away. Significant improvement in the stability of the application and all modes if you use third-party monitoring software, RGB control and so on. I think many of you don't know that you have third party software installed that can slow down HYDRA's processes and crash the system.
+* - Checking Windows timers for correct operation of HYDRA. If something is wrong, the corresponding information will appear in the log.
+* ----------------------------------------
 * HYDRA 1.3C PRO (1302) - what's new?
 * ----------------------------------------
 * - Added support Zen 4 for Gigabyte and other motherboards.
