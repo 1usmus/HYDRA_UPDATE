@@ -28,7 +28,7 @@
 * - Fixes some problems with inability to activate "RMP" on some cards. Nevertheless, I observe a strange behavior of RX graphics cards on W11, they have much worse performance than on W10.
 * - Improved granularity of some "RMP" settings.
 * - The conflict check button is on the "LOGGING" page.
-* - The PCI-mutex related problem will also go away. Significant improvement in the stability of the application and all modes if you use third-party monitoring software, RGB control and so on. I think many of you don't know that you have third party software installed that can slow down HYDRA's processes and crash the system.
+* - The PCI-mutex related problem will also go away. Significant improvement in the stability of the application and all modes if you use third-party monitoring software, RGB control and so on. 
 * - Checking Windows timers for correct operation of HYDRA. If something is wrong, the corresponding information will appear in the log.
 * ----------------------------------------
 * HYDRA 1.3C PRO (1302) - what's new?
