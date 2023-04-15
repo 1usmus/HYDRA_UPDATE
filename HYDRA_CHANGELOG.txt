@@ -1,4 +1,13 @@
 * ----------------------------------------
+* HYDRA 1.3F PRO (1305) - what's new?
+* ----------------------------------------
+* - New GPU diagnostic algorithm. Added suspend/resume technology. Reduced number of video driver restarts.
+* - Added support for RX 7000 diagnostics in test mode.
+* - Fixed bug when you can not apply VRAM frequency settings.
+* - Fixed application crash when trying to reset GPU settings.
+* - Fixed bug when not all GPU diagnostics values were entered to "RX-TUNER" tab.
+* - Fixed bug when CPU diagnostics for processors with 1 CCD did not give resultant "HOC CO" values.
+* ----------------------------------------
 * HYDRA 1.3E PRO (1304) - what's new?
 * ----------------------------------------
 * - Basic support for RX 7000 graphics cards. Only the "RX-TUNER" tab is currently available.
