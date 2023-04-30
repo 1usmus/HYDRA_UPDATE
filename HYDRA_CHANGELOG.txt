@@ -1,4 +1,15 @@
 * ----------------------------------------
+* HYDRA 1.3G PRO (1306) - what's new?
+* ----------------------------------------
+* - "CHECK TIMINGS" ("DCFR" tab) function that allows you to check the set timings or the timings you plan to change for JEDEC rules and optimal overclocking. The color indication will allow you to visually determine which timings are optimal (green), sub-optimal (yellow) or critically (red) wrong. 
+* - DDR5. All presets got another important information field - CPU VDDIO/MC. This is one of the most critical voltages for memory stabilization.
+* - DDR5. Added normal and fast presets for Hynix A-die.
+* - DDR5. Added normal and fast presets for Samsung B-die.
+* - DDR4. Added fast presets for Samsung B-die.
+* - DDR4. Added normal and fast presets for Hynix CJR and DJR.
+* - DDR4. Due to the fact that the timing of RCDRD significantly depends on the luck of the sample, I made a note in the presets (in brackets) that maybe if it is not stable you should use a higher value.
+* - A number of edits and innovations to existing presets.
+* ----------------------------------------
 * HYDRA 1.3F PRO (1305) - what's new?
 * ----------------------------------------
 * - New GPU diagnostic algorithm. Added suspend/resume technology. Reduced number of video driver restarts.
