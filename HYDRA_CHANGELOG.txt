@@ -3,6 +3,7 @@
 * ----------------------------------------
 * - Important safety update for 1.4A version.
 * - Added ability to skip searching for raw HOC CO values. The assistant asks.
+* - Target VID = 0 now works correctly.
 * ----------------------------------------
 * HYDRA 1.4A PRO (1400) - what's new?
 * ----------------------------------------
