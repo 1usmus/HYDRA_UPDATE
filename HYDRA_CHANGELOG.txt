@@ -31,6 +31,7 @@
 * - Added entry level monitoring for RTX and GTX graphics cards.
 * - Added "RTX/GTX-TUNER" entry level. The user can manage CORE and VRAM offsets, temperature and power limits ,CORE voltage control.
 * - Fixed bugs, which did not allow RX 7000 videocards to monitor and diagnose correctly.
+* - Fixed a bug when it was impossible to adjust the curve of the fans.
 * - Fixed a bug where "RX-TUNER" could not control multiple adapters at the same time. Note that the latest AMD drivers may block the use of multi-gpu.
 * - Changed the default GPU diagnostic settings. In particular, it is recommended to use 4K resolution for reliable results.
 * - GPU diagnostics now works better due to catching single artifacts. Accuracy has been improved.
