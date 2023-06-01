@@ -1,4 +1,9 @@
 * ----------------------------------------
+* HYDRA 1.4B PRO (1401) - what's new?
+* ----------------------------------------
+* - Important safety update for 1.4A version.
+* - Added ability to skip searching for raw HOC CO values. The assistant asks.
+* ----------------------------------------
 * HYDRA 1.4A PRO (1400) - what's new?
 * ----------------------------------------
 * - You choose where to minimize the application at OS startup: tray / taskbar / none (settings tab).
