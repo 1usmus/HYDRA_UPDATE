@@ -1,4 +1,26 @@
 * ----------------------------------------
+* HYDRA 1.4C PRO (1402) - what's new?
+* ----------------------------------------
+* - HYDRA is now distributed separately from the test applications (Prime95, Cinebench R23 and MSI Kombustor). When starting the application for the first time, the user will be prompted to select the path for the corresponding applications.
+* - "GTX/RTX and RX TUNER" can be used with any processor (Ryzen is not required).
+* - Added a new tool to control the Сore Сurve for Nvidia graphics cards. Various controls allow you to get the desired result in a few clicks.
+* - Added support for new sensors for Nvidia graphics cards.
+* - It now uses its own library for information monitoring graphics cards Nvidia, which in turn reduces the load on the processor in 7 times.
+* - Added simultaneous profiling support for up to 6 Nvidia video cards.
+* - Added manual fan control for Nvidia graphics cards.
+* - Fixed bug when previously activated "GTX/RTX or RX TUNER" was not active when automatically loading application.
+* - Fixed bug where adding new "GTX/RTX or RX TUNER" profile would cause settings of other profiles to be changed by mistake.
+* - Added validation of important .dll files for "GTX/RTX or RX TUNER" to work correctly.
+* - A number of dialog boxes got a visual improvement in the form of new buttons.
+* - When adding a new profile to "GTX/RTX or RX TUNER", the user will be asked if they want to fill the new profile with default settings or with settings from the "Global" profile.
+* - A button has been added to the "HELP" menu to open a public wishlist for the project. 
+* - MSI Kombustor will no longer bore the user with its graphical shell during GPU diagnostics. 
+* - AMD graphics card diagnostics has improved its ability to catch errors earlier.
+* - "FIND CCD CO VALUES" has received a WHEA check function during CPU diagnostics.
+* - Applying all settings for graphics adapters is now forced. Avoids problems with third-party software interference.
+* - Added driver information for Nvidia video card owners to the general system information line.
+* - Improved the overall stability of the application in some exceptional situations.
+* ----------------------------------------
 * HYDRA 1.4B PRO (1401) - what's new?
 * ----------------------------------------
 * - Important safety update for 1.4A version.
@@ -20,8 +42,8 @@
 * - Fixed bug when system detecting wrong FFT value falsely stopped CPU diagnostics.
 * - Alerts the user to background activity that negatively affects the accuracy of CPU diagnostics.
 * - To avoid false detection of the error, the Prime95 log is deleted before each test run. 
-* - New presets for DDR4 memory that is already in the app: 2*8 3866, 2*16 3866, 4*16 3600.
-* - New presets for DDR5 memory that is already in the app: 2*16 6400.
+* - New presets for DDR4 memory that is already in the app. 2*8 3866, 2*16 3866, 4*16 3600.
+* - New presets for DDR5 memory that is already in the app. 2*16 6400.
 * - Adjusting the rules for the "CHECK TIMINGS" function.
 * - Fixed bug of incorrect RCDWR reading.
 * - "CHECK TIMINGS" now logs the recommended values for the timings if the user wants to enter a completely unspecified timing value.
