@@ -1,4 +1,38 @@
 * ----------------------------------------
+* HYDRA 1.5A PRO (1500) - what's new?
+* ----------------------------------------
+* - Improved sensor support for NVIDIA 1000-4000 series graphics cards, added new sensors.
+* - Improved sensor support for AMD RX 7000 series graphics cards, added new sensors.
+* - "Overriding best cores" replaced by "T-CONTROL". Now it has its own page, new control parameters and status information. Performance has been improved.
+* - "T-CONTROL" is now supported on all Ryzen family processors.
+* - Added double gaming trigger so that "HYBRID OC" or "T-CONTROL" will correctly recognize a gaming application.
+* - Added NVIDIA graphics card diagnostics (realignment of the volt-frequency curve with respect to user parameters).
+* - Fixed a bug where NVIDIA graphics card user could crash the application when trying to edit the curve.
+* - Fixed a bug where it was impossible to control fans for NVIDIA or AMD graphics cards.
+* - Fixed a bug where NVIDIA graphics cards were not accepting volt-frequency curve values during "GTX/RTX-TUNER" activation.
+* - Reduced CPU resource utilization when monitoring NVIDIA and AMD graphics cards.
+* - Disabled intermittent activation of HYDRA main window during GPU diagnostics.
+* - "TESTS" - new page where all tests are stored (improved user experience).
+* - During GPU diagnostics a single positional artifact is not considered as an error, the process is not stopped.
+* - Added "SCREENSHOT" button for some separate important windows.
+* - The volt-frequency curve editor for NVIDIA graphics cards now updates the curve view and information after each user interaction.
+* - Fixed a bug where "PHOENIX" could not always read temporary files and caused the diagnostic process to terminate.
+* - Changes to configuration files. It is not recommended to use old files except for profiles.
+* - More useful information about key events is now displayed in the log during GPU diagnostics.
+* - Added information about average FPS for GPU diagnostics (displayed in the log).
+* - Improved usability for a number of functions (editing RX graphics card ventilator curve, activating profiles, adding profiles, etc.).
+* - Fixed bug where Intel CPU user could not use "RX/GTX/RTX-TUNER".
+* - Improved BIOS dump feature for RX 6000 graphics cards.
+* - Added integrity check of PowerPlay tables and video card BIOS dump. Previously this could cause system boot problems for RX 6000 video cards.
+* - Fixed a rare bug where GPU diagnostics stopped for no reason and the log had no information. 
+* - Added a function that will copy missing dlls to the system folder if necessary. Actual for AMD and NVIDIA video cards owners.
+* - Improved application stability if iGPU remains active.
+* - Changed idle parameters in "HYBRID OC", which should affect the stability of the function.
+* - Added exception handling if videocard drivers are corrupted.
+* - Added support for systems with Intel graphics cards.
+* - Preparing for "APPE" (Advanced Power Plan Editor) implementation in the next build.
+* - Some GUI changes.
+* ----------------------------------------
 * HYDRA 1.4C PRO (1402) - what's new?
 * ----------------------------------------
 * - HYDRA is now distributed separately from the test applications (Prime95, Cinebench R23 and MSI Kombustor). When starting the application for the first time, the user will be prompted to select the path for the corresponding applications.
