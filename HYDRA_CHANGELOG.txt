@@ -1,4 +1,15 @@
 * ----------------------------------------
+* HYDRA 1.5B PRO (1501) - what's new?
+* ----------------------------------------
+* - Improved support for Nvidia and AMD graphics cards with Windows 11 and some builds of W10.
+* - Fixed "PHOENIX" behavior during CPU diagnostics.
+* - Reduced time spent on Zen 4 generation processor diagnostics.
+* - Added support for Nvidia graphics card bundles from different generations (GTX 1070 + RTX 4090).
+* - Improved user experience - when starting HYDRA for the first time, you only need to specify the main "APP PACK" folder.
+* - Correction of some descriptions.
+* - CPU diagnostics will now not stop after reporting an incorrect FFT.
+* - Updated the programs in the "APP PACK" to the current version.
+* ----------------------------------------
 * HYDRA 1.5A PRO (1500) - what's new?
 * ----------------------------------------
 * - Improved sensor support for NVIDIA 1000-4000 series graphics cards, added new sensors.
