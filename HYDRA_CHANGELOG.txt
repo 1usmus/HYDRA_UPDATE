@@ -8,6 +8,7 @@
 * - Improved user experience - when starting HYDRA for the first time, you only need to specify the main "APP PACK" folder.
 * - Correction of some descriptions.
 * - CPU diagnostics will now not stop after reporting an incorrect FFT.
+* - Fixed an issue where the default fans for Nvidia GPU diagnostics had a setting other than -1 (default).
 * - Updated the programs in the "APP PACK" to the current version.
 * ----------------------------------------
 * HYDRA 1.5A PRO (1500) - what's new?
