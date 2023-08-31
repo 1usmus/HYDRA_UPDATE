@@ -1,4 +1,23 @@
 * ----------------------------------------
+* HYDRA 1.5C PRO (1502) - what's new?
+* ----------------------------------------
+* - "APP PACK" has been updated to the latest versions. Critical for HYDRA version 1.5.
+* - "HYDRA CORE CURVE BUILDER" for Nvidia graphics cards. The user selects the number of points and offset/voltage values through which the curve will be drawn. No analogs from third-party software.
+* - No limitations in GTX/RTX-TUNER. For users who want to use extreme overclocking.
+* - Nvidia GPUs. The operating voltages range for the curve is increased to 1.1 volts.
+* - Increased error finding penalty values for GPU diagnostics. As a result, it should affect the stability of the final curve.
+* - CPU diagnostics written from scratch ("PHOENIX" also). Added a number of Y-cruncher tests to check the stability of the cache and cores under certain conditions. The testing algorithm has been changed.
+* - "HYDRA CPU DIAGNOSTIC CENTER" interface has been restructured to improve the user comfort and key settings are now defined by the application itself to avoid incorrect settings.
+* - "HYDRA CPU DIAGNOSTIC CENTER" has added the ability to quickly re-diagnose the "HOC CO", just enable the "Use my HOC" option.
+* - "HYDRA CPU DIAGNOSTIC CENTER" added the ability to enable critical WHEA event checking to improve the accuracy of CO value retrieval.
+* - "HYDRA CPU DIAGNOSTIC CENTER" will allow the Zen 4 user to select a preset for testing. The difference is that the Super Heavy preset includes the AVX2 instruction set (for some reason they are more resource intensive for Zen 4 than AVX512).
+* - "HYDRA CPU DIAGNOSTIC CENTER" has been given the ability to synchronize custom "AMD CO" values with starting values by clicking on the button with the icon of two arrows pointing at each other.
+* - Fixed a bug where "HYBRID OC" did not want to automatically power on after a system reboot.
+* - Changed basic trigger settings for "HYBRID OC" (settings tab). Faster detection of running game and less suboptimal profile switching.
+* - Improved overall application stability, improved exception handling and added support for CPU engineering samples.
+* - Fixed bug in multi-GPU systems when GPU diagnostics load the wrong GPU.
+* - Fixed a bug for GTX 1000 family graphics cards where custom frequency values for the curve did not match reality.
+* ----------------------------------------
 * HYDRA 1.5B PRO (1501) - what's new?
 * ----------------------------------------
 * - Improved support for Nvidia and AMD graphics cards with Windows 11 and some builds of W10.
