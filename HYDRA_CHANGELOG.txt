@@ -1,4 +1,32 @@
 * ----------------------------------------
+* HYDRA 1.5D PRO (1503) - what's new?
+* ----------------------------------------
+* - Added SMU logging feature for CPU.
+* - Added experimental ECC state estimation function has been added for diag. May be useful for owners of RTX 4090 and newer video cards.
+* - Added a phase of searching for maximum-stable VRAM frequency + when plotting each point there is an additional test that can adjust VRAM frequency downwards.
+* - Improved support for processors with an active second CCD.
+* - Replaced some tests for processor diagnostics due to high temperatures.
+* - HYDRA autoloading is now automatically enabled when activating: "HYBRID OC" / "AMD PBO2" / "RX-TUNER" / "RTX-TUNER" or "T-CONTROL". 
+* - HYDRA autoloading will be automatically disabled if none of the following are enabled: "HYBRID OC" / "AMD PBO2" / "RX-TUNER" / "RTX-TUNER" or "T-CONTROL".
+* - When HYDRA autoloads, there is now always an animated window to give the user an idea of whether the application is in tray/taskbar or not.
+* - Added CCD tests for AMD CO search.
+* - Useful function of standby cache clearing, which was in general settings, moved to T-CONTROL tab for usability.
+* - Fixed a bug where there was GPU instability when testing 800mV at any offset.
+* - Voltage for the first point of the curve can now be set by the user.
+* - Removed test switches to simplify the GUI. There's a lot hidden under the hood.
+* - Fixed bug when GPU driver crashed, HYDRA could crash or GPU monitoring could freeze.
+* - Fixed a bug where diagnostics could continue to ramp up frequencies after a driver crash.
+* - Fixed a bug in systems with multiple video cards when diagnostic tests did not load the CORE.
+* - Fixed VRAM monitoring and frequency control for GTX 1XXX and 16XX graphics cards.
+* - Removed the quick offset search phase for points since we could miss by a step or two the stable frequency.
+* - The frequency ramp-up steps for VRAM and CORE have been changed. They became more fine-grained, more accurate result.
+* - "Pause/Resume" function has been redesigned for better diagnostic stability.
+* - Fixed description of some functions, removed unnecessary information from the log.
+* - A number of improvements for stability and accuracy of CPU and GPU diagnostics.
+* - The diagnostics settings have basic PBO limits for better thermal state of the processor during diagnostics.
+* - Fixed a rare bug of getting into an infinite playback loop in the log of information about diagnostics being completed.
+* - Changed some "HYDRID OC" parameters "HOC mode" for better stability and easier understanding (e.g. GAME offset now works in MHz mode instead of CO).
+* ----------------------------------------
 * HYDRA 1.5C PRO (1502) - what's new?
 * ----------------------------------------
 * - "APP PACK" has been updated to the latest versions. Critical for HYDRA version 1.5.
