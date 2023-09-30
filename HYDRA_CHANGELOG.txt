@@ -4,7 +4,7 @@
 * - Added "APPE" (Advanced Power Plan Editor) tab with 65 parameters to adjust the Windows thread scheduler. Export and import of power profile is also available.
 * - Updated rules for "Safety System", now it will not react to single peaks of temperature, voltage and other parameters.
 * - Fixed a bug of getting into an infinite loop during MEM diagnostics of the video card.
-* - Fixed a Phoenix bug where an Nvidia graphics card could pick up an incorrect point offset value.
+* - Fixed a "Phoenix" bug where an Nvidia graphics card could pick up an incorrect point offset value.
 * - Improved the accuracy of the system that detects a video card driver crash during diagnostics.
 * - Fixed a rare bug where a stable graphics card frequency could be recognized as unstable during a brief MSI Kombustor freeze.
 * - Adjusted internal "HOC CO" diagnostic parameters so that custom systems with poor cooling or uneven solder under the IHS do not catch the process stop.
