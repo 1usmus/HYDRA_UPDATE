@@ -10,6 +10,7 @@
 * - Adjusted internal "HOC CO" diagnostic parameters so that custom systems with poor cooling or uneven solder under the IHS do not catch the process stop.
 * - Improved "HYBRID OC" stability when dynamic profile is enabled, added a rule that prevents increasing frequency when "HOC CO" is free, for cores that do not have C0 state < 95%. 
 * - Improved video card detection in the system (sometimes HYDRA could fail to recognize a video card and report a corrupted driver).
+* - Improved the responsiveness of the app when the STOP button is pressed.
 * - Fixed a number of descriptions.
 * ----------------------------------------
 * HYDRA 1.5D PRO (1503) - what's new?
