@@ -1,4 +1,17 @@
 * ----------------------------------------
+* HYDRA 1.5E PRO (1504) - what's new?
+* ----------------------------------------
+* - Added "APPE" (Advanced Power Plan Editor) tab with 65 parameters to adjust the Windows thread scheduler. Export and import of power profile is also available.
+* - Updated rules for "Safety System", now it will not react to single peaks of temperature, voltage and other parameters.
+* - Fixed a bug of getting into an infinite loop during MEM diagnostics of the video card.
+* - Fixed a Phoenix bug where an Nvidia graphics card could pick up an incorrect point offset value.
+* - Improved the accuracy of the system that detects a video card driver crash during diagnostics.
+* - Fixed a rare bug where a stable graphics card frequency could be recognized as unstable during a brief MSI Kombustor freeze.
+* - Adjusted internal "HOC CO" diagnostic parameters so that custom systems with poor cooling or uneven solder under the IHS do not catch the process stop.
+* - Improved "HYBRID OC" stability when dynamic profile is enabled, added a rule that prevents increasing frequency when "HOC CO" is free, for cores that do not have C0 state < 95%. 
+* - Improved video card detection in the system (sometimes HYDRA could fail to recognize a video card and report a corrupted driver).
+* - Fixed a number of descriptions.
+* ----------------------------------------
 * HYDRA 1.5D PRO (1503) - what's new?
 * ----------------------------------------
 * - Added SMU logging feature for CPU.
