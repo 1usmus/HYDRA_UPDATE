@@ -1,4 +1,30 @@
 * ----------------------------------------
+* HYDRA 1.6A PRO (1600) - what's new?
+* ----------------------------------------
+* New AMD and Nvidia graphics card diagnostics (new test, new GUI, new logic).
+* Nvidia. A new curve type is created during GPU diagnostics.
+* Nvidia. Curve Control has a new rule. Extreme offset at the beginning of the curve is cut off. Now the control is from 718mV.
+* Nvidia. Added the ability to change an individual part of the curve by selecting points and clicking on the up or down arrow.
+* Improved detection of video cards in the system if there are virtual video cards in Device Manager.
+* Fixes various monitoring errors for Nvidia after driver crashes.
+* "TESTS" tab got 2 new tests for video cards - PURE RT(NON-RT) BENCHMARK. Author Miguel Albo.
+* VRAM frequency multiplier fix for RTX 2000 and 4000.
+* Improved performance and stability of "T-CONTROL", one control has been removed to simplify the GUI.
+* Added exclusive "HYDRA Power Profile" in "APPE" tab.
+* Added manual activation/deactivation of "HYDRA Power Profile".
+* Fix descriptions in "APPE" tab.
+* Improved logic of application settings backup before a crash.
+* Nvidia. Curve creation assistant in "HYDRA GPU CORE CURVE BUILDER" tab.
+* Limit positive CO during CPU diagnostics.
+* Nvidia. Added automatic power limit detection.
+* At the end of the Nvidia diagnostics, the stability of the results is indicated in the report about the obtained checkpoints. 
+* Added hints and descriptions.
+* Fixed a bug where HYDRA could lose the path to the "APP PACK".
+* Fixed a bug where it was impossible to create a summary curve after diagnosing an Nvidia graphics card when using a non-standard voltage for points (not a multiple of 25).
+* Added automatic rounding of set offsets for curve with 6.25MHz granularity.
+* Fixed a bug where an incorrect multiplier for memory could be used for RTX 4000 series graphics cards.
+* Fixed a bug where a previously enabled HOC, PBO2 or any other feature was not completely disabled when running diagnostics.
+* ----------------------------------------
 * HYDRA 1.5E PRO (1504) - what's new?
 * ----------------------------------------
 * - Added "APPE" (Advanced Power Plan Editor) tab with 65 parameters to adjust the Windows thread scheduler. Export and import of power profile is also available.
