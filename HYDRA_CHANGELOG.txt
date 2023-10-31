@@ -19,6 +19,7 @@
 * Nvidia. Added automatic power limit detection.
 * At the end of the Nvidia diagnostics, the stability of the results is indicated in the report about the obtained checkpoints. 
 * Added hints and descriptions.
+* Fixed "CMD_FAILED" error, the exception is when SMU stops responding.
 * Fixed a bug where HYDRA could lose the path to the "APP PACK".
 * Fixed a bug where it was impossible to create a summary curve after diagnosing an Nvidia graphics card when using a non-standard voltage for points (not a multiple of 25).
 * Added automatic rounding of set offsets for curve with 6.25MHz granularity.
