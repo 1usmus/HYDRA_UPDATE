@@ -1,4 +1,28 @@
 * ----------------------------------------
+* HYDRA 1.6B PRO (1601) - what's new?
+* ----------------------------------------
+* Fixed a bug where "APPE" was not available to users whose system language was not English.
+* Simplified the interface of windows for GPU diagnostics, added adapter information in the upper right corner of the window to (more informative).
+* Updated ADL library to version 18.0 (AMD RX graphics card management). Improved compatibility with newer AMD drivers.
+* "APPE" got an additional button, when pressed, 7950X3D and 7900X3D processors will get an option to fix CCD parking behavior (auto-fixing is done by a background process for 10-15 minutes).  
+* RX graphics card diagnostics now works in two directions simultaneously: search for optimal VID and search for optimal CORE frequency.
+* RX diagnostic. If the target frequency cell is set to 0 - automatic search for optimal frequency above the default one is performed (provided TBP is free).
+* RX, RTX and GTX diagnostic. Added new rule - only active adapter can be tested, because UE engine based test suite can not do it otherwise.
+* RX diagnostic. Unlocked ability to customize PowerPlay table before diagnostics (via "RX-TUNER" menu). For example, you can increase or decrease the power limit more than the default driver allows.
+* RX diagnostic and "RX-TUNER". Fixed FAN curve behavior, should work more stable.
+* RX diagnostic and "RX-TUNER". Fixed a rare bug where the power offset was not applied. 
+* "RX-TUNER". Sometimes users have encountered a bug where it is impossible to reset the power offset to default.
+* "RX-TUNER". Fixed a rare bug where it was impossible to return the FAN curve state to default.
+* RX, RTX and GTX diagnostic. Added a system for evaluating chip quality (overclocking capabilities). Result at the end of diagnostics. Beta version.
+* RX, RTX and GTX diagnostic. Added user presets for easy customization of diagnostics for inexperienced users.
+* In the program header, the Windows version information is now clearer.
+* Added a system for evaluating processor quality (overclocking abilities) based on AMD CO values. Result at the end of diagnostics. Beta version.
+* RX, RTX and GTX diagnostic. Fixed a bug where the number of test cycles did not match the user request.
+* RX, RTX and GTX diagnostic. Improved diagnostic algorithms and improved stability. Fixed some bugs for "PHOENIX".
+* RX, RTX and GTX diagnostic. Configuration settings have been changed for faster diagnostic results.
+* RTX diagnostic. Special attention is paid to the RTX 4000 series graphics cards.
+* RTX diagnostic. Added new rule - diagnostics of the first point of the curve cannot be performed at voltage less than 800mV otherwise an infinite loop can be caught.
+* ----------------------------------------
 * HYDRA 1.6A PRO (1600) - what's new?
 * ----------------------------------------
 * New AMD and Nvidia graphics card diagnostics (new test, new GUI, new logic).
