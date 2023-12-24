@@ -1,54 +1,71 @@
 * ----------------------------------------
+* HYDRA 1.6C PRO (1602) - what's new?
+* ----------------------------------------
+* - DDR5 diagnostic - auto search for optimal timings. Now available for these timings: CL RCD RP RAS RC RRDS RRDL FAW RFC RTP. For DDR4 - coming soon.
+* - Updated "Pure Benchmark" (for GPU diagnostic), a number of improvements and spares (new "APP PACK").
+* - New generation "CHECK TIMINGS" ("DCFR" tab).
+* - Creating profiles for "RX/RTX/GTX-TUNER: has new features: search for a process by name and copy the desired profile instead of choosing between global or default.
+* - Added autosave settings when deleting or adding a new GPU profile.
+* - CPU Diagnostics. Some rules added for Y-cruncher, less false positives.
+* - GPU diagnostics. Added detail and resolution setting (new "APP PACK" required).
+* - "DCFR" now knows how to monitor the "CPU VDDIO" value.
+* - Experimental fix for bug when "RMP" does not work with iGPU enabled.
+* - When closing the application, HYDRA will automatically stop diagnostics (no emergency termination previously).
+* - Fixed a rare bug when user could get an additional message about throttling during GPU diagnostics after finding instability.
+* - Information about installed DRAM has been added to the program header and log.
+* - "RTX/GTX-TUNER". Fixed bug when new Power Limit was applied.
+* - "RTX/GTX-TUNER". Improved "Curve Builder" operation, fixed numerous bugs.
+* ----------------------------------------
 * HYDRA 1.6B PRO (1601) - what's new?
 * ----------------------------------------
-* Fixed a bug where "APPE" was not available to users whose system language was not English.
-* Simplified the interface of windows for GPU diagnostics, added adapter information in the upper right corner of the window to (more informative).
-* Updated ADL library to version 18.0 (AMD RX graphics card management). Improved compatibility with newer AMD drivers.
-* "APPE" got an additional button, when pressed, 7950X3D and 7900X3D processors will get an option to fix CCD parking behavior (auto-fixing is done by a background process for 10-15 minutes).  
-* RX graphics card diagnostics now works in two directions simultaneously: search for optimal VID and search for optimal CORE frequency.
-* RX diagnostic. If the target frequency cell is set to 0 - automatic search for optimal frequency above the default one is performed (provided TBP is free).
-* RX, RTX and GTX diagnostic. Added new rule - only active adapter can be tested, because UE engine based test suite can not do it otherwise.
-* RX diagnostic. Unlocked ability to customize PowerPlay table before diagnostics (via "RX-TUNER" menu). For example, you can increase or decrease the power limit more than the default driver allows.
-* RX diagnostic and "RX-TUNER". Fixed FAN curve behavior, should work more stable.
-* RX diagnostic and "RX-TUNER". Fixed a rare bug where the power offset was not applied. 
-* "RX-TUNER". Sometimes users have encountered a bug where it is impossible to reset the power offset to default.
-* "RX-TUNER". Fixed a rare bug where it was impossible to return the FAN curve state to default.
-* RX, RTX and GTX diagnostic. Added a system for evaluating chip quality (overclocking capabilities). Result at the end of diagnostics. Beta version.
-* RX, RTX and GTX diagnostic. Added user presets for easy customization of diagnostics for inexperienced users.
-* In the program header, the Windows version information is now clearer.
-* Added a system for evaluating processor quality (overclocking abilities) based on AMD CO values. Result at the end of diagnostics. Beta version.
-* RX, RTX and GTX diagnostic. Fixed a bug where the number of test cycles did not match the user request.
-* RX, RTX and GTX diagnostic. Improved diagnostic algorithms and improved stability. Fixed some bugs for "PHOENIX".
-* RX, RTX and GTX diagnostic. Configuration settings have been changed for faster diagnostic results.
-* RTX diagnostic. Special attention is paid to the RTX 4000 series graphics cards.
-* RTX diagnostic. Added new rule - diagnostics of the first point of the curve cannot be performed at voltage less than 800mV otherwise an infinite loop can be caught.
+* - Fixed a bug where "APPE" was not available to users whose system language was not English.
+* - Simplified the interface of windows for GPU diagnostics, added adapter information in the upper right corner of the window to (more informative).
+* - Updated ADL library to version 18.0 (AMD RX graphics card management). Improved compatibility with newer AMD drivers.
+* - "APPE" got an additional button, when pressed, 7950X3D and 7900X3D processors will get an option to fix CCD parking behavior (auto-fixing is done by a background process for 10-15 minutes).  
+* - RX graphics card diagnostics now works in two directions simultaneously: search for optimal VID and search for optimal CORE frequency.
+* - RX diagnostic. If the target frequency cell is set to 0 - automatic search for optimal frequency above the default one is performed (provided TBP is free).
+* - RX, RTX and GTX diagnostic. Added new rule - only active adapter can be tested, because UE engine based test suite can not do it otherwise.
+* - RX diagnostic. Unlocked ability to customize PowerPlay table before diagnostics (via "RX-TUNER" menu). For example, you can increase or decrease the power limit more than the default driver allows.
+* - RX diagnostic and "RX-TUNER". Fixed FAN curve behavior, should work more stable.
+* - RX diagnostic and "RX-TUNER". Fixed a rare bug where the power offset was not applied. 
+* - "RX-TUNER". Sometimes users have encountered a bug where it is impossible to reset the power offset to default.
+* - "RX-TUNER". Fixed a rare bug where it was impossible to return the FAN curve state to default.
+* - RX, RTX and GTX diagnostic. Added a system for evaluating chip quality (overclocking capabilities). Result at the end of diagnostics. Beta version.
+* - RX, RTX and GTX diagnostic. Added user presets for easy customization of diagnostics for inexperienced users.
+* - In the program header, the Windows version information is now clearer.
+* - Added a system for evaluating processor quality (overclocking abilities) based on AMD CO values. Result at the end of diagnostics. Beta version.
+* - RX, RTX and GTX diagnostic. Fixed a bug where the number of test cycles did not match the user request.
+* - RX, RTX and GTX diagnostic. Improved diagnostic algorithms and improved stability. Fixed some bugs for "PHOENIX".
+* - RX, RTX and GTX diagnostic. Configuration settings have been changed for faster diagnostic results.
+* - RTX diagnostic. Special attention is paid to the RTX 4000 series graphics cards.
+* - RTX diagnostic. Added new rule - diagnostics of the first point of the curve cannot be performed at voltage less than 800mV otherwise an infinite loop can be caught.
 * ----------------------------------------
 * HYDRA 1.6A PRO (1600) - what's new?
 * ----------------------------------------
-* New AMD and Nvidia graphics card diagnostics (new test, new GUI, new logic).
-* Nvidia. A new curve type is created during GPU diagnostics.
-* Nvidia. Curve Control has a new rule. Extreme offset at the beginning of the curve is cut off. Now the control is from 718mV.
-* Nvidia. Added the ability to change an individual part of the curve by selecting points and clicking on the up or down arrow.
-* Improved detection of video cards in the system if there are virtual video cards in Device Manager.
-* Fixes various monitoring errors for Nvidia after driver crashes.
-* "TESTS" tab got 2 new tests for video cards - PURE RT(NON-RT) BENCHMARK. Author Miguel Albo.
-* VRAM frequency multiplier fix for RTX 2000 and 4000.
-* Improved performance and stability of "T-CONTROL", one control has been removed to simplify the GUI.
-* Added exclusive "HYDRA Power Profile" in "APPE" tab.
-* Added manual activation/deactivation of "HYDRA Power Profile".
-* Fix descriptions in "APPE" tab.
-* Improved logic of application settings backup before a crash.
-* Nvidia. Curve creation assistant in "HYDRA GPU CORE CURVE BUILDER" tab.
-* Limit positive CO during CPU diagnostics.
-* Nvidia. Added automatic power limit detection.
-* At the end of the Nvidia diagnostics, the stability of the results is indicated in the report about the obtained checkpoints. 
-* Added hints and descriptions.
-* Fixed "CMD_FAILED" error, the exception is when SMU stops responding.
-* Fixed a bug where HYDRA could lose the path to the "APP PACK".
-* Fixed a bug where it was impossible to create a summary curve after diagnosing an Nvidia graphics card when using a non-standard voltage for points (not a multiple of 25).
-* Added automatic rounding of set offsets for curve with 6.25MHz granularity.
-* Fixed a bug where an incorrect multiplier for memory could be used for RTX 4000 series graphics cards.
-* Fixed a bug where a previously enabled HOC, PBO2 or any other feature was not completely disabled when running diagnostics.
+* - New AMD and Nvidia graphics card diagnostics (new test, new GUI, new logic).
+* - Nvidia. A new curve type is created during GPU diagnostics.
+* - Nvidia. Curve Control has a new rule. Extreme offset at the beginning of the curve is cut off. Now the control is from 718mV.
+* - Nvidia. Added the ability to change an individual part of the curve by selecting points and clicking on the up or down arrow.
+* - Improved detection of video cards in the system if there are virtual video cards in Device Manager.
+* - Fixes various monitoring errors for Nvidia after driver crashes.
+* - "TESTS" tab got 2 new tests for video cards - PURE RT(NON-RT) BENCHMARK. Author Miguel Albo.
+* - VRAM frequency multiplier fix for RTX 2000 and 4000.
+* - Improved performance and stability of "T-CONTROL", one control has been removed to simplify the GUI.
+* - Added exclusive "HYDRA Power Profile" in "APPE" tab.
+* - Added manual activation/deactivation of "HYDRA Power Profile".
+* - Fix descriptions in "APPE" tab.
+* - Improved logic of application settings backup before a crash.
+* - Nvidia. Curve creation assistant in "HYDRA GPU CORE CURVE BUILDER" tab.
+* - Limit positive CO during CPU diagnostics.
+* - Nvidia. Added automatic power limit detection.
+* - At the end of the Nvidia diagnostics, the stability of the results is indicated in the report about the obtained checkpoints. 
+* - Added hints and descriptions.
+* - Fixed "CMD_FAILED" error, the exception is when SMU stops responding.
+* - Fixed a bug where HYDRA could lose the path to the "APP PACK".
+* - Fixed a bug where it was impossible to create a summary curve after diagnosing an Nvidia graphics card when using a non-standard voltage for points (not a multiple of 25).
+* - Added automatic rounding of set offsets for curve with 6.25MHz granularity.
+* - Fixed a bug where an incorrect multiplier for memory could be used for RTX 4000 series graphics cards.
+* - Fixed a bug where a previously enabled HOC, PBO2 or any other feature was not completely disabled when running diagnostics.
 * ----------------------------------------
 * HYDRA 1.5E PRO (1504) - what's new?
 * ----------------------------------------
