@@ -1,25 +1,25 @@
 * ----------------------------------------
 * HYDRA 1.6D PRO (1603) - what's new?
 * ----------------------------------------
-* Added a comprehensive stress test for DRAM, called "CHECK MY MEM" ("TESTS" tab).
-* Added DDR4 diagnostic (auto-tuner).
-* Expanded DDR5 diagnostics capabilities (auto-tuning of all timings).
-* DDR5 train HYDRA to work with a range of 6000-6400MT/s (2*16, 2*24, 4*16, 4*24 kits).
-* DRAM diagnosctic. MEM VDDIO range extended to 1500mV.
-* DRAM diagnosctic. VDDCR SOC range extended to 1325mV.
-* DRAM diagnosctic. User chooses which timings we tune and which we don't.
-* DRAM diagnosctic. Added assistant that will help you set the correct starting parameters with tooltips that can be scrolled through.
-* DRAM diagnosctic. Added separate undervolting for MEM VDDIO (only DDR5), SOC VDDCR and CLDO VDDP.
-* DRAM diagnosctic. Optional benching of each step. Benchmarking checks random latency, bandwidth and performance (in progress).
-* DRAM diagnosctic. Added protection against entering incorrect parameters that may be the cause of no boot.
-* DRAM diagnosctic. Automatic detection of memory chips (50% of cases).
-* DRAM diagnosctic. Additional parameters added.
-* DRAM diagnosctic. WHEA checking for each step.
-* Fixed bug (partially) when "function not found" error was in the log during DRAM diagnostics.
-* Improved stability of HCI test.
-* Rework of all DDR5 presets(not final version).
-* "PHOENIX WAKE UP" can be called for DRAM diagnostic.
-* Improved accuracy of getting random latency by half.
+* - Added a comprehensive stress test for DRAM, called "CHECK MY MEM" (TESTS tab).
+* - Expanded DDR5 diagnostics capabilities (auto-tuning of all timings).
+* - Added DDR4 diagnostic for MIcron E-die and Samsung B-die.
+* - DDR5 train HYDRA to work with a range of 6000-6400MT/s (2*16, 2*24, 4*16, 4*24 kits).
+* - DRAM diagnostic. MEM VDDIO range extended to 1500mV.
+* - DRAM diagnostic. VDDCR SOC range extended to 1325mV.
+* - DRAM diagnostic. User chooses which timings we tune and which we don't.
+* - DRAM diagnostic. Added assistant that will help you set the correct starting parameters with tooltips that can be scrolled through.
+* - DRAM diagnostic. Added separate undervolting for MEM VDDIO (only DDR5), SOC VDDCR and CLDO VDDP.
+* - DRAM diagnostic. Optional benching of each step. Benchmarking checks random latency, bandwidth and performance (in progress).
+* - DRAM diagnostic. Added protection against entering incorrect parameters that may be the cause of no boot.
+* - DRAM diagnostic. Automatic detection of memory chips (DDR5 only, 50% of cases).
+* - DRAM diagnostic. Additional parameters added.
+* - DRAM diagnostic. WHEA checking for each step.
+* - Fixed bug (partially) when "function not found" error was in the log during DRAM diagnostics
+* - Improved stability of HCI test.
+* - Rework of all DDR5 presets (not final version).
+* - "PHOENIX WAKE UP" can be called for DRAM diagnostic.
+* - Improved accuracy of getting random latency by half.
 * ----------------------------------------
 * HYDRA 1.6C PRO (1602) - what's new?
 * ----------------------------------------
