@@ -1,6 +1,7 @@
 * ----------------------------------------
 * HYDRA 1.6E PRO (1604) - what's new?
 * ----------------------------------------
+* - Updated APP PACK. Critical update, download for everyone!
 * - For DDR5 diagnostics added support memory modules based on Micron, Hynix, Samsung chips.
 * - For DDR5 diagnostics added support 5600 and 5800 MT/s.
 * - For DDR5 diagnostics added additional tips and made some adjustments for limits (timings and voltages).
