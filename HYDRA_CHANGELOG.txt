@@ -1,4 +1,18 @@
 * ----------------------------------------
+* HYDRA 1.6E PRO (1604) - what's new?
+* ----------------------------------------
+* - For DDR5 diagnostics added support memory modules based on Micron, Hynix, Samsung chips.
+* - For DDR5 diagnostics added support 5600 and 5800 MT/s.
+* - For DDR5 diagnostics added additional tips and made some adjustments for limits (timings and voltages).
+* - For DDR4 diagnostics added support memory modules based on Micron, Hynix, Samsung chips.
+* - For DDR4 diagnostics added support 3866, 3933 and 4000 MT/s.
+* - Improved stability of the application during exceptions occurring during "T-CONTROL" and "RTX/GTX/RX TUNER". If an error occurred - information in the log.
+* - The algorithm of processor diagnostics when searching for AMD CO and HOC CO has been significantly improved. The procedure consists of preliminary search and verification by complex tests.
+* - Added the ability to customize the number of verification cycles for each core and CCD.
+* - Added "Super Heavy" preset for diagnosing Zen 3 processors.
+* - Change the load level for "Heavy" and "Super Heavy" presets (presets previously did not allow to find stable CO).
+* - Other minor comfort improvements and bug fixes.
+* ----------------------------------------
 * HYDRA 1.6D PRO (1603) - what's new?
 * ----------------------------------------
 * - Added a comprehensive stress test for DRAM, called "CHECK MY MEM" (TESTS tab).
