@@ -12,6 +12,7 @@
 * - Added the ability to customize the number of verification cycles for each core and CCD.
 * - Added "Super Heavy" preset for diagnosing Zen 3 processors.
 * - Change the load level for "Heavy" and "Super Heavy" presets (presets previously did not allow to find stable CO).
+* - Fixed application crash when NV driver crashes with "RTX/GTX-TUNER" option active.
 * - Other minor comfort improvements and bug fixes.
 * ----------------------------------------
 * HYDRA 1.6D PRO (1603) - what's new?
