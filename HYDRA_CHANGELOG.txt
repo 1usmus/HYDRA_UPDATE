@@ -1,4 +1,23 @@
 * ----------------------------------------
+* HYDRA 1.6F PRO (1605) - what's new?
+* ----------------------------------------
+* - Updated APP PACK.
+* - "HYBRID OC" operation has been simplified, it will require a single button press to enable (AMD CO curve is enabled automatically).
+* - Improved the function of restoring active "HYBRID OC"/"AMD PBO2" after the system wakes up from sleep.
+* - Some optimizations have been made to reduce the background load from the HYDRA.
+* - Added monitoring support for some NVIDIA graphics cards that previously prevented the user from using GPU diagnostics or "RTX-TUNER".
+* - There's been a lot of changes in algorithms and configuration files for CPU diagnostics.
+* - Added new comprehensive tests for CPU diagnostics to better detect instability of cores in specific scenarios.
+* - Added possibility to use additional SSE tests for CPU diagnostics.
+* - The use of "GTX/RTX-TUNER" and NVIDIA graphics card diagnostics is once again available for systems with an Intel processor installed.
+* - Fixed a bug of not applying priority to the "T-CONTROL" process.
+* - Added AMD PBO presets for CPU diagnostics.
+* - Changed the appearance of CPU diagnostics test difficulty level setting. From 1 to 3. Higher number - more difficult tests.
+* - Fixed some stability issues during CPU diagnostics.
+* - The accuracy of CPU diagnostic results has been improved.
+* - DRAM diagnostics could previously get stuck due to lack of RAM, fixed.
+* - If an "APPE" cannot be created or managed the user will be denied access.
+* ----------------------------------------
 * HYDRA 1.6E PRO (1604) - what's new?
 * ----------------------------------------
 * - Updated APP PACK. Critical update, download for everyone!
