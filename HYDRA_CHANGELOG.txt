@@ -2,9 +2,11 @@
 * HYDRA 1.7A PRO (1700) - what's new?
 * ----------------------------------------
 * - Dynamic VID for "MT" profile (important note, the dynamic VID for the "MT" profile can operate between -75mV and +50mV).
+* - Removed intermediate "HYBRID OC" profiles as their functionality is now accounted for in the "MT" profile. 
 * - Added "TEL" and "Vdroop" info for Zen 4.
 * - New "HYBRID OC" profiles + reworked "HYBRID OC" algorithms. The stability of "HYBRID OC" has been significantly improved.
 * - New "CUSTOM" profile tab.
+* - "CUSTOM#1", "CUSTOM#2", and "MT HEAVY" are devoid of the dynamic boost feature because I can't predict user load.
 * - Improved user comfort, many times fewer settings that can be distracting. 
 * - New "Profile Creation" (2 min only).
 * - Improved CPU diagnostic (HOC only).
