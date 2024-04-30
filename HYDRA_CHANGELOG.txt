@@ -1,5 +1,16 @@
 * ----------------------------------------
-* HYDRA 1.6F PRO (1605) - what's new?
+* HYDRA 1.7A PRO (1700) - what's new?
+* ----------------------------------------
+* - Dynamic VID for "MT" profile (important note, the dynamic VID for the "MT" profile can operate between -75mV and +50mV).
+* - Added "TEL" and "Vdroop" info for Zen 4.
+* - New "HYBRID OC" profiles + reworked "HYBRID OC" algorithms. The stability of "HYBRID OC" has been significantly improved.
+* - New "CUSTOM" profile tab.
+* - Improved user comfort, many times fewer settings that can be distracting. 
+* - New "Profile Creation" (2 min only).
+* - Improved CPU diagnostic (HOC only).
+* - Fixed minor bugs when working with "HOC CO" table.
+* - HYDRA's protection system now does not interfere with AMD CO's search process.
+* - HYDRA background activity has been slightly reduced.
 * ----------------------------------------
 * - Updated APP PACK.
 * - "HYBRID OC" operation has been simplified, it will require a single button press to enable (AMD CO curve is enabled automatically).
