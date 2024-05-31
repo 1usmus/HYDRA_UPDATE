@@ -23,7 +23,7 @@
 * Editing and working with "Profiles Table" (HYBRID OC) has been slightly improved, double click handlers have been added and single click handlers have been removed where they are not needed.
 * For "APPE", I have turned off some registry edit options due to non-addictive system behavior when using the latest OS updates.
 * "HOC mode" got some additional rules, now depending on the mode the "HYBRID OC" behavior is significantly different.
-* "RTX/GTX-TUNER" made as simple as possible.
+* "RTX/GTX-TUNER" tab made as simple as possible.
 * ----------------------------------------
 * HYDRA 1.7A PRO (1700) - what's new?
 * ----------------------------------------
