@@ -1,4 +1,29 @@
 * ----------------------------------------
+* HYDRA 1.7B PRO (1701) - what's new?
+* ----------------------------------------
+* Code quality. This is the third month of code refactoring with undocumented bugs fixed.
+* Added comparison test for GPU. Between default state and the state written in "Global" profile ("RTX/GTX/RX-TUNER" tab).
+* Improved game trigger, which significantly affected "HYBRID OC" and "T-CONTROL".
+* Adaptation of HYDRA to new NVIDIA drivers, improved fault tolerance. 
+* Improved "T-CONTROL" stability and added new game modes. Example: "0-A" - CCD#0 in auto mode(non SMT/SMT), "0-P" - CCD#0 only physical cores(non SMT)).
+* A new generation of diagnostics for NVIDIA graphics cards. The speed of passing has increased many times over. Improved accuracy.
+* Diagnostics for AMD graphics cards is also somewhat faster.
+* Temperature throttling of the GPU is now not perceived by diagnostics as over-overclocking.
+* Simplifying the interface and eliminating some settings for user comfort.
+* Changed "Idle" profile configuration for "HYBRID OC", so stability is slightly improved.
+* The "Game" profile for "HYBRID OC" has a dynamic VID.
+* "MT" profile for "HYBRID OC" is now able to handle heavy loads. That is, "MT" and "MT HEAVY" are now one and the same.
+* The background activity of the application has been reduced. For active "T-CONTROL" and "RTX-TUNER", the background activity is now 0%.
+* Fixed behavior of driver reload button for NVIDIA graphics cards.
+* Fixed some bugs and infinite loop for CPU diagnostics - "AMD CO" search mode.
+* Fixed incorrect monitoring during CPU/GPU diagnostics if application is in minimized state.
+* "Response speed" metric moved from "LOGS" tab to monitoring section.
+* Fixed a GPU diagnostic bug where false adapter instability could be found in the first 20 seconds of a test.
+* Graphics settings for GPU diagnostics are now configured automatically.
+* Editing and working with "Profiles Table" (HYBRID OC) has been slightly improved, double click handlers have been added and single click handlers have been removed where they are not needed.
+* For "APPE", I have turned off some registry edit options due to non-addictive system behavior when using the latest OS updates.
+* "HOC mode" got some additional rules, now depending on the mode the "HYBRID OC" behavior is significantly different.
+* ----------------------------------------
 * HYDRA 1.7A PRO (1700) - what's new?
 * ----------------------------------------
 * - Dynamic VID for "MT" profile (important note, the dynamic VID for the "MT" profile can operate between -75mV and +50mV).
