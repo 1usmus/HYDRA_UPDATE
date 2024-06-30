@@ -57,6 +57,8 @@
 * - HYDRA's protection system now does not interfere with AMD CO's search process.
 * - HYDRA background activity has been slightly reduced.
 * ----------------------------------------
+* HYDRA 1.6А PRO (1605) - what's new?
+* ----------------------------------------
 * - Updated APP PACK.
 * - "HYBRID OC" operation has been simplified, it will require a single button press to enable (AMD CO curve is enabled automatically).
 * - Improved the function of restoring active "HYBRID OC"/"AMD PBO2" after the system wakes up from sleep.
