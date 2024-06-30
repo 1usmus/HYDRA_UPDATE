@@ -1,4 +1,21 @@
 * ----------------------------------------
+* HYDRA 1.7C PRO (1702) - what's new?
+* ----------------------------------------
+* Initial support for Zen 5.
+* A number of serious innovations for "T-CONTROL" and improved functionality, added profiling.
+* When selecting a process for profiling (GPU or CPU), all system or critical processes will now be excluded.
+* AMD  graphics card diagnostic speed up to 5x(!), fixes for a number of bugs, new rules.
+* NVIDIA graphics cards diagnostic speed up to 1.6x, new rules.
+* New "Scalar Integer non SMT" test for CPU diagnostics to improve accuracy of results for some processors.
+* Standby cache cleanup got new feature - EmptySystemWorkingSet.
+* Improved UI for user comfort and adjusting some of the descriptions.
+* Significantly reduced CPU time utilization for all HYDRA functions.
+* Changing "T-CONTROL", "RX/RTX-TUNER" settings on the fly without stuttering.
+* Correct information about the Windows build.
+* Fix "ASSISTANT" for "HYBRID OC".
+* Improved overall stability of the application.
+* Improved handling of PCI mutex.
+* ----------------------------------------
 * HYDRA 1.7B PRO (1701) - what's new?
 * ----------------------------------------
 * Code quality. This is the third month of code refactoring with undocumented bugs fixed.
