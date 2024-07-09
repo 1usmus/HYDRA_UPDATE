@@ -1,7 +1,7 @@
 * ----------------------------------------
 * HYDRA 1.7D PRO (1703) - what's new?
 * ----------------------------------------
-* Fixes issues related to Windows Counter.
+* Fixes issues related to Windows Permormance Counter.
 * AMD RX 6000 graphics card diagnostics got support for overriding the maximum power consumption limit, now it is up to 30%.
 * Graphics test now has the ability to automatically restart in case of accidental crash due to its own error.
 * Fixed an issue where the graphics card diagnostics could accidentally see an error.
