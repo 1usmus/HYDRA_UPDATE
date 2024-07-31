@@ -1,58 +1,72 @@
+
+* ----------------------------------------
+* HYDRA 1.7E PRO (1704) - what's new?
+* ----------------------------------------
+* - APP PACK has been updated. Critical update for HYDRA 1.7E PRO and newer.
+* - Added automatic fix for HYDRA incompatibility with the new W11 update by disabling "Core isolation" with user consent.
+* - "EASY DIAGNOSTIC" for CPU and GPU with presets. An easy and automatic way to optimize your hardware without getting into the details.
+* - New. AMD CO's detail test. The algorithm can more accurately find "AMD CO" values. The values are also more uniform to maximize MT performance.
+* - Fixed HYDRA crash bug if no Nvidia or Radeon RX graphics card was detected on the user's system.
+* - Improved detection of external video cards.
+* - New presets (eliminated inefficient tests, integer AVX tests prioritized) for "AMD CO" lookup for Zen 4 processors (X3D too).
+* - Some changes in the graphical interface for user comfort.
+* - "SVM" information is displayed in the header and log.
+* - Configuration files of the application have been changed.
 * ----------------------------------------
 * HYDRA 1.7D PRO (1703) - what's new?
 * ----------------------------------------
-* Fixes issues related to Windows Permormance Counter.
-* AMD RX 6000 graphics card diagnostics got support for overriding the maximum power consumption limit, now it is up to 30%.
-* Graphics test now has the ability to automatically restart in case of accidental crash due to its own error.
-* Fixed an issue where the graphics card diagnostics could accidentally see an error.
-* Fixed behavior of video card diagnostics algorithm when it reached either maximum allowed value or minimum (infinite loop fix).
-* Improved AMD graphics card core frequency ramping algorithm during diagnostics when free PPT is available.
-* Added individual reset for each of the presets for video card diagnostics.
-* AMD RX 6000 video card diagnostics can inform the user if their "ADDITIONAL POWER TUNE && TWEAKS" values are unstable.
-* Other minor changes to the graphics card diagnostic algorithm.
+* - Fixes issues related to Windows Permormance Counter.
+* - AMD RX 6000 graphics card diagnostics got support for overriding the maximum power consumption limit, now it is up to 30%.
+* - Graphics test now has the ability to automatically restart in case of accidental crash due to its own error.
+* - Fixed an issue where the graphics card diagnostics could accidentally see an error.
+* - Fixed behavior of video card diagnostics algorithm when it reached either maximum allowed value or minimum (infinite loop fix).
+* - Improved AMD graphics card core frequency ramping algorithm during diagnostics when free PPT is available.
+* - Added individual reset for each of the presets for video card diagnostics.
+* - AMD RX 6000 video card diagnostics can inform the user if their "ADDITIONAL POWER TUNE && TWEAKS" values are unstable.
+* - Other minor changes to the graphics card diagnostic algorithm.
 * ----------------------------------------
 * HYDRA 1.7C PRO (1702) - what's new?
 * ----------------------------------------
-* Initial support for Zen 5.
-* A number of serious innovations for "T-CONTROL" and improved functionality, added profiling.
-* When selecting a process for profiling (GPU or CPU), all system or critical processes will now be excluded.
-* AMD  graphics card diagnostic speed up to 5x(!), fixes for a number of bugs, new rules.
-* NVIDIA graphics cards diagnostic speed up to 1.6x, new rules.
-* New "Scalar Integer non SMT" test for CPU diagnostics to improve accuracy of results for some processors.
-* Standby cache cleanup got new feature - EmptySystemWorkingSet.
-* Improved UI for user comfort and adjusting some of the descriptions.
-* Significantly reduced CPU time utilization for all HYDRA functions.
-* Changing "T-CONTROL", "RX/RTX-TUNER" settings on the fly without stuttering.
-* Correct information about the Windows build.
-* Fix "ASSISTANT" for "HYBRID OC".
-* Improved overall stability of the application.
-* Improved handling of PCI mutex.
+* - Initial support for Zen 5.
+* - A number of serious innovations for "T-CONTROL" and improved functionality, added profiling.
+* - When selecting a process for profiling (GPU or CPU), all system or critical processes will now be excluded.
+* - AMD  graphics card diagnostic speed up to 5x(!), fixes for a number of bugs, new rules.
+* - NVIDIA graphics cards diagnostic speed up to 1.6x, new rules.
+* - New "Scalar Integer non SMT" test for CPU diagnostics to improve accuracy of results for some processors.
+* - Standby cache cleanup got new feature - EmptySystemWorkingSet.
+* - Improved UI for user comfort and adjusting some of the descriptions.
+* - Significantly reduced CPU time utilization for all HYDRA functions.
+* - Changing "T-CONTROL", "RX/RTX-TUNER" settings on the fly without stuttering.
+* - Correct information about the Windows build.
+* - Fix "ASSISTANT" for "HYBRID OC".
+* - Improved overall stability of the application.
+* - Improved handling of PCI mutex.
 * ----------------------------------------
 * HYDRA 1.7B PRO (1701) - what's new?
 * ----------------------------------------
-* Code quality. This is the third month of code refactoring with undocumented bugs fixed.
-* Added comparison test for GPU. Between default state and the state written in "Global" profile ("RTX/GTX/RX-TUNER" tab).
-* Improved game trigger, which significantly affected "HYBRID OC" and "T-CONTROL".
-* Adaptation of HYDRA to new NVIDIA drivers, improved fault tolerance. 
-* Improved "T-CONTROL" stability and added new game modes. Example: "0-A" - CCD#0 in auto mode(non SMT/SMT), "0-P" - CCD#0 only physical cores(non SMT)).
-* A new generation of diagnostics for NVIDIA graphics cards. The speed of passing has increased many times over. Improved accuracy.
-* Diagnostics for AMD graphics cards is also somewhat faster.
-* Temperature throttling of the GPU is now not perceived by diagnostics as over-overclocking.
-* Simplifying the interface and eliminating some settings for user comfort.
-* Changed "Idle" profile configuration for "HYBRID OC", so stability is slightly improved.
-* The "Game" profile for "HYBRID OC" has a dynamic VID.
-* "MT" profile for "HYBRID OC" is now able to handle heavy loads. That is, "MT" and "MT HEAVY" are now one and the same.
-* The background activity of the application has been reduced. For active "T-CONTROL" and "RTX-TUNER", the background activity is now 0%.
-* Fixed behavior of driver reload button for NVIDIA graphics cards.
-* Fixed some bugs and infinite loop for CPU diagnostics - "AMD CO" search mode.
-* Fixed incorrect monitoring during CPU/GPU diagnostics if application is in minimized state.
-* "Response speed" metric moved from "LOGS" tab to monitoring section.
-* Fixed a GPU diagnostic bug where false adapter instability could be found in the first 20 seconds of a test.
-* Graphics settings for GPU diagnostics are now configured automatically.
-* Editing and working with "Profiles Table" (HYBRID OC) has been slightly improved, double click handlers have been added and single click handlers have been removed where they are not needed.
-* For "APPE", I have turned off some registry edit options due to non-addictive system behavior when using the latest OS updates.
-* "HOC mode" got some additional rules, now depending on the mode the "HYBRID OC" behavior is significantly different.
-* "RTX/GTX-TUNER" tab made as simple as possible.
+* - Code quality. This is the third month of code refactoring with undocumented bugs fixed.
+* - Added comparison test for GPU. Between default state and the state written in "Global" profile ("RTX/GTX/RX-TUNER" tab).
+* - Improved game trigger, which significantly affected "HYBRID OC" and "T-CONTROL".
+* - Adaptation of HYDRA to new NVIDIA drivers, improved fault tolerance. 
+* - Improved "T-CONTROL" stability and added new game modes. Example: "0-A" - CCD#0 in auto mode(non SMT/SMT), "0-P" - CCD#0 only physical cores(non SMT)).
+* - A new generation of diagnostics for NVIDIA graphics cards. The speed of passing has increased many times over. Improved accuracy.
+* - Diagnostics for AMD graphics cards is also somewhat faster.
+* - Temperature throttling of the GPU is now not perceived by diagnostics as over-overclocking.
+* - Simplifying the interface and eliminating some settings for user comfort.
+* - Changed "Idle" profile configuration for "HYBRID OC", so stability is slightly improved.
+* - The "Game" profile for "HYBRID OC" has a dynamic VID.
+* - "MT" profile for "HYBRID OC" is now able to handle heavy loads. That is, "MT" and "MT HEAVY" are now one and the same.
+* - The background activity of the application has been reduced. For active "T-CONTROL" and "RTX-TUNER", the background activity is now 0%.
+* - Fixed behavior of driver reload button for NVIDIA graphics cards.
+* - Fixed some bugs and infinite loop for CPU diagnostics - "AMD CO" search mode.
+* - Fixed incorrect monitoring during CPU/GPU diagnostics if application is in minimized state.
+* - "Response speed" metric moved from "LOGS" tab to monitoring section.
+* - Fixed a GPU diagnostic bug where false adapter instability could be found in the first 20 seconds of a test.
+* - Graphics settings for GPU diagnostics are now configured automatically.
+* - Editing and working with "Profiles Table" (HYBRID OC) has been slightly improved, double click handlers have been added and single click handlers have been removed where they are not needed.
+* - For "APPE", I have turned off some registry edit options due to non-addictive system behavior when using the latest OS updates.
+* - "HOC mode" got some additional rules, now depending on the mode the "HYBRID OC" behavior is significantly different.
+* - "RTX/GTX-TUNER" tab made as simple as possible.
 * ----------------------------------------
 * HYDRA 1.7A PRO (1700) - what's new?
 * ----------------------------------------
