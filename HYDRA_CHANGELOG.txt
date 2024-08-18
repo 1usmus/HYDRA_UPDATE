@@ -6,6 +6,7 @@
 * - Fixed system micro hangs during DRAM diagnostics.
 * - DRAM diagnostics now works normally for processors with only the second CCD active.
 * - DRAM diagnostics. Added standby cache clearing and delay for DRAM loading before each new Ycruncher/HCI step.
+* - DRAM diagnostics, APU VDDIO voltage range extended to 1300mV.
 * - Functions that require a lot of CPU time and may hang due to Windows problems have a completion timeout of 5 to 10 seconds.
 * - Information on diagnostic progress is revised. The % of total process completion is now displayed. 
 * - Update presets for CPU diagnostics.
