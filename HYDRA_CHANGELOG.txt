@@ -1,4 +1,16 @@
 * ----------------------------------------
+* HYDRA 1.8A PRO (1800) - what's new?
+* ----------------------------------------
+* - Full support for Zen 5.
+* - Full support for AMD CO diagnostics for Zen 5, added optimal presets. Work on HYBRID OC is in progress.
+* - Improved storage system (caching override) of intermediate files for diagnostics. 
+* - Improved stability of the CPU diagnostic algorithm.
+* - Improved DRAM parameter management for motherboards where manufacturer tried to cut out these features.
+* - Added VBS control for additional performance. 
+* - Added exception handlers that can inform the user about a problem with the application before the UI is loaded.
+* - Improved work with Core Isolation for cases when corresponding registry branches are missing.
+* - Some descriptions have been corrected.
+* ----------------------------------------
 * HYDRA 1.7F PRO (1705) - what's new?
 * ----------------------------------------
 * - Added Super Admin mode (settings tab). Since it's dangerous it's optional.
