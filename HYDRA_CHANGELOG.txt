@@ -6,7 +6,7 @@
 * - Improved storage system (caching override) of intermediate files for diagnostics. 
 * - Improved stability of the CPU diagnostic algorithm.
 * - Improved DRAM parameter management for motherboards where manufacturer tried to cut out these features.
-* - Added VBS control for additional performance. 
+* - Added VBS control for additional performance (settings tab). 
 * - Added exception handlers that can inform the user about a problem with the application before the UI is loaded.
 * - Improved work with Core Isolation for cases when corresponding registry branches are missing.
 * - Some descriptions have been corrected.
