@@ -15,6 +15,7 @@
 * - Fixed a bug where "Phoenix" could lose part of the "HOC CO" value (a two-digit number was loaded instead of a three-digit number). 
 * - Improved exception handling when user could catch infinite loop during CPU diagnostics. 
 * - Fixed "SC LIMIT" monitoring bug for Zen 3 generation processors.
+* - Prime95 is excluded from stress tests due to inefficiency. 
 * ----------------------------------------
 * HYDRA 1.8A PRO (1800) - what's new?
 * ----------------------------------------
