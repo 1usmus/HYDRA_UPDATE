@@ -1,38 +1,55 @@
 * ----------------------------------------
+* HYDRA 1.8B PRO (1801) - what's new?
+* ----------------------------------------
+* - Ability to verify "AMD CO" values without a full blind search ("TESTS" tab). 
+* - "HYBRID OC" support for Zen 5. 
+* - "HOC CO" search presets will now not cause temperature issues even in systems with very weak cooling. 
+* - "HOC CO" search algorithms are fully synchronized with the profile creation phase so you won't have any problems. I have simplified a number of tasks that previously required user action. 
+* - Reduced CPU diagnostic pass time for some scenarios without sacrificing accuracy. 
+* - Added some phases and repeatable tests because the CPU was not always unstable at a certain "AMD/HOC CO" the first time. 
+* - Some improvements for diagnosing AMD RX graphics cards when the user was overriding the TBP limit above the standard one. 
+* - "Dynamic VID" for "HYBRID OC" became smarter and more stable after adding some rules. 
+* - "HYBRID OC" has become much more stable as a result of the CPU diagnostic update. 
+* - Windows Performance Counter now performs automatic re-initialization after a video driver crash. 
+* - Simplified interface for CPU diagnostics, fixed some descriptions. 
+* - Fixed a bug where "Phoenix" could lose part of the "HOC CO" value (a two-digit number was loaded instead of a three-digit number). 
+* - Improved exception handling when user could catch infinite loop during CPU diagnostics. 
+* - Fixed "SC LIMIT" monitoring bug for Zen 3 generation processors.
+* ----------------------------------------
 * HYDRA 1.8A PRO (1800) - what's new?
 * ----------------------------------------
 * - Full support for Zen 5.
-* - Full support for AMD CO diagnostics for Zen 5, added optimal presets. Work on HYBRID OC is in progress.
+* - Full support for "AMD CO" diagnostics for Zen 5, added optimal presets. Work on "HYBRID OC" is in progress.
 * - Improved storage system (caching override) of intermediate files for diagnostics. 
 * - Improved stability of the CPU diagnostic algorithm.
 * - Improved DRAM parameter management for motherboards where manufacturer tried to cut out these features.
-* - Added VBS control for additional performance (settings tab). 
+* - Added "VBS" control for additional performance (settings tab). 
 * - Added exception handlers that can inform the user about a problem with the application before the UI is loaded.
-* - Improved work with Core Isolation for cases when corresponding registry branches are missing.
+* - Improved work with "Core Isolation" for cases when corresponding registry branches are missing.
 * - Some descriptions have been corrected.
 * ----------------------------------------
 * HYDRA 1.7F PRO (1705) - what's new?
 * ----------------------------------------
-* - Added Super Admin mode (settings tab). Since it's dangerous it's optional.
-* - The log shows whether you are in Super Admin mode or not.
+* - Added "Super Admin" mode (settings tab). Since it's dangerous it's optional.
+* - The log shows whether you are in "Super Admin" mode or not.
 * - Fixed system micro hangs during DRAM diagnostics.
 * - DRAM diagnostics now works normally for processors with only the second CCD active.
 * - DRAM diagnostics. Improved physical memory clearing after each step.
-* - DRAM diagnostics, APU VDDIO voltage range extended to 1300mV.
+* - DRAM diagnostics, "APU VDDIO" voltage range extended to 1300mV.
 * - Functions that require a lot of CPU time and may hang due to Windows problems have a completion timeout of 5 to 10 seconds.
 * - Information on diagnostic progress is revised. The % of total process completion is now displayed. 
 * - Update presets for CPU diagnostics.
 * - CPU diagnostic steps for each type of event have been modified. A number of improvements in algorithms.
-* - When verifying AMD CO for CCDs, stability is now evaluated sub-core. That is, if instability is found in the CCD, AMD CO value will be reduced only for the culprit, not for the whole CCD.
+* - When verifying "AMD CO" for CCDs, stability is now evaluated sub-core. That is, if instability is found in the CCD, "AMD CO" value will be reduced only for the culprit, not for the whole CCD.
 * - Improved auto-start function, added automatic auto-start repair function.
 * - Added additional exception handling for Prime95 test.
 * - CPU Diagnostics. The delay between finding an error in the core and the subsequent action is reduced. 
-* - Added a button to configure automatic system shutdown for EASY DIAGNOSTIC.
+* - Added a button to configure automatic system shutdown for "EASY DIAGNOSTIC".
 * - Fixed an error when at the end of diagnostics the information window could be missing and thus block further work with the application.
 * - Improved detection of Windows updates that may block HYDRA from running.
 * - Fixed CPU diagnostics bug, when after a failure of a core under test, the diagnostics process switched to another core.
-* - Improved operation of T-CONTROL for situations when the number of used threads did not exceed the number of physical cores, but the mask "All CORES (no SMT)" was applied.
-* - Support for defining timings and settings for Zen 5 processors (DCFR tab).
+* - Improved operation of "T-CONTROL" for situations when the number of used threads did not exceed the number of physical cores, but the mask "All CORES (no SMT)" was applied.
+* - Support for defining timings and settings for Zen 5 processors ("DCFR" tab).
 * - Monitoring support for Zen 5 with 1 CCD (support for other functions and 2 CCD will be added soon too).
 * - Added a check to see if the phoenix has successfully turned on during the start of the diagnostic. 
 * ----------------------------------------
@@ -41,7 +58,7 @@
 * - APP PACK has been updated. Critical update for HYDRA 1.7E PRO and newer.
 * - Added automatic fix for HYDRA incompatibility with the new W11 update by disabling "Core isolation" with user consent.
 * - "EASY DIAGNOSTIC" for CPU and GPU with presets. An easy and automatic way to optimize your hardware without getting into the details.
-* - New. AMD CO's detail test. The algorithm can more accurately find "AMD CO" values. The values are also more uniform to maximize MT performance.
+* - New. "AMD CO's" detail test. The algorithm can more accurately find "AMD CO" values. The values are also more uniform to maximize MT performance.
 * - Fixed HYDRA crash bug if no Nvidia or Radeon RX graphics card was detected on the user's system.
 * - Improved detection of external video cards.
 * - New presets (eliminated inefficient tests, integer AVX tests prioritized) for "AMD CO" lookup for Zen 4 processors (X3D too).
