@@ -1,4 +1,19 @@
 * ----------------------------------------
+* HYDRA 1.8C PRO (1802) - what's new?
+* ----------------------------------------
+* - Updated "T-CONTROL" for all Zen generations. Yes, you heard right, there is even support for Zen 1. More stability and performance for all Zen generations.
+* - The most powerful customization for "HYBRID OC". Added PBO settings for each of the "HYBRID OC" profiles. 
+* - Added another "HYBRID OC" user profile, now there are 3 of them. Recall that each profile can control CPU state for 1 or more applications.
+* - Added support for Zen 4 APU (8000G). Processor monitoring and control is available. Diagnostics during the development process.
+* - Zen 3 APUs (5000G) have received a number of fixes and improvements for correct operation. Note, "AMD CO" monitoring is not working, but "AMD CO" management is working.
+* - For Zen 3 APU (5000G) and Zen 4 APU (8000G), added "apu_slow_limit_ppt" and "slow_limit_ppt" control. Controlled via PPT limit "slider" for user comfort.
+* - Fixes some DDR4 settings management functions (tCKE, tRCDRD, tRCDWR, tRFC and tCWL).
+* - Fixed a bug where user profiles in "RTX-TUNER" could be ignored and not enabled.
+* - Reduced CPU usage for HYDRA needs and through refactoring improved the overall stability of the application.
+* - Reworked the trigger for waking the computer from sleep and then restoring custom "HYBRID OC" and "AMD PBO" values if they were active.
+* - The game triggers have also undergone refactoring, improved functionally.
+* - "HYBRID OC" tab has received some visual changes to improve the user experience.
+* ----------------------------------------
 * HYDRA 1.8B PRO (1801) - what's new?
 * ----------------------------------------
 * - Ability to verify "AMD CO" values without a full blind search ("TESTS" tab). 
