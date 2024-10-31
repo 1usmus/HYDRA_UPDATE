@@ -13,6 +13,7 @@
 * - Reworked the trigger for waking the computer from sleep and then restoring custom "HYBRID OC" and "AMD PBO" values if they were active.
 * - The game triggers have also undergone refactoring, improved functionally.
 * - "HYBRID OC" tab has received some visual changes to improve the user experience.
+* - Improved compatibility with applications that have privileges or full control of PCI mutex permissions.
 * ----------------------------------------
 * HYDRA 1.8B PRO (1801) - what's new?
 * ----------------------------------------
