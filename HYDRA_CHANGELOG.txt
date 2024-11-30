@@ -6,7 +6,6 @@
 * - "T-CONTROL", performance and stability improvement in all games.
 * - "Dynamic VID for LT" profile in "HYBRID OC". On the settings page, you can enable this experimental option.
 * - Ryzen G8000 got diagnostic support and optimal cold presets.
-* - Initial support for Ryzen 7 9800X3D.
 * - "Signal Control" (DCFR tab) allows you to control additional parameters.
 * - Added support for AGESA 1202a and newer.
 * - Correct display of settings in the "DCFR" tab.
