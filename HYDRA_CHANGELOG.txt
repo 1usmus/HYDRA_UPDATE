@@ -1,4 +1,21 @@
 * ----------------------------------------
+* HYDRA 1.8D PRO (1803) - what's new?
+* ----------------------------------------
+* - Added iGPU CO control for Ryzen G8000. For Ryzen 7000 & 9000 coming soon.
+* - X3D processors will have access to "HYBRID OC", but there is no talk of manual overclocking, the mode of operation is relative to AMD PBO2 custom values for each of the profiles.
+* - "T-CONTROL", performance and stability improvement in all games.
+* - "Dynamic VID for LT" profile in "HYBRID OC". On the settings page, you can enable this experimental option.
+* - Ryzen G8000 got diagnostic support and optimal cold presets.
+* - Initial support for Ryzen 7 9800X3D.
+* - "Signal Control" (DCFR tab) allows you to control additional parameters.
+* - Added support for AGESA 1202a and newer.
+* - Correct display of settings in the "DCFR" tab.
+* - Fixed some descriptions and tooltips.
+* - Improved support when using AMD iGPU + AMD dGPU.
+* - Fixed a rare bug where some AMD PBO2 values were not filled in correctly when the program was first started.
+* - For DRAM diagnostics, some signal line settings are switched to auto mode for improved compatibility.
+* - Improved user CO monitoring performance for Ryzen G8000 and Ryzen 5000G processors.
+* ----------------------------------------
 * HYDRA 1.8C PRO (1802) - what's new?
 * ----------------------------------------
 * - Updated "T-CONTROL" for all Zen generations. Yes, you heard right, there is even support for Zen 1. More stability and performance for all Zen generations.
