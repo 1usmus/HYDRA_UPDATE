@@ -1,4 +1,19 @@
 * ----------------------------------------
+* HYDRA 1.8E PRO (1804) - what's new?
+* ----------------------------------------
+* - Fixed a bug that prevented X3D processor users from using "HYBRID OC".
+* - Fixed a bug where CO values could be incorrectly displayed or cause the application to crash.
+* - Fixed a bug where Zen 3 processor users were not seeing some DRAM information in the "DCFR" tab.
+* - Fixed a bug where Zen 3 processor users could see incorrect "Signal Control" settings options ("DCFR" tab).
+* - "T-CONTROL" got additional rules for mask setting in games when more than one CCD is used.
+* - Some visual fixes on the "HYBRID OC" tab for X3D processor users.
+* - The "IDLE" profile for "HYBRID OC" inherits AMD PBO2 values from the "LT" profile. 
+* - Zen 3 processors received some changes to the presets for "SEARCH CORE HOC CO" to improve system stability when "HYBRID OC" is active.
+* - Improved informativeness in the log about current settings during DRAM diagnostics.
+* - Fixed a bug where X3D processor users could see errors in the logs. 
+* - Fixed a bug where a running "T-CONTROL" function could inform the user of an incorrect amount of resources being used.
+* - Changed the warning information that the user always sees at every startup.
+* ----------------------------------------
 * HYDRA 1.8D PRO (1803) - what's new?
 * ----------------------------------------
 * - Added iGPU CO control for Ryzen G8000. For Ryzen 7000 & 9000 coming soon.
