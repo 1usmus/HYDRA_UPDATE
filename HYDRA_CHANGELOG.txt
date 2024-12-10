@@ -3,7 +3,7 @@
 * ----------------------------------------
 * - Fixes bugs related to WMI operation ("DCFR" tab).
 * - Fixed a bug where RCD timings could take an incorrect value.
-* - Improved behavior of "SEARCH CORE AMD CO" algorithm for some Phoenix related events.
+* - Improved behavior of "SEARCH CORE AMD CO" algorithm for some "Phoenix" related events.
 * - Improvement of "HYBRID OC" stability. 
 * - Improved exception handling when working with SMU, "CMD WAITING" events will not interfere with HYDRA operation.
 * - Abolished "Mammoth" algorithm for "SEARCH CORE AMD CO" due to lack of advantages over the updated fast scan.
