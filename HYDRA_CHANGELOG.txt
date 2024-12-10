@@ -1,4 +1,13 @@
 * ----------------------------------------
+* HYDRA 1.8F PRO (1805) - what's new?
+* ----------------------------------------
+* - Fixes bugs related to WMI operation ("DCFR" tab).
+* - Fixed a bug where RCD timings could take an incorrect value.
+* - Improved behavior of "SEARCH CORE AMD CO" algorithm for some Phoenix related events.
+* - Improvement of "HYBRID OC" stability. 
+* - Improved exception handling when working with SMU, "CMD WAITING" events will not interfere with HYDRA operation.
+* - Abolished "Mammoth" algorithm for "SEARCH CORE AMD CO" due to lack of advantages over the updated fast scan.
+* ----------------------------------------
 * HYDRA 1.8E PRO (1804) - what's new?
 * ----------------------------------------
 * - Fixed a bug that prevented X3D processor users from using "HYBRID OC".
