@@ -1,4 +1,24 @@
 * ----------------------------------------
+* HYDRA 1.8G PRO (1806) - what's new?
+* ----------------------------------------
+* - A new DRAM test suite has been added. Includes cache-DRAM access latency graph and DRAM bandwidth estimation per 1 core.
+* - In CPU diagnostics implemented "eCLK" support for all processor generations, but with corresponding motherboard support. The corresponding "eCLK" control will appear on the "AMD PBO2" tab.
+* - GPU diagnostics has already received a number of improvements, especially for NVIDIA graphics cards. The curve will look as accurate as possible.
+* - Full support for 9800X3D, special diagnostics, additional overvoltage protection.
+* - "iGPU magnitude" management for Zen 4 and Zen 5 has already been added. Available in the AMD PBO 2 tab.
+* - Improved unified mechanism for loading CPU and GPU profiles from NVIDIA. Now any version of the profile is compatible with the new HYDRA.
+* - Added support for Zen 5 with only the second CCD active.
+* - Some adjustments to the starting values for DDR5 diagnostics.
+* - Improvements to the dialog message and warning system.
+* - Improved handling of some events when communicating with the SMU of the processor.
+* - "HYBRID OC" stability improvement.
+* - Improved identification of CPUs that have physically 2 CCDs, but only 1 is enabled.
+* - Minor improvements to the CPU diagnostic algorithm when searching for AMD CO.
+* - Automatic screenshot creation when running CPU and DRAM tests ("TESTS" tab). You can find it in the “RESULTS” folder.
+* - Improved algorithm for finding the path to .exe that are located in the “APP PACK” folder. 
+* - Improved algorithm for creating a screenshot, now the UI doesn't freeze.
+* - Improved interaction with Task Scheduler when working with "Phoenix" or application autoloading.
+* ----------------------------------------
 * HYDRA 1.8F PRO (1805) - what's new?
 * ----------------------------------------
 * - Fixes bugs related to WMI operation ("DCFR" tab).
