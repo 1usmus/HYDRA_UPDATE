@@ -1,4 +1,63 @@
 * ----------------------------------------
+* HYDRA 1.8H PRO (1807) - what's new?
+* ----------------------------------------
+* - "Check conflict" ("LOGGING" tab) now detects more processes and services blocking the "PCI mutex".
+* - Experimental support for RTX 5000 series.
+* - Added "Nitro" control on the "DCFR" page for DDR5.
+* - Improved the storage system for all types of HYDRA files, including "phoenix".
+* - Added "Performance Bias" control via Windows (on the "Settings" page).
+* - HYDRA has removed a number of drivers written by third-party developers (now using only its own).
+* - CPU diagnostics: "Target VID" does not want to accept the value.
+* - CPU diagnostics: Fixed a rare bug that could cause a boot loop.
+* - CPU diagnostics: Some CPU were not allowed to be diagnosed. Fixed.
+* - GPU diagnostics (NVIDIA): Added a dual "non-RT/RT" test with automatic resolution adaptation to the main screen for more accurate results.
+* - GPU diagnostics (NVIDIA): Various improvements related to curve building.
+* - GPU diagnostics (AMD/NVIDIA): Fixed a bug where user changes in "GPU DIAGNOSTIC CENTER" could be ignored.
+* - CPU and DRAM (DDR5/DDR4) diagnostics: Improved system for pausing/resuming diagnostic processes.
+* - CPU and DRAM (DDR4/DDR5) diagnostics: Improved recovery of processes from "phoenix" files.
+* - CPU and DRAM (DDR4/DDR5) diagnostics: Improved failure type detection and "phoenix" branching after different types of failures.
+* - DRAM (DDR4/DDR5) diagnostics: Added "VT3" test to diagnostics for more accurate results.
+* - DRAM (DDR4/DDR5) diagnostics: Fixed a bug where diagnostics could end prematurely.
+* - DRAM (DDR4/DDR5) diagnostics: Fixed a bug where the HCI test completion percentage was displayed incorrectly.
+* - DRAM (DDR5) diagnostics: Added an automatic tuning option for "ProcODT" and "DramDqDs".
+* - DRAM (DDR5) diagnostics: Added an undervolting option for "MC VDDIO".
+* - DRAM (DDR5) diagnostics: Extended "DRAM MT/s" range to 8800 in 1:2 mode and 6800 in 1:1 mode.
+* - DRAM (DDR5) diagnostics: Extended "MEM VDD" range to 1.55V.
+* - DRAM (DDR5) diagnostics: Extended "MEM VDDQ" range to 1.45V.
+* - DRAM (DDR5) diagnostics: Extended "SOC VDDCR" range to 1.3V.
+* - DRAM (DDR5) diagnostics: Extended "MC VDDIO" range to 1.4V.
+* - DRAM (DDR5) diagnostics: Extended "CLDO VDDP" range to 1.15V.
+* - DRAM (DDR5) diagnostics: Added "Nitro" settings (presets for best performance/latency or stability).
+* - DRAM (DDR5) diagnostics: Added automatic "ODT" search (ProcODT/ProcODT PU and DramDqDs).
+* - DRAM (DDR5) diagnostics: Automatic adjustment of start timings for any "DRAM MT/s", "MEM VDD", and "DRAM IC" (all dependencies are taken into account).
+* - DRAM (DDR5) diagnostics: Updated performance tests for each tuning step (optional).
+* - DRAM (DDR5) diagnostics: A number of bug fixes and start value adjustments.
+* - DRAM (DDR5) diagnostics: Added new tips.
+* - DRAM (DDR5) diagnostics: When the user selects "DRAM MT/s", a number of additional settings affecting stability are also changed (HYDRA suggestion).
+* - DRAM (DDR5) diagnostics: Modified UI for faster selection of new values and settings.
+* - DRAM (DDR5) diagnostics: Warning system for unsafe voltage use.
+* - DRAM BENCH: Added infinite history (file-based storage).
+* - DRAM BENCH: Added timing and configuration information.
+* - DRAM BENCH: Added the ability to compare settings and results between different experiments (user selects from a dropdown list).
+* - DRAM BENCH: Added the ability to browse experiment history and delete selected entries.
+* - DRAM BENCH: Added the "Random Access Rd/Wr" sub-test.
+* - DRAM BENCH: Added the "CCD DRAM Rd/Wr/Cp" sub-test.
+* - DRAM BENCH: Adjusted the "MemBench" sub-test starting values for 12-core and 6-core processors.
+* - Added the "PING PONG" test ("TESTS" page) with various metrics (MIN/MED/AVG/P95/P99/MAX), which measures the real latency of communication between cores.
+* - "CHECK MY MEM" ("TESTS" page) received an additional "VT3" test for DRAM stability checking.
+* - "CORE C6" and "PACKAGE C6" settings ("Settings" page) no longer require restarting the application.
+* - "T-CONTROL" now also manages the C6 state of cores, improving performance and particularly reducing P95/P99 events.
+* - Added an alternative method for determining CPPC core labels for Zen 3.
+* - "HYBRID OC" received minor stability improvements.
+* - Fixed a bug that prevented HYDRA from launching if there were no dGPU in the system aside from iGPU.
+* - "APPE" now has multilingual support.
+* - Added support for 4-byte settings in "APPE".
+* - Other minor fixes, stability improvements, and refactoring.
+* - "CMD_FAILED 51 0" - you will still see this message, but it will not stop any process.
+* - CPU monitoring on some systems did not work properly and therefore everything broke down because of it. Fixed.
+* - Increased the maximum "VID" threshold for the 9800X3D, it is now 1325 for the "LT profile" and 1225 for the "MT profile". The reason for such a strict limitation is that I don't consider AMD's standard limit to be safe.
+* - Further protects "Profiles Table" from a user attempting to enter a "VID" value that is too high.
+* ----------------------------------------
 * HYDRA 1.8G PRO (1806) - what's new?
 * ----------------------------------------
 * - A new DRAM test suite has been added. Includes cache-DRAM access latency graph and DRAM bandwidth estimation per 1 core.
