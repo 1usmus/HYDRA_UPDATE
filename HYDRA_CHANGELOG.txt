@@ -43,6 +43,7 @@
 * - DRAM BENCH: Added the "Random Access Rd/Wr" sub-test.
 * - DRAM BENCH: Added the "CCD DRAM Rd/Wr/Cp" sub-test.
 * - DRAM BENCH: Adjusted the "MemBench" sub-test starting values for 12-core and 6-core processors.
+* - DRAM BENCH: Zen 3 fully supported.
 * - Added the "PING PONG" test ("TESTS" page) with various metrics (MIN/MED/AVG/P95/P99/MAX), which measures the real latency of communication between cores.
 * - "CHECK MY MEM" ("TESTS" page) received an additional "VT3" test for DRAM stability checking.
 * - "CORE C6" and "PACKAGE C6" settings ("Settings" page) no longer require restarting the application.
