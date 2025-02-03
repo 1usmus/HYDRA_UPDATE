@@ -60,6 +60,7 @@
 * - Further protects "Profiles Table" from a user attempting to enter a "VID" value that is too high.
 * - "CHECK MY MEM" can now use up to 3072 megabytes per thread instead of 2048 as before (if needed).
 * - Some improvements to PowerShell command editing.
+* - Updated the "nvapi64.dll" and "nvml.dll" backup libraries in System32 to the latest version.
 * ----------------------------------------
 * HYDRA 1.8G PRO (1806) - what's new?
 * ----------------------------------------
