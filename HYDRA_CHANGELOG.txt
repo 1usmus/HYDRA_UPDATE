@@ -19,6 +19,7 @@
 * - Fixed bug where in "СPU DIAGNOSTIC" the user-defined "eCLK" value could be ignored.
 * - Blocked GTX video card users from running the RTX benchmark due to complete incompatibility of the technologies.
 * - Fixed bug where after system sleep with X3D processors, spam log messages were generated indicating that "HYBRID OC" could not be enabled.
+* - The step of changing the curve frequency for NVIDIA video cards using the function keys with the up and down icons became 15 instead of 10.
 * - Corrected some descriptions and minor bugs.
 * ----------------------------------------
 * HYDRA 1.8H PRO (1807) - what's new?
