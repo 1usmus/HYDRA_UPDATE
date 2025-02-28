@@ -1,4 +1,26 @@
 * ----------------------------------------
+* HYDRA 1.9A PRO (1900) - what's new?
+* ----------------------------------------
+* - The new manual is 90% complete and is already available at the old link.
+* - Added new "GPU DIAGNOSTIC" (auto-tuning) with a new test called "Elemental".
+* - Added full support for RTX 5000.
+* - Added full support for RX 9000.
+* - Fixed bug when "Windows Performance Counter" could not be used.
+* - Fixed bug when the user in "T-CONTROL" incorrectly changed the sequence of best cores, resulting in a "T-CONTROL" crash.
+* - Fixed bug when on X3D processors the automatic launch of "Assistant" could cause a HYDRA crash.
+* - Improved the stability of "RX-TUNER" and "RTX-RUNER" during video card driver crashes.
+* - Fixed bug where values set by the user in the "GPU DIAGNOSTIC CENTER" could be ignored or not saved.
+* - "GPU DIAGNOSTIC CENTER" and "EASY DIAGNOSTIC" (GPU) received adjustments to presets.
+* - Changed the order of settings for the "FAN curve" on Radeon video cards, now resembling the "Adrenalin" interface.
+* - During DRAM benchmarking, the system will not turn off the screen or go to sleep.
+* - Removed "RMP" as the proposed presets were often unstable due to the low quality of the video card silicon.
+* - The "Phoenix" diagnostics recovery system has received stability improvements.
+* - Improved the system for detecting the primary video card in the system.
+* - Fixed bug where in "СPU DIAGNOSTIC" the user-defined "eCLK" value could be ignored.
+* - Blocked GTX video card users from running the RTX benchmark due to complete incompatibility of the technologies.
+* - Fixed bug where after system sleep with X3D processors, spam log messages were generated indicating that "HYBRID OC" could not be enabled.
+* - Corrected some descriptions and minor bugs.
+* ----------------------------------------
 * HYDRA 1.8H PRO (1807) - what's new?
 * ----------------------------------------
 * - "Check conflict" ("LOGGING" tab) now detects more processes and services blocking the "PCI mutex".
