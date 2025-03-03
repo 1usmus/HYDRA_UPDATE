@@ -1,4 +1,15 @@
 * ----------------------------------------
+* HYDRA 1.9B PRO (1901) - what's new?
+* ----------------------------------------
+* - A number of fixes and improvements for "GPU DIAGNOSTIC" (auto-tuning). The final version.
+* - "T-CONTROL" stability improvement. 
+* - Improved game application launch detection.
+* - Fixes a bug where GPU profile could be completely overwritten even if user selected only MEM diagnostics or only CORE diagnostics.
+* - For NVIDIA graphics cards, an additional RTX test has been added for the verification phase.
+* - Elemental tech demo is hidden if the user's screen resolution is smaller than the render resolution.
+* - Added exception handling for requests to the processor's MSR (C6, C6 Package and Performance Bias). 
+* - Other minor adjustments to the application's default settings.
+* ----------------------------------------
 * HYDRA 1.9A PRO (1900) - what's new?
 * ----------------------------------------
 * - The new manual is 90% complete and is already available at the old link.
