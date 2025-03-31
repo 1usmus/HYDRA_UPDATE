@@ -1,4 +1,29 @@
 * ----------------------------------------
+* HYDRA 1.9C PRO (1902) - what's new?
+* ----------------------------------------
+* - Added an informational overlay for 3D applications displaying sensor data, technology status, and performance metrics. RTSS must be installed for it to work.
+* - Overlay customization added to global settings.
+* - Integrated "PresentMon 2.3.0 for the overlay system and GPU diagnostics.
+* - Implemented a live performance stats system for games, operating with a rolling 60-second interval.
+* - "GPU DIAGNOSTIC" now include an additional algorithm to detect throttling due to over-overclocking.
+* - Replaced the legacy "ADL API" with the new "ADLX API" for Radeon RX GPUs. This resolved several issues related to the GPU fan curve and power limits, and improved overall application performance.
+* - Improved support for Ryzen 9 9950X3D and Ryzen 9 9900X3D. Compatibility research is ongoing.
+* - Improved support for Radeon RX 9070 / XT. Compatibility research is ongoing.
+* - Enhanced stability of "T-CONTROL", "RX-TUNER", "RTX-TUNER", and "GPU DIAGNOSTIC".
+* - Improved detection of game applications, especially those lacking standard fullscreen modes or using exotic fullscreen implementations.
+* - Better detection of certain Radeon RX GPUs.
+* - Fixed issues related to minimizing/restoring the window from the tray or taskbar.
+* - Fixed a bug where HYDRA would forget the last window position before closing.
+* - Removed the GPU monitoring switch. Monitoring now focuses solely on the primary GPU connected to the display.
+* - Added a button in global settings to unlock the full VID range for Zen 5 X3D CPUs.
+* - Unlocked overclocking range for RTX GPUs up to 1100mV, provided the card’s TDP allows it.
+* - Added ECC error counter for diagnosing RTX GPUs (if supported and enabled on the card).
+* - Updated several CPU and GPU presets used in the diagnostics module.
+* - Disabled certain spammy MSR messages.
+* - Fixed an issue preventing the use of APP PACK when located in directories without proper access permissions.
+* - Added the ability to select timing types for Radeon "GPU DIAGNOSTIC". Using a non-default option may cause a one-time screen blink.
+* - Corrected some of the descriptions.
+* ----------------------------------------
 * HYDRA 1.9B PRO (1901) - what's new?
 * ----------------------------------------
 * - A number of fixes and improvements for "GPU DIAGNOSTIC" (auto-tuning). The final version.
