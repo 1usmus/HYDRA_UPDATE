@@ -1,4 +1,27 @@
 * ----------------------------------------
+* HYDRA 1.9D PRO (1903) - what's new?
+* ----------------------------------------
+* - A number of fixes and improvements for "RTSS". Global refactoring.
+* - Low-level optimization of HYDRA to reduce its own CPU usage. Most of the included DLLs have been updated.   
+* - "HYBRID OC" received several stability-focused improvements. I began modifying it further, but not all changes made it into this release.  
+* - "HYBRID OC" now includes protection against setting frequencies below the base clock—values can no longer drop under the baseline.  
+* - CPPC tags are now retrieved via MSR.  
+* - Various enhancements to the CPU diagnostic algorithm: each cycle now triggers a system reboot, and the verification interval has been significantly adjusted.  
+* - Added optimized "AMD CO" search presets for the 9950X3D and 9900X3D. "HOC search" is not ready yet.  
+* - Implemented a dedicated CCD verification test for previously discovered "AMD CO" values("TESTS tab").  
+* - Added support for "C6" state management on Zen 5.  
+* - Added an MSR-based check for low-level CPU errors (MCA) during per-core "AMD CO" searches.  
+* - Added an MSR-based check for frame-time stretching during per-core "AMD CO" searches (e.g. logs now show “STR: 1.300”).  
+* - Several improvements to the game trigger feature.  
+* - Enhanced "T-CONTROL" for dual-CCD processors—non-game processes will attempt to run on the unused CCD during gameplay, rather than on the one running the game.  
+* - Introduced "Game Analyzer", which tracks five key metrics in-game via "RTSS" to inform the user about frame-rate smoothness.  
+* - Fixed bugs in the comparative tests "DEFAULT vs HYBRID OC" and "DEFAULT vs AMD PBO2".  
+* - Improved NVIDIA GPU diagnostics—each cycle now runs two tests, prioritizing curve identification first, then VRAM stability.  
+* - Finally resolved the issue where "eCLK" (if supported by the motherboard) could not be set for CPU diagnostics.  
+* - Fixed a visual bug where eCLK adjustments could inadvertently affect MEMCLK or UCLK.  
+* - Enhanced detection of conflicts with other applications ("LOGS" tab).  
+* - Corrected various typos and description errors.
+* ----------------------------------------
 * HYDRA 1.9C PRO (1902) - what's new?
 * ----------------------------------------
 * - Added an informational overlay for 3D applications displaying sensor data, technology status, and performance metrics. RTSS must be installed for it to work.
