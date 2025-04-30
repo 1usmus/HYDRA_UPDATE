@@ -1,7 +1,8 @@
 * ----------------------------------------
 * HYDRA 1.9D PRO (1903) - what's new?
 * ----------------------------------------
-* - A number of fixes and improvements for "RTSS". Global refactoring.
+* - A number of fixes and improvements for "RTSS". 
+* - There is a new option in the settings ("SETTINGS" tab) called “Rolling window (s)”. It controls the size of the temporary window for which the frame-time metrics are calculated.
 * - Low-level optimization of HYDRA to reduce its own CPU usage. Most of the included DLLs have been updated.   
 * - "HYBRID OC" received several stability-focused improvements. I began modifying it further, but not all changes made it into this release.  
 * - "HYBRID OC" now includes protection against setting frequencies below the base clock—values can no longer drop under the baseline.  
@@ -20,7 +21,7 @@
 * - Finally resolved the issue where "eCLK" (if supported by the motherboard) could not be set for CPU diagnostics.  
 * - Fixed a visual bug where eCLK adjustments could inadvertently affect MEMCLK or UCLK.  
 * - Enhanced detection of conflicts with other applications ("LOGS" tab).  
-* - Corrected various typos and description errors.
+* - Corrected various typos and description errors. Global refactoring.
 * ----------------------------------------
 * HYDRA 1.9C PRO (1902) - what's new?
 * ----------------------------------------
