@@ -1,4 +1,18 @@
 * ----------------------------------------
+* HYDRA 1.9E PRO (1904) - what's new?
+* ----------------------------------------
+* - Improved UI for enhanced visual comfort: semantics, simplification, and more.
+* - Updated the ADLX API to version 1.4. Fixed bugs that affected Radeon GPU monitoring, RTSS activation, diagnostics, and other functions.
+* - RTSS will no longer launch if the user has disabled the overlay in HYDRA settings.
+* - Some settings might not have been saved automatically during HYDRA operation. This has been fixed.
+* - Enhanced diagnostics for Radeon GPUs. Changed phase order for more accurate results.
+* - Launching HYDRA no longer resets the user’s settings in AMD Adrenalin.
+* - Fixed a rare bug where user modification of the fan curve was not applied for Radeon GPUs.
+* - The hypervisor is no longer disabled when HYDRA starts.
+* - Fixed HYDRA crashes caused by an internal RTSS conflict on processors with only one CCD enabled by the manufacturer.
+* - Adjusted thresholds for core highlighting in monitoring—green (core idle) and red (core active)—to more realistic values.
+* - The overall stability of the application has been improved.
+* ----------------------------------------
 * HYDRA 1.9D PRO (1903) - what's new?
 * ----------------------------------------
 * - A number of fixes and improvements for "RTSS". 
