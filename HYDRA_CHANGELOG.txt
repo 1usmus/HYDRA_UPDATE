@@ -1,4 +1,19 @@
 * ----------------------------------------
+* HYDRA 1.9F PRO (1905) - what's new?
+* ----------------------------------------
+* - First version on new kernel (.NET Framework 4.8.1 -> .Net 8.0) with updated versions of all nested libraries (for UI too).
+* - "HYBRID OC" has been rewritten from scratch. It offers more performance and stability. I really like how it works on single-CCD processors.
+* - "SEARCH CCD HOC CO" has been rewritten from scratch.
+* - "SEARCH CORE HOC CO" includes a number of changes that do not affect the testing process itself but do affect the final results.
+* - Presets and CPU diagnostic settings have been modified.
+* - "PROFILE CREATION" has received a series of fixes and enhancements.
+* - Improved application parallelism and reduced CPU usage for its own needs.
+* - Improved interaction with RTSS.
+* - "T-CONTROL" functionality has been substantially improved, especially for gaming applications. A number of bugs have been fixed.
+* - Added logging of critical events when HYDRA crashes.
+* - Improved communication with SMU; added SMU cleanup in case a command gets “stuck” in it.
+* - Improved stability of "DEFAULT vs HYBRID OC" and "DEFAULT vs AMD PBO2" tests.
+* ----------------------------------------
 * HYDRA 1.9E PRO (1904) - what's new?
 * ----------------------------------------
 * - Improved UI for enhanced visual comfort: semantics, simplification, and more.
