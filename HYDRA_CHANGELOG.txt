@@ -1,4 +1,23 @@
 * ----------------------------------------
+* HYDRA 1.9G PRO (1906) - what's new?
+* ----------------------------------------
+* - A series of improvements for "HYBRID OC" that significantly enhance stability and performance.
+* - The "GAME" and "MT" profiles in "HYBRID OC" now feature a redesigned dynamic VID mechanism with an expanded range (it’s working again).
+* - The "IDLE" profile parameters for "HYBRID OC" have been adjusted for greater stability and lower temperatures.
+* - Various enhancements to the "HYDRA ASSISTANT" that appears after a system crash with "HYBRID OC" enabled.
+* - Added support for PresentMon 2.3.1, updated the archive, and implemented new sensors: FPS-Present, FPS-Display, and CCD Usage.
+* - Several fixes for working with CPU profiles (reset, export and import).
+* - "T-CONTROL" now includes an API toggle for applying the mask, improving performance in certain games.
+* - Fixed buttons that were intended to open web pages.
+* - Updated presets for diagnostics of certain processors.
+* - DRAM diagnostics: the ODT-search mode now validates AGESA’s automatic values before iterating through hard-coded settings.
+* - Some fixes for HYDRA’s save-location system before shutdown.
+* - A set of fixes enabling HYDRA to safely close itself before an initiated system reboot.
+* - Improved integration with RTSS.
+* - Fixed HYDRA crashes when using an unsupported AMD GPU or one with no installed driver.
+* - Refined the PROFILE CREATION mechanism to generate safe profiles for HYBRID OC or log a notification if something prevents it.
+* - Other minor enhancements and bug fixes.
+* ----------------------------------------
 * HYDRA 1.9F PRO (1905) - what's new?
 * ----------------------------------------
 * - First version on new kernel (.NET Framework 4.8.1 -> .Net 8.0) with updated versions of all nested libraries (for UI too).
