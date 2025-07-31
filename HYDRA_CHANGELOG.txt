@@ -1,4 +1,20 @@
 * ----------------------------------------
+* HYDRA 2.0A PRO (2000) - what's new?
+* ----------------------------------------
+* - Improved "AUTO ODT" for DDR5 diagnostics (auto-tuning).
+* - Updated configuration files for CPU diagnostics responsible for test selection. Zen 4 X3D is still in the process of being updated.
+* - Updated presets for CPU diagnostics, with particular attention to systems with weak cooling (preventing diagnostics from stopping due to high temperature).
+* - Fixed a rare bug causing CPU diagnostics to loop indefinitely.
+* - Fixed a rare bug that made "Phoenix" believe CPU diagnostic files were lost or corrupted.
+* - Improved flexibility of CPU diagnostics: now "CORE HOC CO" and "CCD HOC CO" searches have individual control over maximum allowable temperatures.
+* - Unlocked frequency and voltage limits for "HYBRID OC".
+* - Several algorithm improvements for "HYBRID OC", enhancing stability and performance.
+* - "HYBRID OC" received new settings: "Max CORES for LT profile" and "Extra boost for MT profile" (global settings tab).
+* - Fixed a bug that incorrectly set AMD PBO values in CPU diagnostics when the user used the pause button or system sleep.
+* - Fixed errors and updated configuration settings for "PROFILE CREATION" (CPU diagnostics). In particular, the "GAME" profile is now created correctly.
+* - For easier evaluation of CPU diagnostic test efficiency, introduced encoding for test names. Some additional information has been added to the log.
+* - Fixed an error where HYDRA could report that the processor is not supported and crash—for example, with Ryzen APU G8000 processors.
+* ----------------------------------------
 * HYDRA 1.9G PRO (1906) - what's new?
 * ----------------------------------------
 * - A series of improvements for "HYBRID OC" that significantly enhance stability and performance.
@@ -15,7 +31,7 @@
 * - A set of fixes enabling HYDRA to safely close itself before an initiated system reboot.
 * - Improved integration with RTSS.
 * - Fixed HYDRA crashes when using an unsupported AMD GPU or one with no installed driver.
-* - Refined the PROFILE CREATION mechanism to generate safe profiles for HYBRID OC or log a notification if something prevents it.
+* - Refined the "PROFILE CREATION" mechanism to generate safe profiles for HYBRID OC or log a notification if something prevents it.
 * - Other minor enhancements and bug fixes.
 * ----------------------------------------
 * HYDRA 1.9F PRO (1905) - what's new?
