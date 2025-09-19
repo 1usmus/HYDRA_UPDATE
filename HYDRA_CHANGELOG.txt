@@ -1,4 +1,17 @@
 * ----------------------------------------
+* HYDRA 2.0C PRO (2002) - what's new?
+* ----------------------------------------
+* - New. HYDRA Game Comfort Index (HGCI) in overlay. Logging to a file is also available.
+* - New. RTX-TUNER. Updated UI, extended OC range, new OC features.
+* - Updated. GPU DIAGNOSTIC for NVIDIA has received a number of improvements, bug fixes, and significant speedup of the process.
+* - Updated. PresentMon has been updated to version 2.4.0 beta. Data retrieval time has been reduced, and the accuracy of key metric calculations has been improved.
+* - Updated. RTSS has received color skins and an improved, more comfortable overlay.
+* - Updated. Phoenix mode has become even more reliable, and the OS autoload system has also been improved.
+* - Improved support for Intel and AMD Ryzen APU processors.
+* - Optimization of HYDRA communication with SMU, reduction of processor usage.
+* - Fixed a critical bug where the application could crash after a forced restart of the NVIDIA driver.
+* - A number of minor fixes.
+* ----------------------------------------
 * HYDRA 2.0B PRO (2001) - what's new?
 * ----------------------------------------
 * - Coming soon...
