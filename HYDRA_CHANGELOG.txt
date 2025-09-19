@@ -11,6 +11,7 @@
 * - Optimization of HYDRA communication with SMU, reduction of processor usage.
 * - Fixed a critical bug where the application could crash after a forced restart of the NVIDIA driver.
 * - A protection system has been implemented to prevent attempts to use OC on chipsets where it is blocked.
+* - Fixed a bug causing voltage to stick on RTX 4090 and RTX 5000 graphics cards during diagnostics.
 * - A number of minor fixes.
 * ----------------------------------------
 * HYDRA 2.0B PRO (2001) - what's new?
