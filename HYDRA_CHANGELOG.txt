@@ -1,4 +1,19 @@
 * ----------------------------------------
+* HYDRA 2.0D PRO (2030) - what's new?
+* ----------------------------------------
+* - Improvements to a number of security features; full compatibility with Secure Boot + Core Isolation. Most anti-cheat systems do not react to HYDRA. No impact on performance.
+* - Fixed a bug where the curve for NVIDIA graphics cards was not applied.
+* - Fixed a flickering issue in the Pure test on some systems.
+* - The Elemental test received an exclusive full-screen mode.
+* - Some fixes and stability improvements for NVIDIA GPU DIAGNOSTIC.
+* - Improved reliability of the Phoenix feature.
+* - The comparative testing mode for RTX 5090 and RTX 4090 graphics cards now correctly displays PPT graphs.
+* - Fixed some errors that prevented all resources from being correctly released when closing HYDRA.
+* - Added a system for handling exceptions related to Core Isolation (for future Windows updates and security policy changes).
+* - Added a check for available CPPC tags with an attempt to use an alternative source if some tags are missing.
+* - Temporarily disabled MSR-related features.
+* - Added temporary detailed logging during GPU DIAGNOSTICs.
+* ----------------------------------------
 * HYDRA 2.0C PRO (2002) - what's new?
 * ----------------------------------------
 * - New. HYDRA Game Comfort Index (HGCI) in overlay. Logging to a file is also available.
