@@ -1,4 +1,20 @@
 * ----------------------------------------
+* HYDRA 2.0D PRO (2031) - what's new?
+* ----------------------------------------
+* - Significantly reduced latency when ingesting data from PresentMon.
+* - A large set of fixes and enhancements to Radeon and NVIDIA GPU diagnostics, improving HYDRA process stability and the accuracy of results.
+* - Improved stability of RTX-TUNER features for curve and memory tuning.
+* - Reworked Radeon graphics driver restart mechanism for greater reliability.
+* - HGCI: Improved support for monitors with refresh rates above 240 Hz.
+* - Security updates: Windows Defender is now more tolerant of HYDRA, resulting in fewer false positives.
+* - Improved support for Intel CPUs and AMD Ryzen APUs.
+* - Increased overall stability when interacting with eCLK.
+* - Added detailed logging for cases where HYDRA cannot detect RTSS.
+* - Fixed an issue where Phoenix could terminate within the first few seconds of a diagnostic run following a system reboot.
+* - Improved resource cleanup during emergency/crash shutdowns of HYDRA.
+* - Fixed an issue on GTX-series GPUs where fan speed control affected only one of multiple fans.
+* - Improved CPPC tag reading function, sometimes finds lost tags due to buggy BIOS or AMD chipset driver.
+* ----------------------------------------
 * HYDRA 2.0D PRO (2030) - what's new?
 * ----------------------------------------
 * - Improvements to a number of security features; full compatibility with Secure Boot + Core Isolation. Most anti-cheat systems do not react to HYDRA. No impact on performance.
