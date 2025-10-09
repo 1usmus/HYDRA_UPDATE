@@ -1,4 +1,33 @@
 * ----------------------------------------
+* HYDRA 2.0D PRO (2032) - what's new?
+* ----------------------------------------
+* - Added HOTKEYS:
+* - Ctrl + Alt + F1 = HYBRID OC (ON/OFF)
+* - Ctrl + Alt + F2 = AMD PBO2 (ON/OFF)
+* - Ctrl + Alt + F3 = RTX/RX/GTX-TUNER (ON/OFF)
+* - Ctrl + Alt + F5 = T-CONTROL (ON/OFF)
+* - Ctrl + Alt + F6 = OVERLAY (ON/OFF)
+* - Ctrl + Alt + F7 = HGCI (ON/OFF)
+* - Ctrl + Alt + F8 = HGCI LOGGING (ON/OFF)
+* - Added compatibility with the latest AMD chipset drivers on systems with X3D processors. CPPC is correctly identified.
+* - Fixed a bug that could prevent the application from working correctly with 5800X3D, 7800X3D, and 9800X3D, which physically have 2CCD.
+* - Added support for EPYC processors for the AM5 platform.
+* - If the anti-cheat partially blocks HYDRA, all functions except HYBRID OC, eCLK and CPU monitoring will work.
+* - A number of improvements to T-CONTROL. Simplified UI, new CCD prioritization modes added for "Preserred CCD's for game". New .dll library.
+* - Improved HYDRA stability if the user's motherboard has problems with BCLK/eCLK.
+* - Fixed an error when Vulkan Memtest could not be launched during GPU auto-tuning (diagnostic).
+* - Fixed a few rare bugs that could affect the stability of GPU auto-tuning (diagnostic).
+* - Choosing the HYDRA driver version (global settings tab). The old one will be added for users who need MSR features (MCA/X for CPU auto-tuning (diagnostic) and C6 control).
+* - Several fixes for Curve Editor (RTX/GTX-TUNER).
+* - Fixed a bug where clicking on the core tile in the SQ BENCH tab set the wrong AMD CO.
+* - The game trigger now works correctly with Vulkan and OpenGL applications.
+* - The game trigger now only activates when the game is in full-screen mode. This approach eliminates false positives.
+* - The game trigger now allows a mode where CORE Usage is set to 0. Analysis of whether it is a game is performed only on PresentMon.
+* - The game trigger can now keep game profiles enabled in applications where there is flickering load.
+* - Fixed a rare false throttling trigger during NVIDIA graphics card auto-tuning (diagnostic).
+* - Fixed a bug that prevented T-CONTROL from working after passing some comparison tests from the TESTS tab.
+* - Improvements in the accuracy of PresentMon metrics.
+* ----------------------------------------
 * HYDRA 2.0D PRO (2031) - what's new?
 * ----------------------------------------
 * - Significantly reduced latency when ingesting data from PresentMon.
