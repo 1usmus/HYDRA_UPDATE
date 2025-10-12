@@ -1,4 +1,13 @@
 * ----------------------------------------
+* HYDRA 2.0D PRO (2033) - what's new?
+* ----------------------------------------
+* - NVIDIA Autotuner, added a switch that allows diagnostics to be performed without skipping points with Perf Cap triggering. That is, forced testing of each point on the curve.
+* - Fixed a bug where HYDRA consumes a lot of CPU time.
+* - Maximum antivirus loyality.
+* - eCLK specifically works with fractional numbers on all Windows localizations.
+* - Improved support for multiple Nvidia graphics cards simultaneously.
+* - Improved cleaning of PresentMon sessions.
+* ----------------------------------------
 * HYDRA 2.0D PRO (2032) - what's new?
 * ----------------------------------------
 * - Added HOTKEYS:
