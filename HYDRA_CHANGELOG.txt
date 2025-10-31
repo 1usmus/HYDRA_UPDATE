@@ -1,7 +1,8 @@
 * ----------------------------------------
 * HYDRA 2.0E PRO (2040) - what's new?
 * ----------------------------------------
-* - New CPU diagnostic (auto-tuning) based on SQ AGENT. New presets. Better stability and accuracy. Test selection mode.
+* - New AMD CO diagnostic (auto-tuning) based on SQ AGENT. New presets. Better stability and accuracy. Test selection mode.
+* - SEARCH CORE HOC CO, SEARCH CCD HOC CO, and PROFILE CREATION search algorithms have also been modernized. 
 * - Phoenix/Autoloading has received 3 additional triggers. No gaps in the auto-start process.
 * - Autoloading is programmed only for the user who launched HYDRA.
 * - Minimization/normalization of the HYDRA window by clicking on the icon in the taskbar.
