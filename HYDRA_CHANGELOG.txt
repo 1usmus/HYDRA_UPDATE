@@ -1,4 +1,22 @@
 * ----------------------------------------
+* HYDRA 2.0E PRO (2040) - what's new?
+* ----------------------------------------
+* - New CPU diagnostic (auto-tuning) based on SQ AGENT. New presets. Better stability and accuracy. Test selection mode.
+* - Phoenix/Autoloading has received 3 additional triggers. No gaps in the auto-start process.
+* - Autoloading is programmed only for the user who launched HYDRA.
+* - Minimization/normalization of the HYDRA window by clicking on the icon in the taskbar.
+* - Fixed distortion of the HYDRA window shape if the user forcibly turned off the monitor.
+* - Fixed a rare bug where a closed previous instance of HYDRA might not allow a new instance to be launched.
+* - Users of NVIDIA PRO graphics cards will be able to use most features without restriction (except for GPU/RTX-TUNER auto-overclocking).
+* - Correction of the eCLK description; it is now called BCLK and is supported by any motherboard. Safe range up to 103 MHz.
+* - Reduced CPU usage of HYDRA for cases when anti-cheat blocked some functions.
+* - Windows Defender loyalty has been slightly improved.
+* - Fixed some bugs related to Ycruncher's unpredictable behavior during CPU diagnostics.
+* - Improved mathematics for processor statistics. It has become more accurate.
+* - Performance comparison and single-threaded clock speed measurement functions using Cinebench have received a number of improvements.
+* - The sharpness of a number of UI elements has been improved.
+* - If Vulkan Memtest does not work on your system for some reason, this will not invalidate the GPU auto-tuning results.
+* ----------------------------------------
 * HYDRA 2.0D PRO (2033) - what's new?
 * ----------------------------------------
 * - NVIDIA Autotuner, added a switch that allows diagnostics to be performed without skipping points with Perf Cap triggering. That is, forced testing of each point on the curve.
