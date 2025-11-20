@@ -1,4 +1,16 @@
 * ----------------------------------------
+* HYDRA 2.0E PRO (2041) - what's new?
+* ----------------------------------------
+* - Finelized AMD CO diagnostic (auto-tuning) based on SQ AGENT. Updated test sets. Better stability and accuracy. Choosing test sets for some processors.
+* - Over 20 minor fixes for SEARCH AMD CO, SEARCH CORE HOC CO, SERACH CCD HOC CO and PROFILE CREATION.
+* - Improved stability for HYBRID OC with active MT profile.
+* - Added support for multi-monitors with different orientations.
+* - Added manual verifications for AMD CO, CORE HOC CO and HOC CO. All 3 mechanisms are available on the TESTS tab.
+* - Added monitoring of thread load (T0 and T1) per core. To select monitoring metrics, double-click on the table with processor metrics.
+* - HYDRA uses 2.5 times less RAM.
+* - Improved overall application stability.
+* - Updated some .dll and PresentMon.
+* ----------------------------------------
 * HYDRA 2.0E PRO (2040) - what's new?
 * ----------------------------------------
 * - New AMD CO diagnostic (auto-tuning) based on SQ AGENT. New presets. Better stability and accuracy. Data set selector.
