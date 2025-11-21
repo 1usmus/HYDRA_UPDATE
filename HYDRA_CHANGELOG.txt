@@ -1,4 +1,8 @@
 * ----------------------------------------
+* HYDRA 2.0E PRO (2042) - what's new?
+* ----------------------------------------
+* - Fixed a bug that could affect the order of CPU diagnostics stages.
+* ----------------------------------------
 * HYDRA 2.0E PRO (2041) - what's new?
 * ----------------------------------------
 * - Finalized AMD CO diagnostic (auto-tuning) based on SQ AGENT. Updated test sets. Better stability and accuracy. Choosing test sets for some processors.
