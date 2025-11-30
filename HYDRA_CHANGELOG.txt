@@ -1,4 +1,13 @@
 * ----------------------------------------
+* HYDRA 2.1A PRO (2100) - what's new?
+* ----------------------------------------
+* - Updated SQ Agent, version 1.1. Improved accuracy, new features, metrics, and bug fixes.
+* - New!!! DRAM LAB REPORT 1.0 (TETST tab -> DRAM BENCH btn) - your personal engineering tool that will allow you to configure DRAM as efficiently as possible. Presentation coming soon.
+* - Fixed bugs related to Ycruncher refusing to start. Affects all modules.
+* - CPU DIAGNOSTIC - a series of improvements and fixes.
+* - Updated window with log. Allows for more accurate structuring of information.
+* - Fixed some bugs for DRAM DIAGNOSTIC.
+* ----------------------------------------
 * HYDRA 2.0E PRO (2042) - what's new?
 * ----------------------------------------
 * - Fixed a bug that could affect the order of CPU diagnostics stages.
