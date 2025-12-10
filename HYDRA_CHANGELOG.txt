@@ -1,4 +1,8 @@
 * ----------------------------------------
+* HYDRA 2.1A PRO (2101) - what's new?
+* ----------------------------------------
+* - DRAM LAB 1.1 (better accuracy, new metrics and control elements) + big tutorial.
+* ----------------------------------------
 * HYDRA 2.1A PRO (2100) - what's new?
 * ----------------------------------------
 * - Updated SQ Agent, version 1.1. Improved accuracy, new features, metrics, and bug fixes.
