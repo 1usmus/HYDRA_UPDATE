@@ -1,4 +1,15 @@
 * ----------------------------------------
+* HYDRA 2.1A PRO (2102) - what's new?
+* ----------------------------------------
+* - Improvements to DRAM diagnostics stability, in particular fixing causes of looping, ignoring settings, and support for new AGESA.
+* - Added reading and logging of EXPO/XMP profiles for Ryzen processors (temporary only for DDR5). You can find the “READ SPD” button on the DCFR tab.
+* - Fixed a bug that prevented users of processors with a single CCD from trying DRAM LAB.
+* - Minor RTSS stability fixes.
+* - Major stability update for RX-TUNER and RTX-TUNER.
+* - Support for simultaneous use of different generations of Radeon in RX-TUNER.
+* - The PowerPlay table modification works correctly for the RX 6500 - RX 6950 generation of graphics cards (experimental update.).
+* - Other improvements to the stability and performance of HYDRA modules. Updated dll's.
+* ----------------------------------------
 * HYDRA 2.1A PRO (2101) - what's new?
 * ----------------------------------------
 * - DRAM LAB 1.1 (better accuracy, new metrics and control elements) + big tutorial.
