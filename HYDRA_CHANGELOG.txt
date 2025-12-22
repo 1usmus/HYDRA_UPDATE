@@ -1,4 +1,13 @@
 * ----------------------------------------
+* HYDRA 2.1A PRO (2103) - what's new?
+* ----------------------------------------
+* - Improved stability of Phoeinix mode for video card diagnostics (auto-tuning).
+* - Improved logging for some modules.
+* - Added some tolerance when working with Ryzen SMU for cluttered systems.
+* - Added experimental support for 5800X3D, 7800X3D, and 9800X3D, which actually have 2 CCDs.
+* - Fixed a bug that prevented the video card performance comparison test between standard and tuned states from running.
+* - The APP PACK selection window has been redesigned.
+* ----------------------------------------
 * HYDRA 2.1A PRO (2102) - what's new?
 * ----------------------------------------
 * - Improvements to DRAM diagnostics stability, in particular fixing causes of looping, ignoring settings, and support for new AGESA.
