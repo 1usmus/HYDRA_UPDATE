@@ -4,6 +4,7 @@
 * - Over 40 minor fixes to improve application stability and performance.
 * - T-CONTROL improvements, new automatic feature - pushing third-party processes to the second CCD during gameplay (available only for Ryzen 9 users).
 * - T-CONTROL has been given process control bar status. 0 - everything is fine.
+* - Simplified T-CONTROL interface for greater user comfort.
 * - DDR5 diagnostics, updated ProcODT and RTT search phase. It has tremendous flexibility in terms of user configuration.
 * - DDR5 diagnostics, "Motherboard" - a new control element that allows you to select the motherboard class. The accuracy of the results depends on the choice.
 * - During GPU diagnostics, the artificial delay has been removed to allow the chip to cool down. For some, this micro-phase could have lasted forever.
