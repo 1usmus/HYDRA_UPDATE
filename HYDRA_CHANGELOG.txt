@@ -8,6 +8,7 @@
 * - DDR5 diagnostics, updated ProcODT and RTT search phase. It has tremendous flexibility in terms of user configuration.
 * - DDR5 diagnostics, "Motherboard" - a new control element that allows you to select the motherboard class. The accuracy of the results depends on the choice.
 * - During GPU diagnostics, the artificial delay has been removed to allow the chip to cool down. For some, this micro-phase could have lasted forever.
+* - Improved stability when working with RTSS.
 * ----------------------------------------
 * HYDRA 2.1A PRO (2103) - what's new?
 * ----------------------------------------
