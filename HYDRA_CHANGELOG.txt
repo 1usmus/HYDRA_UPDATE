@@ -1,5 +1,5 @@
 * ----------------------------------------
-* HYDRA 2.1A PRO (2103) - what's new?
+* HYDRA 2.1A PRO (2104) - what's new?
 * ----------------------------------------
 * - Over 40 minor fixes to improve application stability and performance.
 * - T-CONTROL improvements, new automatic feature - pushing third-party processes to the second CCD during gameplay (available only for Ryzen 9 users).
