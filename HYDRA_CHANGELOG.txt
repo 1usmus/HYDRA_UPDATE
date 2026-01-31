@@ -1,4 +1,14 @@
 * ----------------------------------------
+* HYDRA 2.1B PRO (2110) - what's new?
+* ----------------------------------------
+* - Fixed a critical bug in “CHECK MY MEM”.
+* - Updated T-CONTROL. More gaming smoothness compared to the default Windows state.
+* - Updated APPE. 4 new settings, simplified interface, added hot reboot of the HYDRA power plan for instant acceptance of settings. 
+* - In games, RTSS now displays additional information about which API is used by the game, as well as information about the two top game threads.
+* - The game trigger now has memory during the session. This means that the “game running” state becomes more permanent, even if the render freezes.
+* - PresentMon has been updated to version 2.4.1.
+* - Other minor bug fixes.
+* ----------------------------------------
 * HYDRA 2.1A PRO (2104) - what's new?
 * ----------------------------------------
 * - Over 40 minor fixes to improve application stability and performance.
