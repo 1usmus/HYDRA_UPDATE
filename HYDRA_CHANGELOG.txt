@@ -1,4 +1,22 @@
 * ----------------------------------------
+* HYDRA 2.1C PRO (2120) - what's new?
+* ----------------------------------------
+* - T-CONTROL. New low-level API for controlling game threads, impacting gameplay quality and stability.
+* - T-CONTROL. Added the ability to manage the interrupt-affinity policy for GPU, xHCI, and Audio. Impacts gameplay quality and low-thread performance. On - better.
+* - T-CONTROL. Added the ability to control Windows Game Mode and all its underlying features with a single toggle. Off - better.
+* - T-CONTROL. Special focus on X3D processors with dual CCDs; fixed incorrect load distribution (parallelization) between the CCDs.
+* - The game detector has become even more reliable and less susceptible to game freezes. Affects HYBRID OC, RTSS, and T-CONTROL.
+* - RTSS. Added the display of supplementary useful T-CONTROL information regarding managed game threads and their load relative to overall CPU usage.
+* - RTSS. Added the PMU module (a unique feature) with the following metrics: User IPC, L3 Hit %, DRAM Latency, and Branch Mispred. Available for Win 10 without VBS. Works in real-time, supports customization.
+* - RTSS. Added a DRAM information block: MCLK, UCLK, FCLK, module temperatures, and bandwidth. Works in real-time, supports customization.
+* - RTSS. Fixed the formatting and positioning of certain elements.
+* - RTSS. Added a Frame-time graph. Works in real-time, supports customization.
+* - DCFR. Added information about the currently active RFC mode. DDR5 only.
+* - The monitoring response rate for certain devices has been increased by 2x, which improves the decision-making speed of T-CONTROL and HYBRID OC, for example.
+* - Added an information display for the current AGESA version.
+* - Due to Windows 11 security requirements, the development and integration of an additional secure driver for CPU operations have begun.
+* - Other minor fixes.
+* ----------------------------------------
 * HYDRA 2.1B PRO (2110) - what's new?
 * ----------------------------------------
 * - Fixed a critical bug in “CHECK MY MEM”.
