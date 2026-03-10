@@ -16,13 +16,13 @@
 * - DDR5 Diagnostic Center. Various preset adjustments.
 * - GPU Diagnostics. Fixed a bug on RX 9000 series where an incorrect value was written to RX-TUNER after running diagnostics.
 * - GPU Diagnostics. Integrated a new crash detector with zero false positives on instability detection.
-* - GPU Diagnostics. Improved automatic fan suppression system for NVIDIA.
+* - GPU Diagnostics. Improved automatic fan suppression system for NVIDIA (safe technology for creating greater load).
 * - DCFR. Fixed monitoring of certain DDR5 parameters, support for latest AGESA versions only.
 * - DCFR. Improved parameter management system for Zen 5.
 * - DCFR. Fixed an issue where READ SPD could be read incompletely or only for a single module.
 * - RTX-TUNER and RX-TUNER. Automatic reactivation of profiles after driver failure. For Radeon, there is also an assistant available that will help you solve the cause of the crash.
 * - UI. Fixed log box rendering when a GPU driver crash occurred.
-* - Updated HCI to version 7.0 and reworked the pipeline for working with it (i.e. fixed test start issues).
+* - Updated HCI to version 7.0 (memtest) and reworked the pipeline for working with it (i.e. fixed test start issues).
 * - Improved support for various Windows localizations in a number of functions.
 * ----------------------------------------
 * HYDRA 2.1C PRO (2120) - what's new?
