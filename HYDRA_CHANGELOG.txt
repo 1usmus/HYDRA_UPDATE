@@ -1,4 +1,12 @@
 * ----------------------------------------
+* HYDRA 2.2A PRO (2201) - what's new?
+* ----------------------------------------
+* - Improved stability of DIMM monitoring.
+* - Further improvements to the Phoenix recovery logic during CPU diagnostics. Greater reliability; hopefully there is now zero chance of an infinite loop.
+* - A number of fixes that did not affect the app’s stability but were likely to generate a lot of error messages in the log.
+* - CPU diagnostics. The ECLK/BCLK values might lose the decimal point in certain localizations; this has been fixed.
+* - Corrections to some descriptions.
+* ----------------------------------------
 * HYDRA 2.2A PRO (2200) - what's new?
 * ----------------------------------------
 * - New!!! Vanta — built-in VRAM stress test powered by a custom DX12 compute shader engine, replacing the external Vulkan Memtest.
