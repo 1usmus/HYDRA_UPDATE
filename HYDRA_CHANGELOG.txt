@@ -1,4 +1,11 @@
 * ----------------------------------------
+* HYDRA 2.2B PRO (2202) - what's new?
+* ----------------------------------------
+* - New!!! Anvil — built-in DRAM stress test. First alpha version. Optimised for modern Ryzen processors and the latest memory types. 
+* - Anvil. There are currently 4 patterns available, along with a number of key settings. Please note that the mouse jitter during testing is a feature, not a bug. In my estimation, only 25% of the strategies and patterns have been implemented.
+* - Vanta 0.9b. Simplified interface, grouping of patterns by memory type, and updated patterns for GDDR6. This could be described as the second alpha version. 
+* - Other minor fixes.
+* ----------------------------------------
 * HYDRA 2.2A PRO (2201) - what's new?
 * ----------------------------------------
 * - Improved stability of DIMM monitoring.
