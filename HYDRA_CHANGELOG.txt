@@ -1,4 +1,26 @@
 * ----------------------------------------
+* HYDRA 2.2C PRO (2203) - what's new?
+* ----------------------------------------
+* - New!!! HYDRA Health — a new page for quickly checking the state of HYDRA's core modules. It shows latency, error count and quality for low-level sensors, overlay, GPU/CPU monitoring and helper services.
+* - Anvil. The built-in DRAM stress test has received a major update. A new native engine, extended Typical / Detailed / Custom presets, and flexible controls for duration, cycles, working set and stop conditions have been added.
+* - Anvil. New DDR-focused test scenarios have been added for modern Ryzen systems. Internal pattern details are not disclosed, but coverage is much wider than in the first alpha version.
+* - Anvil. Custom preset now lets you build your own test set, enable the required pattern groups and set repeat counts.
+* - Anvil. Added stop after a selected number of unique DRAM errors, sound alerts for new errors, improved progress and a more readable final report.
+* - Anvil. The diagnostic summary after each run is more useful: HYDRA now reports error repeatability, early localization hints, DIMM thermal state and DRAM voltage behavior without exposing sensitive internal maps.
+* - Anvil. Added helper game-like load and OS-trigger modes for scenarios where memory stability needs to be checked closer to a real gaming workload.
+* - Vanta. The VRAM stress scheduler, Custom preset handling and error accounting have been improved. The test now separates errors between sub-patterns more accurately and does not lose fast error events.
+* - Vanta. Added stop after a selected number of unique VRAM errors, sound alerts for new errors and a clearer final summary.
+* - Vanta. Improved VRAM overheat control, GPU driver crash detection, warm-up phase and VRAM working-set calculation. Testing all available adapters is now more reliable.
+* - Monitoring. Ryzen PMU monitoring has been substantially reworked to reduce dependence on the previous external telemetry path, improve stability and make the RTSS overlay more responsive.
+* - RTSS. The PMU overlay now shows per-CCD metrics, L3 behavior and branch-miss information more reliably on supported Ryzen processors. The DRAM overlay has cleaner output for module temperature, power and voltage.
+* - Radeon / ADLX. ADLX has been updated to a newer base. Factory-default readback, reset-to-factory, ADLX lifecycle handling and RX-TUNER / GPU monitoring stability have been improved.
+* - Curve Shaper. Live read/apply mode has been added for supported Zen 5 systems. On other platforms HYDRA continues to use the compatible path.
+* - Low-level CPU access has been reworked for better compatibility with modern Windows security settings and fewer conflicts with drivers and protection mechanisms.
+* - PresentMon and RTSS received better health tracking, more stable session cleanup and fewer chances to leave HYDRA in an incorrect state after a game, driver or test failure.
+* - DRAM SPD / PMIC / DIMM monitoring has been improved for DDR4 and DDR5, including more stable module reads and better display of temperatures, voltages and power.
+* - The Anvil, Vanta, monitoring and main-window UI received many small fixes. A number of localization, formatting and stability issues have also been fixed.
+* - Other minor fixes.
+* ----------------------------------------
 * HYDRA 2.2B PRO (2202) - what's new?
 * ----------------------------------------
 * - New!!! Anvil — built-in DRAM stress test. First alpha version. Optimised for modern Ryzen processors and the latest memory types. 
