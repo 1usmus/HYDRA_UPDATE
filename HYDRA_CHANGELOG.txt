@@ -2,7 +2,6 @@
 * HYDRA 2.2E PRO (2205) - what's new?
 * ----------------------------------------
 * - Fix. Stabilized Update Center JSON parsing under obfuscation so public manifest, latest build metadata, local license store, and changelog remain readable after update.
-* - Fix. HYDRA assembly version is now aligned with the 2.2.0.6 update build so CURRENT BUILD advances to 2206 after installation.
 * - New. A great feature for professionals. Added HYDRA telemetry Shared Memory and local control pipe for external monitoring, automation, PMU mode switching, and telemetry-driven CSV logging.
 * - New. Added HYDRA authorization and Update Center with Patreon/code activation, offline entitlement tickets, protected update metadata, SHA256 package verification, and gated downloads.
 * - New. PresentMon 2.5.1 integration.
