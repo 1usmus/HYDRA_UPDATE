@@ -1,4 +1,23 @@
 * ----------------------------------------
+* HYDRA 2.2E PRO (2205) - what's new?
+* ----------------------------------------
+* - Fix. Stabilized Update Center JSON parsing under obfuscation so public manifest, latest build metadata, local license store, and changelog remain readable after update.
+* - Fix. HYDRA assembly version is now aligned with the 2.2.0.6 update build so CURRENT BUILD advances to 2206 after installation.
+* - New. A great feature for professionals. Added HYDRA telemetry Shared Memory and local control pipe for external monitoring, automation, PMU mode switching, and telemetry-driven CSV logging.
+* - New. Added HYDRA authorization and Update Center with Patreon/code activation, offline entitlement tickets, protected update metadata, SHA256 package verification, and gated downloads.
+* - New. PresentMon 2.5.1 integration.
+* - Anvil. Updating modulo-patterns.
+* - APPE. Added locale-independent Windows Power Plan control through direct Windows power APIs.
+* - UI. Globally reworked the UI across diagnostics, monitoring, profiles, update flow, Radeon/NVIDIA tuning, DRAM Bench, SQ Agent, Vanta, and main HYDRA surfaces.
+* - Monitoring. Improved monitoring with compact CPU/GPU/MEMORY sensor groups, PMU metrics, L3/DRAM latency visibility, DRAM PMIC/SPD freshness tracking, and HGCI display refresh-rate detection.
+* - Tooltips. Significantly expanded and improved tooltips, including tuning controls, diagnostics, metric tables, benchmark charts, DRAM Bench, SQ Agent, T-CONTROL, and GPU/CPU profile flows.
+* - Localization. Technical numeric parsing and formatting now use culture-invariant paths while keeping local date/time display.
+* - Monitoring. Added monitoring safety features: hardware-access conflict detection, safer SMBus/EC/PCI/SMU synchronization, abandoned lock recovery, protected low-level access paths, and more reliable startup/shutdown handling.
+* - Diagnostics. Improved NVIDIA and Radeon diagnostics with safer GPU recovery, Vanta VRAM handling, NVIDIA FAN Soak mode, RX 6000 PowerPlay/VBIOS reading.
+* - Diagnostics. Removed legacy Easy Mode and routed CPU, NVIDIA and Radeon diagnostics through the advanced dialogs.
+* - Benchmarks. Improved CPU/GPU/DRAM benchmark reporting with safer result handling, dynamic charts, better comparison views, and more reliable profile state handling.
+* - Fixes. Includes 100+ fixes and stability improvements across UI, diagnostics, monitoring, profiles, benchmarks, telemetry, hardware access, and recovery flows.
+* ----------------------------------------
 * HYDRA 2.2C PRO (2203) - what's new?
 * ----------------------------------------
 * - New!!! HYDRA Health — a new page for quickly checking the state of HYDRA's core modules. It shows latency, error count and quality for low-level sensors, overlay, GPU/CPU monitoring and helper services.
