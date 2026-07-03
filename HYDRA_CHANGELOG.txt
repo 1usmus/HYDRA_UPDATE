@@ -11,7 +11,8 @@
 - Update Center. HYDRA now loads the full accumulated changelog history from the update service and formats multiple build sections in the Update Center.
 - Updates. Improved update package and integrity handling so user INI files, logs, cache files, and runtime folders are not included in protected update payloads or overwritten by the updater.
 - Startup. Improved background autostart and Phoenix recovery behavior so scheduled startup does not bring HYDRA to the foreground when another instance is already running.
-- Fixes. Improved Windows version detection, activation error messages, Radeon default frequency checks, and compatibility with BIOS/AGESA versions that do not expose every ACPI command.
+- Compatibility. Improved support for BIOS/AGESA versions that do not expose every optional ACPI command. HYDRA now skips unavailable commands instead of stopping diagnostics or tuning workflows.
+- Radeon. Fixed RX 9000 tuning reset compatibility when ADLX does not expose a separate minimum core frequency control. Solving the problem of diagnostic stalling.
 * ----------------------------------------
 * HYDRA 2.2E PRO (2205) - what's new?
 * ----------------------------------------
