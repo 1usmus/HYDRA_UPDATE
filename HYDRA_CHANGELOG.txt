@@ -1,4 +1,18 @@
 * ----------------------------------------
+* HYDRA 2.2E PRO (2207) - what's new?
+* ----------------------------------------
+- New. Added SPD Viewer for decoded DDR4/DDR5 module information, including manufacturer, part number, topology, JEDEC baseline, XMP/EXPO profiles, and raw SPD report data.
+- New. Added background SPD cache so HYDRA can safely reuse one SPD read for SPD Viewer, DRAM diagnostics, ANVIL, and memory snapshots without repeated SMBus access.
+- DRAM. Improved DDR5 diagnostic safety checks. HYDRA now validates memory speed, CAS latency, VDD, and VDDQ against the module SPD JEDEC baseline before starting the diagnostic.
+- DRAM. Improved DDR4 diagnostic pre-check logging with exact FCLK, SOC voltage, and DRAM voltage reasons when a run is blocked.
+- Anvil. ANVIL now waits for ready SPD data before starting and stores SPD sidecar data in the dedicated SPD folder.
+- Monitoring. Improved RTSS overlay stability with automatic recovery, safer OSD slot handling, PresentMon frametime fallback, and warnings for outdated RTSS versions.
+- Monitoring. Direct L3 PMU monitoring is now disabled on Windows 11 or newer to avoid known platform instability. HYDRA can also recover from L3 counter ownership changes during runtime.
+- Update Center. HYDRA now loads the full accumulated changelog history from the update service and formats multiple build sections in the Update Center.
+- Updates. Improved update package and integrity handling so user INI files, logs, cache files, and runtime folders are not included in protected update payloads or overwritten by the updater.
+- Startup. Improved background autostart and Phoenix recovery behavior so scheduled startup does not bring HYDRA to the foreground when another instance is already running.
+- Fixes. Improved Windows version detection, activation error messages, Radeon default frequency checks, and compatibility with BIOS/AGESA versions that do not expose every ACPI command.
+* ----------------------------------------
 * HYDRA 2.2E PRO (2205) - what's new?
 * ----------------------------------------
 * - New. A great feature for professionals. Added HYDRA telemetry Shared Memory and local control pipe for external monitoring, automation, PMU mode switching, and telemetry-driven CSV logging.
