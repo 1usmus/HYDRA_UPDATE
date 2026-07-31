@@ -1,4 +1,56 @@
 * ----------------------------------------
+* HYDRA 2.3A PRO (2200) - what's new?
+* --------------------------------------
+* - HYBRID OC. Reworked runtime decisions around actual observed workload, with more accurate LT/MT selection, preferred-core handling, smoother group transitions, and complete per-core/CCD target plans.
+* - HYBRID OC. Applied state is now committed only after the complete hardware operation succeeds. Reset, diagnostic pause/resume, recovery, BCLK, and ECLK handling were improved.
+* - PBO2. Improved access validation and automatic startup. Failed application no longer leaves an enabled state saved in the configuration.
+* - CPU Diagnostics. Improved complete per-core/CCD plan preservation and restoration during diagnostic pause, resume, and recovery.
+* - CPU Monitoring. Improved preferred-core fallback through Windows CPU Sets when direct CPPC data is unavailable or incomplete, providing more reliable core ranking on affected systems.
+* - SPD. Refined enabled DDR5 XMP/EXPO profile decoding, including EXPO revisions, timing quantization, CRC validation, and selection of the closest profile for the target data rate.
+* - DDR5 Diagnostics. Added a new Safe/Fast/Extreme timing model. Starting CL/RCD/RP values and automatic-tuning limits are calculated from the DRAM IC, MT/s, VDD, and a validated EXPO/XMP profile.
+* - DDR5 Diagnostics. Added automatic DRAM IC detection from cached SPD data. Ambiguous or insufficiently validated ICs use the conservative Safe mode while keeping all timings manually editable.
+* - DDR5 Diagnostics. Added a clear startup preflight for JEDEC-default settings, AWE readiness, and Memory Context Restore. The test is blocked with an exact reason until mandatory requirements are satisfied.
+* - DDR5 Diagnostics. Automatic CL/RCD/RP tuning can no longer cross the calculated timing guard of the selected preset.
+* - DRAM Monitoring. Added per-DIMM temperature, DDR5 PMIC voltage, power, thermal state, and sample-freshness telemetry.
+* - Anvil. Improved presets, custom schedules, parameter validation, memory/runtime estimates, physical-memory distribution, pattern execution, duplicate error filtering, and candidate DDR5 error localization.
+* - DRAM Bench. Added two-report comparison, interactive latency charts, exact-value tooltips, and clearer benchmark result presentation.
+* - SQ Agent. Fixed physical-to-logical core mapping when applying CO recommendations and improved result-view clarity.
+* - GPU Runtime. Reworked exact physical GPU identification across Windows and vendor APIs, improving multi-GPU profiles, diagnostics, and rebinding after driver restart.
+* - GPU Diagnostics. Elemental now adapts its workload to the GPU class, monitor mode, resolution, and aspect ratio of each system. The obsolete Elemental2 package dependency was removed.
+* - GPU Diagnostics. Electric Dreams verification is used only for eligible supported desktop GPUs and is validated against the exact selected adapter.
+* - NVIDIA Diagnostics. Added Initial Load Fit. HYDRA now uses the voltage range reached during the first full workload and skips V/F points that the workload does not use.
+* - NVIDIA Diagnostics. Cold reference V/F capture is less sensitive to brief background activity and now uses a bounded collection window.
+* - GPU Diagnostics. Reduced false positives caused by short telemetry gaps, workload shutdown, cleanup failures, and infrastructure problems. Valid results are preserved independently from cleanup status.
+* - GPU Diagnostic Log. Reworked the log into a compact structured format for stages, workloads, results, TDR events, AMD settings, and NVIDIA V/F points.
+* - GPU Recovery. Improved Windows Explorer, taskbar, and shell recovery after a confirmed display-driver reset, including waiting for GPU monitoring to return.
+* - RTX-TUNER. Added Curve Guard, an optional per-GPU protection against upward NVIDIA base V/F curve drift. It works across all profiles without changing saved offsets and never raises the applied curve.
+* - RTX-TUNER. Improved profile storage using stable physical GPU identity, data validation, and recovery after unsuccessful application or driver restart.
+* - Curve Editor. Completely updated the UI with direct point selection, protected and plateau zones, requested versus driver-accepted values, Undo/Redo, and Curve Builder.
+* - Curve Editor. Added safe preview and restoration, reference/default curve capture, and a V/F residency view with the current GPU operating point.
+* - NVIDIA Monitoring. Added a low-overhead WDDM path for temperature, clocks, and voltage. NVAPI is queried only for missing metric groups, reducing polling overhead and allocations.
+* - GPU Monitoring. Optimized exact-adapter and per-process WDDM GPU usage sampling, including multi-GPU systems.
+* - NVIDIA Monitoring. Expanded Ada/Blackwell GPU and memory temperature details, power-rail telemetry, and Additional Monitor data. Professional adapters remain read-only.
+* - NVIDIA Protection. Added optional 12VHPWR/12V-2x6 power telemetry warnings for supported hardware.
+* - RX-TUNER. Reworked RX 6000 Soft Power Table handling around a direct, verified read of the selected GPU's factory table from VBIOS. An external VBIOS reading utility is no longer required.
+* - RX-TUNER. Improved per-GPU SPT editing, application, reset, profile restoration, multi-GPU handling, and exact adapter driver restart. Tuning remains unavailable without a verified factory table.
+* - RX-TUNER. Corrected RX 9000 frequency semantics and prevented accidental tuning changes while scrolling with the mouse wheel.
+* - Vanta. Improved presets, custom schedules, validation, VRAM/runtime estimates, temperature/ECC checks, driver-crash recovery, and separation of infrastructure failures from actual VRAM instability.
+* - HGCI. Added manual game-session capture with a timeline, FPS, 1% Low, latency, hitches, GPU telemetry, and a final assessment.
+* - PresentMon. Optimized frame processing for the exact PID, dominant swapchain, and actual display/VRR mode, reducing allocations and long-session overhead.
+* - RTSS. Reworked integration with version validation, safer OSD updates, automatic recovery, and an embedded frametime graph.
+* - APPE. Improved transactional Windows power-plan application, value validation, readback, rollback, and coordination with T-CONTROL while preserving third-party plans.
+* - Phoenix. Added versioned GPU checkpoints and more reliable background startup with duplicate-process protection and failed-startup recovery.
+* - UI. Added a unified tooltip system across all forms with seven supported languages and live language switching. New DDR5 presets and preflight states include localized explanations.
+* - Performance. Consolidated shared UI resources, removed unnecessary forced GC pauses, optimized the main runtime loop, and improved background-thread distribution across CCDs.
+* - System Performance. Improved Windows 11 timer-resolution handling and added debounced working-set trimming during minimize and page transitions to reduce latency jitter and unnecessary memory overhead.
+* - Telemetry. Improved RAM-buffered CSV logging with stable sensor columns, automatic saving at the buffer limit, and fewer allocations.
+* - Authorization. Access is now validated for the specific PRO feature immediately before it starts. Improved signed offline access and separation of authorization denial from temporary server availability problems.
+* - Authorization. Improved concurrent device activation/reactivation, synchronization of the local license state, and serialization of simultaneous update checks.
+* - Updates. Update packages now require valid SHA256 metadata and a digital signature. The updater and its runtime copies are verified against a signed integrity manifest.
+* - Updates. Strengthened protected staging, backup, and rollback. Automatic HYDRA restart is blocked if a failed update cannot restore every changed file.
+* - Security. Critical system libraries are loaded only from trusted Windows locations. Hardware-access conflict detection and legacy-driver policy diagnostics were also improved.
+* - Fixes. Includes more than 100 fixes and improvements across tuning, diagnostics, monitoring, profiles, benchmarks, UI, performance, authorization, update security, and recovery.
+* ----------------------------------------
 * HYDRA 2.2E PRO (2207) - what's new?
 * ----------------------------------------
 - New. Added SPD Viewer for decoded DDR4/DDR5 module information, including manufacturer, part number, topology, JEDEC baseline, XMP/EXPO profiles, and raw SPD report data.
