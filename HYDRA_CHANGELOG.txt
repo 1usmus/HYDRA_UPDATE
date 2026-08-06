@@ -1,15 +1,35 @@
 * ----------------------------------------
+* HYDRA 2.3A PRO (2302) - what's new?
+* ----------------------------------------
+* - GPU Platform. Introduced a multi-GPU-aware runtime with stable physical adapter identification, reliable primary-GPU selection, and safe rebinding after driver or vendor API restarts.
+* - GPU Profiles. NVIDIA and Radeon profiles are now stored per physical GPU, preventing settings from being applied to the wrong adapter after device reordering.
+* - NVIDIA Control. Strengthened VF curve protection with live snapshots, topology and readback validation, voltage-lock checks, safer rollback, and clearer NVAPI failure reporting.
+* - NVIDIA Telemetry. Reworked the fast WDDM telemetry path with exact adapter targeting, lower sampling overhead, capability detection, and automatic recovery after a display-driver restart.
+* - Radeon Diagnostics. Added a clean factory-state preparation step, stricter adapter validation, and more reliable recovery when switching between Elemental and fallback workloads.
+* - Vanta. Added stable GPU selection for multi-GPU systems, per-adapter ECC tracking, clearer worker failures, and safer workload startup.
+* - Vanta Memory Management. Working-set calculations now consider both available VRAM and Windows commit headroom, with live recalculation before every workload start.
+* - Anvil. The workload now waits until the optional Vanta GameSim component has completed its resident VRAM allocation.
+* - Anvil Memory Allocation. Partial Windows AWE allocations are now accepted and used instead of aborting the test when the full requested page count is unavailable.
+* - GPU Diagnostics. Replaced process-bound GPU-load detection with verified vendor telemetry, improving workload detection when launchers or helper processes are involved.
+* - APP PACK. Completely reworked component discovery and validation, including nested folders, duplicate detection, complete y-cruncher sets, Electric Dreams package validation, and clearer configuration errors.
+* - DDR5 Diagnostics. Added precise DRAM die revision detection from SPD data, including Hynix, Samsung, and Micron revisions, instead of relying on ambiguous defaults.
+* - Patreon Authorization. Improved version-aware entitlement handling, device authorization reliability, token renewal, and controlled offline fallback during temporary service outages.
+* - Component Integrity. Strengthened authorization and lifecycle control for native workload components, added consistent version metadata, and verified package version consistency before startup.
+* - Persistent Data. Improved the reliability of SPD cache, telemetry, and recovery data in protected and obfuscated release builds.
+* - Shared Memory Telemetry. Stabilized the external JSON schema and added the running HYDRA version to control-status responses.
+* - Windows Security. Fewer false alarms.
+* ----------------------------------------
 * HYDRA 2.3A PRO (2301) - what's new?
-* --------------------------------------
-- GPU Detection. Improved DXGI adapter filtering to exclude software, indirect-display, and other non-render devices, preventing invalid GPU selection.
-- Electric Bloom. Updated the supported GPU list by removing GeForce RTX 3090.
-- Anvil / Vanta. Anvil now waits for Vanta resident-VRAM initialization before proceeding, preventing the workload from starting prematurely.
-- Anvil. Improved Windows AWE allocation handling. HYDRA can now safely continue with the number of memory pages actually granted when the full request is unavailable.
-- DDR5 Diagnostics. Added the missing default diagnostic preset and improved INI parsing errors with clearer information about invalid settings.
-- Compatibility / Security. Removed the obsolete Super Administrator and VBS controls and their dependency. Added targeted Microsoft Defender exclusions for the HYDRA and updater working directories.
+* ----------------------------------------
+* - GPU Detection. Improved DXGI adapter filtering to exclude software, indirect-display, and other non-render devices, preventing invalid GPU selection.
+* - Electric Bloom. Updated the supported GPU list by removing GeForce RTX 3090.
+* - Anvil / Vanta. Anvil now waits for Vanta resident-VRAM initialization before proceeding, preventing the workload from starting prematurely.
+* - Anvil. Improved Windows AWE allocation handling. HYDRA can now safely continue with the number of memory pages actually granted when the full request is unavailable.
+* - DDR5 Diagnostics. Added the missing default diagnostic preset and improved INI parsing errors with clearer information about invalid settings.
+* - Compatibility / Security. Removed the obsolete Super Administrator and VBS controls and their dependency. Added targeted Microsoft Defender exclusions for the HYDRA and updater working directories.
 * ----------------------------------------
 * HYDRA 2.3A PRO (2300) - what's new?
-* --------------------------------------
+* ----------------------------------------
 * - HYBRID OC. Reworked runtime decisions around actual observed workload, with more accurate LT/MT selection, preferred-core handling, smoother group transitions, and complete per-core/CCD target plans.
 * - HYBRID OC. Applied state is now committed only after the complete hardware operation succeeds. Reset, diagnostic pause/resume, recovery, BCLK, and ECLK handling were improved.
 * - PBO2. Improved access validation and automatic startup. Failed application no longer leaves an enabled state saved in the configuration.
