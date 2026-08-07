@@ -1,4 +1,16 @@
 * ----------------------------------------
+* HYDRA 2.3A PRO (2303) - what's new?
+* ----------------------------------------
+* - Profile Storage. Replaced legacy INI persistence for CPU, NVIDIA, and Radeon profiles with strict versioned JSON contracts using stable field names, atomic writes, and complete validation before any data is applied.
+* - Profile Safety. CPU profiles now require the exact current topology, GPU profiles require the exact physical adapter catalog, and recovery from main or backup files occurs only after the complete document passes validation.
+* - Profile Compatibility. Legacy CPU/GPU INI profiles and T-CONTROL Version 1-4 migrations are no longer imported. Profiles created by older builds must be recreated in build 2303.
+* - NVIDIA Diagnostics. PerfCap is now informational telemetry only and no longer skips V/F points, stops the offset search, or cuts the final curve. The final curve is based on Initial Load Fit and measured stability coverage, and the obsolete Perf Cap toggle was removed.
+* - Electric Dreams. Added a startup grace period before heartbeat-stall detection, reducing false failures while the workload is still initializing and improving shared NVIDIA/Radeon verification reliability.
+* - DRAM Bench. Rebalanced the latency curve with workload-scaled repeat counts and finer cache-region sampling, reduced the raw distribution sample budget, and compacted the comparison table while preserving R/W Turnaround results and safe percentage highlighting.
+* - Patreon Authorization. Device-protocol-v2 builds above the legacy published-version cap can now authorize after a valid device proof, with the entitlement bound to the declared version. Former Patreon members can enroll newer v2 builds without receiving update access.
+* - Authorization UI. A stale device proof is now reported as a Windows date, time, or time-zone synchronization problem, with clear recovery instructions and confirmation that activation has not been lost.
+* - Updates. Updated HYDRA, the updater, and native metadata to 2.3.0.3; preserved the new local profile JSON files during release packaging and updates; and skipped the driver ASR exclusion change when Microsoft Defender is inactive.
+* ----------------------------------------
 * HYDRA 2.3A PRO (2302) - what's new?
 * ----------------------------------------
 * - GPU Platform. Introduced a multi-GPU-aware runtime with stable physical adapter identification, reliable primary-GPU selection, and safe rebinding after driver or vendor API restarts.
