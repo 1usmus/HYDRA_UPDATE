@@ -1,4 +1,15 @@
 * ----------------------------------------
+* HYDRA 2.3A PRO (2304) - what's new?
+* ----------------------------------------
+* - NVIDIA Compatibility. Added validated tuning support for the RTX PRO 6000 Blackwell Workstation using its exact PCI device and subsystem identity. Other professional, Max-Q, and server variants remain excluded unless explicitly validated.
+* - NVIDIA Tuning Safety. Introduced per-control hardware capabilities for core and memory offsets, power and temperature limits, fan control, V/F curve editing, voltage lock, and voltage rails. HYDRA now enables, applies, resets, and restores only controls validated for the selected physical GPU, and rejects profiles that request unsupported operations.
+* - NVIDIA Curve Control. Strengthened V/F curve preview and application with optional voltage-lock handling and stricter driver readback validation. HYDRA now rejects requested offsets that the driver silently removes or applies with the wrong sign, while preserving exact rollback of captured hardware state.
+* - GPU Detection. Improved physical GPU catalog construction by filtering software and indirect-display DXGI adapters, verifying NVIDIA devices against unique NVML PCI identities, and matching AMD ADLX adapters through exact LUID or PCI BDF. Unrelated Windows display entries no longer invalidate an otherwise complete hardware catalog.
+* - 12V-2x6 Monitoring. Added a live ASUS connector monitor accessible from the Total Power row. It displays voltage, current, power, and load share for all six power contacts together with total current, connector power, and current imbalance.
+* - 12V-2x6 Protection. Added early suspected-contact highlighting from load-aware current and resistance analysis. Live pin analysis remains available when alerts are disabled, while baseline learning, warning debounce, RTSS alerts, logging, and dialogs remain controlled by the protection setting.
+* - NVIDIA Temperature Monitoring. Warning accents now identify actual abnormal conditions: a VRAM temperature spread of at least 8 C, a hotspot-to-core delta above 20 C, or core temperature within 5 C of the configured limit. Normal and fallback telemetry remains visually neutral.
+* - Settings Compatibility. Decoupled Settings.ini and Settings_Backup.ini compatibility from the HYDRA build number. Compatible and legacy settings now survive application updates without being reset, while new saves record an explicit stable settings schema version.
+* ----------------------------------------
 * HYDRA 2.3A PRO (2303) - what's new?
 * ----------------------------------------
 * - Profile Storage. Replaced legacy INI persistence for CPU, NVIDIA, and Radeon profiles with strict versioned JSON contracts using stable field names, atomic writes, and complete validation before any data is applied.
