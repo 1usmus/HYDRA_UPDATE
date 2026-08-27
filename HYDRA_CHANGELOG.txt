@@ -1,4 +1,8 @@
 * ----------------------------------------
+* HYDRA 2.3B PRO (2314) - what's new?
+* ----------------------------------------
+* - Startup. Fixed cases where HYDRA could fail to start.
+* ----------------------------------------
 * HYDRA 2.3B PRO (2313) - what's new?
 * ----------------------------------------
 * - NVIDIA XOC. Added an independent XOC mode. On validated RTX 50 Series and RTX PRO 6000 Blackwell adapters it enables power limits up to 150% and an extended memory-clock range; on supported RTX generations it also enables absolute NVVDD/MSVDD maximum and Core OCP control. XOC sessions use exact hardware and driver validation with verified rollback when XOC is disabled, the driver restarts, a TDR occurs, or HYDRA exits.
