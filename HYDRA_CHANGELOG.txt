@@ -1,4 +1,23 @@
 * ----------------------------------------
+* HYDRA 2.3B PRO (2313) - what's new?
+* ----------------------------------------
+* - NVIDIA XOC. Added an independent XOC mode. On validated RTX 50 Series and RTX PRO 6000 Blackwell adapters it enables power limits up to 150% and an extended memory-clock range; on supported RTX generations it also enables absolute NVVDD/MSVDD maximum and Core OCP control. XOC sessions use exact hardware and driver validation with verified rollback when XOC is disabled, the driver restarts, a TDR occurs, or HYDRA exits.
+* - NVIDIA Compatibility. Extended validated tuning support to the exact RTX PRO 6000 Blackwell Server identity in addition to the Workstation model. Unsupported professional and mobile variants remain excluded.
+* - NVIDIA Tuning. Added separate SYS and XBAR clock offsets. RTX profiles now preserve SYS/XBAR settings, rail limits, Core OCP and private V/F curves while remaining compatible with profiles created by build 2304.
+* - Curve Editor. Added independent GPC, XBAR, SYS and NVD V/F modes with per-domain history, live operating-point tracking, residency and performance-limit statistics, exact preview/readback and rollback. The editor now uses live voltage limits and no longer creates an implicit plateau.
+* - NVIDIA Monitoring. Added an Advanced RTSS GPU mode with SM/RT/Tensor/raster activity, VRAM traffic, L2, texture/ROP and XBAR metrics. The same demand-driven sensors are available through Shared Memory and CSV logging, while standard monitoring now includes XBAR/SYS clocks and live MSVDD voltage.
+* - GPU Safety. Added configurable maximum GPU power and NVIDIA OCP Guard thresholds. The new GPU app emergency stop, enabled by default, can identify and terminate the dominant non-system process on the exact monitored GPU after a confirmed temperature, power or OCP event; when disabled, HYDRA shows rate-limited warnings instead.
+* - 12V-2x6 Protection. Protection is now always active when complete per-pin telemetry is available on a supported ASUS card. HYDRA distinguishes early warnings from emergencies, detects a zero-current contact separately, and attempts to stop the dominant GPU process for confirmed zero-current or overcurrent emergencies.
+* - NVIDIA Diagnostics. Added the NVIDIA driver workload as an optional third core-verification stage with exact adapter selection and separate workload, TDR and robust-channel failure handling. Phoenix now resumes from the exact failed workload, preserves Initial Load Fit state, uses a larger post-TDR safety margin, and applies live voltage and hardware range limits instead of fixed model limits.
+* - GPU Recovery. HYDRA now distinguishes an API-session failure from an Event Log-confirmed TDR. GPU control remains disabled after a monitoring failure, XOC sessions are reconciled only after a confirmed NVIDIA recovery, and Explorer/taskbar repair waits for fresh vendor telemetry before restarting the Windows shell.
+* - Radeon Monitoring. Added detailed per-chip VRAM temperature views for supported RDNA 2, RDNA 3 and RDNA 4 GPUs, plus GCD/MCD temperature views on RDNA 3. The detail windows highlight abnormal VRAM spread and chiplet temperature deltas.
+* - RX 6000 Tuning. Moved Soft Power Play controls into a dedicated modeless editor while preserving physical-adapter binding, pending changes, apply/reset behavior and localized tooltips.
+* - CPU Core Mapping. Fixed physical-core mapping on 6-16-core and disabled-CCD configurations.
+* - CPU and DRAM. Corrected DDR5 single-rank/dual-rank detection and population totals.
+* - APP PACK. HYDRA no longer exits when APP PACK is missing. It prompts once or when a specific benchmark/diagnostic needs a component, validates only the required workload, and preserves the selected package across general settings resets.
+* - User Experience and Fixes. Improved everyday interaction with HYDRA across settings, profiles, monitoring, diagnostics and recovery. Fixed a large number of minor UI, state-handling and stability issues.
+* - UI and Monitoring Runtime. Upgraded the bundled PresentMon runtime to 2.6.0, corrected its health timing metric, and automatically selects the initial tooltip language from the Windows UI language with English fallback.
+* ----------------------------------------
 * HYDRA 2.3A PRO (2304) - what's new?
 * ----------------------------------------
 * - NVIDIA Compatibility. Added validated tuning support for the RTX PRO 6000 Blackwell Workstation using its exact PCI device and subsystem identity. Other professional, Max-Q, and server variants remain excluded unless explicitly validated.
