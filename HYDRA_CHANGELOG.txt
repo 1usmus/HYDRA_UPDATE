@@ -1,4 +1,24 @@
 * ----------------------------------------
+* HYDRA 2.3B PRO (2315) - what's new?
+* ----------------------------------------
+* - NVIDIA Compatibility. Added XOC support for the exact NVIDIA 616.56 driver alongside 610.88. Power Limit unlock now supports desktop GeForce RTX 40 Series and supported RTX 50 Series / RTX PRO 6000 cards, while the extended MCLK range remains available only on supported Blackwell cards.
+* - NVIDIA Multi-GPU. Improved unlock preparation, recovery, and exact adapter selection on systems with several NVIDIA GPUs. The GPU list now clearly marks active and inactive adapters, and HYDRA keeps tuning bound to the selected physical card.
+* - NVIDIA XOC. Replaced the single XOC switch with five modes: Disabled, Air, Water, Chiller, and LN2. Their Power Limit / OCP limits are Air 110/100%, Water 125/110%, Chiller 140/125%, and LN2 150/150%.
+* - NVIDIA XOC Safety. Switching between active XOC modes or disabling XOC now starts from a clean stock driver state. Recovery after a driver crash, diagnostics, settings reset, or HYDRA shutdown was also improved. Lowering the mode automatically brings larger saved profile values back within the selected limits.
+* - NVIDIA OCP. Added separate MEM OCP control alongside Core OCP. Both limits use the range allowed by the selected XOC mode, are saved separately for every GPU profile, and can be returned to the exact stock values.
+* - NVIDIA GPU Safety. Increased the default NVIDIA OCP Guard threshold from 100% to 110% to reduce false protection triggers caused by short current spikes.
+* - NVIDIA 12V-2x6 Protection. Added a user-adjustable per-pin overcurrent threshold for supported ASUS 12VHPWR / 12V-2x6 telemetry. The default is 9.2 A, while the separate fast 12 A emergency protection remains active.
+* - NVIDIA Profiles. Reworked RTX profiles around independent settings for every physical GPU. HYDRA now applies only the controls that actually changed, preserves unrelated settings when one control fails, and safely copies, deletes, loads, and saves profiles without mixing adapter data.
+* - NVIDIA Curve Editor. Improved Core, XBAR, SYS, and NVD curve handling on Ada and Blackwell cards. Curve changes are now saved as one complete operation, and HYDRA rejects the result if the selected profile, GPU, or curve changed while the editor was open.
+* - NVIDIA Tuning. Improved XBAR and SYS offset support on cards where the driver exposes only V/F curve control. Voltage-rail and OCP controls now use the limits of the selected cooling mode and no longer depend on the Power or MCLK unlock being available.
+* - NVIDIA Clock Monitoring. GPC, XBAR, and memory clocks now show frequencies measured by the GPU hardware instead of the frequencies requested by the driver.
+* - NVIDIA Performance Monitoring. Moved NPERF telemetry into a separate native worker with exact GPU binding and automatic recovery after a telemetry failure. Unsupported XBAR metrics are now hidden instead of showing empty rows in the RTSS overlay.
+* - Phoenix. Fixed cases where Phoenix could lose its recovery state before a diagnostic resumed. HYDRA now keeps the saved step for an automatic retry, while a manual STOP or safety shutdown still cancels recovery.
+* - Startup. Fixed a rare issue where the APP PACK selection window could appear before HYDRA was ready, making the application look as if it had failed to launch.
+* - CPU Monitoring. Improved monitoring reliability after sleep or resume and during short hardware-telemetry read failures. CPU core mapping can now continue when even one complete snapshot provides enough valid data.
+* - Radeon Compatibility. HYDRA can now start an installed AMD Tools driver automatically when supported Radeon tuning needs it, improving recovery when the driver service was stopped.
+* - Updates and Stability. The updater now removes the obsolete NPERF telemetry DLL when installing the new worker. GPU recovery, diagnostics, profile shutdown, low-level hardware reads, and general stability were also improved.
+* ----------------------------------------
 * HYDRA 2.3B PRO (2314) - what's new?
 * ----------------------------------------
 * - Startup. Fixed cases where HYDRA could fail to start.
