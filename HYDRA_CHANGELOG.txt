@@ -1,4 +1,10 @@
 * ----------------------------------------
+* HYDRA 2.3B PRO (2316) - what's new?
+* ----------------------------------------
+* - NVIDIA 616.56 Compatibility.
+* - NVIDIA Curve Builder. Added session memory for confirmed Builder control points. Reopening Curve Editor restores the last Builder nodes separately for each RTX profile and physical GPU until HYDRA closes; copied profiles, other adapters, and canceled edits do not inherit or overwrite them.
+* - DRAM Diagnostics. Fixed a DDR5 preflight issue that could keep diagnostics from starting while showing the wrong requirement. HYDRA now identifies the actual blocker: JEDEC defaults, the AWE privilege or required Windows restart, or Memory Context Restore.
+* ----------------------------------------
 * HYDRA 2.3B PRO (2315) - what's new?
 * ----------------------------------------
 * - NVIDIA Compatibility. Added XOC support for the exact NVIDIA 616.56 driver alongside 610.88. Power Limit unlock now supports desktop GeForce RTX 40 Series and supported RTX 50 Series / RTX PRO 6000 cards, while the extended MCLK range remains available only on supported Blackwell cards.
