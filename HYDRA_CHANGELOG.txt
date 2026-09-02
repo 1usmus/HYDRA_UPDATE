@@ -1,4 +1,13 @@
 * ----------------------------------------
+* HYDRA 2.3B PRO (2317) - what's new?
+* ---------------------------------------
+* - System Resume. HYDRA now remembers active HYBRID OC, PBO2, and AMD/NVIDIA G_CONTROL before sleep and restores them after wake-up. It pauses GPU control during recovery, refreshes stale CPU, DRAM, and GPU data, rebuilds NVIDIA XOC when needed, and reapplies the full profile. A Resume event without a matching Suspend no longer restores old states.
+* - NVIDIA XOC Profiles. Temporary loss of Power or MCLK unlock no longer lowers or overwrites saved XOC values. HYDRA also keeps a higher stock Power maximum when the driver supports it, and shutdown restores stock hardware without changing the saved XOC mode or profiles.
+* - NVIDIA Monitoring. Core, XBAR, SYS, memory, and NVD now show effective clocks from one NVAPI sample, marked as EFreq. This replaces mixed measured and requested frequencies.
+* - NVIDIA Curve Editor. Live V/F monitoring now pairs effective clocks with matching VID or MSVDD readings and skips unstable samples instead of estimating missing voltage. PERF_LIMITS now shows the main clock limiter and the related NVVDD or MSVDD limit, including target voltage and floor/ceiling type. Table labels distinguish requested and driver-accepted frequency, and edited values are normalized immediately.
+* - NVIDIA OCP Guard. OCP Guard is now experimental and disabled by default. The old default is not carried over automatically. Its value is treated as a driver current reference, not a verified hardware OCP limit, and any non-negative percentage can be entered to enable it.
+* - GPU-only Compatibility. HYDRA can now run on unsupported or non-Ryzen CPUs for GPU monitoring by skipping AMD-specific startup and monitoring.
+* ----------------------------------------
 * HYDRA 2.3B PRO (2316) - what's new?
 * ----------------------------------------
 * - NVIDIA 616.56 Compatibility.
