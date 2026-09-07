@@ -1,4 +1,32 @@
 * ----------------------------------------
+* HYDRA 2.3B PRO (2318) - what's new?
+* ---------------------------------------
+* - NVIDIA Compatibility. Added XOC support for drivers 616.64 and 616.86, plus improved RTX 40 Series Power Limit unlock on 610.88.
+* - RTX-TUNER. Added XBAR Ratio control from 89.99% to 100% on supported Blackwell GPUs. SYSCLK offset is now available in Misc Control. Both settings are saved per profile.
+* - NVIDIA Diagnostics. Added CORE VID Min/Max, XBAR offset, CORE OCP, voltage-rail limits and an optional NVIDIA GWLS verification toggle for supported GPUs. MSVDD control is available on supported RTX 50 Series and RTX PRO 6000 cards.
+* - NVIDIA Diagnostics. Tests now retain the selected XOC mode and restore it before continuing after a driver crash. Failed XOC recovery preserves the Phoenix checkpoint.
+* - NVIDIA Diagnostics. Added single-point V/F testing and improved Initial Load Fit. Failed tuning writes, instability at zero offset and unverified VRAM results no longer produce an accepted diagnostic result.
+* - NVIDIA Monitoring. Reworked GPU detection and monitoring around NVAPI, including power, utilization, fan, ECC and VRAM data. Reduced repeated sensor queries and improved coordination with tuning and driver recovery.
+* - Multi-GPU Monitoring. Added separate sensor views for each discrete GPU, independent of the tuning target. Supports multiple NVIDIA or multiple Radeon cards; mixed-vendor configurations remain unsupported.
+* - NVIDIA Advanced Monitoring. Each monitored GPU now has independent advanced counters and recovery. A slow or failed NvPerf worker no longer delays the other cards.
+* - Multi-GPU Logging. Added an NvPerf One/All GPUs switch for Shared Memory and CSV. The default records only the active control GPU; enabling it records every dGPU with separate sensor columns and card identities. Updated PowerShell tools support the same GPU selection.
+* - Vanta. Monitoring now follows the selected test GPU and reuses its regular sensor data without extra polling. NVIDIA temperature detail windows also follow the displayed card.
+* - NVIDIA 12V-2x6 Monitoring. Faster sensor polling on supported ASUS cards, with automatic adjustment to the supported I2C speed.
+* - NVIDIA Recovery. Improved XOC activation, Power Limit preparation and recovery after API failures or sleep. XOC now restores independently of G_CONTROL, including automatic wake-ups.
+* - GPU Profiles. Fixed lost edits during rapid profile changes and immediate saves or backups. Improved full-profile application and stopped repeated Radeon apply attempts after rejected settings.
+* - NVIDIA Curve Editor. Fixed Undo/Redo and preservation of hidden points and plateaus. Curve Builder now detects nodes that map to the same V/F point; curve reset and refresh handling were also corrected.
+* - HGCI. Corrected average FPS, latency and GPU load assessment. Reports now identify the latency source, preserve final hitch events and handle sustained FPS changes and moving games between monitors more accurately.
+* - CPU Tuning. Improved HYBRID OC and PBO2 apply/restore handling, CO defaults and Curve Shaper startup. HYBRID OC stops after unrecoverable SMU communication failures, and CPU access pauses during XOC activation.
+* - HYBRID OC. Refined LT frequency adjustment, fixed GAME voltage behavior and improved process-profile matching and SMT-aware core selection.
+* - DRAM. Fixed DDR4 diagnostic selections and starting values, preserved manual DDR5 settings, and corrected timing rounding, voltage handling and repeated setting changes before reboot.
+* - SQ Agent. Improved stop handling and CO recommendations. Measurements are rejected if the workload exits early or setup fails.
+* - RX Soft Power Play. Preserved coefficient precision and pending edits, corrected factory resets, and improved multi-GPU Apply/restart tracking. RX 9000 factory zero offsets are now restored correctly.
+* - APPE. HYDRA now restores the previous Windows power plan on exit. Improved saving, importing and restoring plans, plus core-parking setting validation.
+* - Conflict Detection. Improved identification of hardware-access clients across Windows sessions without interrupting diagnostic UI progress.
+* - Telemetry Logging. CSV logs now save on normal exit and retain buffered data if saving fails. Added PMU mode and sensor freshness information, with matching PowerShell export updates.
+* - Process Monitoring. Removed unused legacy process/thread sampling and startup initialization while preserving process detection.
+* - UI and Runtime. Improved PresentMon scheduling, GPU-only logging, monitoring response-time reporting and window-position saving. Updated tooltips and GPU diagnostic logs.
+* ----------------------------------------
 * HYDRA 2.3B PRO (2317) - what's new?
 * ---------------------------------------
 * - System Resume. HYDRA now remembers active HYBRID OC, PBO2, and AMD/NVIDIA G_CONTROL before sleep and restores them after wake-up. It pauses GPU control during recovery, refreshes stale CPU, DRAM, and GPU data, rebuilds NVIDIA XOC when needed, and reapplies the full profile. A Resume event without a matching Suspend no longer restores old states.
