@@ -1,4 +1,15 @@
 * ----------------------------------------
+* HYDRA 2.3B PRO (2319) - what's new?
+* ---------------------------------------
+* - NVIDIA Compatibility. Added support for driver 616.92 and improved XOC compatibility and recovery on supported RTX cards.
+* - RTX Fan Curves. Added custom hardware fan curves per GPU profile, with automatic point adjustment and factory reset. Use Save profiles to keep your changes.
+* - NVIDIA Diagnostics. Improved tuning accuracy, XBAR compatibility and handling of failed settings.
+* - NVIDIA Monitoring. Added detailed GPU temperature views for supported RTX 40 Series cards.
+* - Vanta. Improved test reliability, progress reporting, error summaries, memory allocation and overheat protection.
+* - Anvil. Improved test reliability, repeated runs, custom schedules and error reporting. Incomplete tests are now clearly identified.
+* - CPU Tuning. Fixed cases where a disabled iGPU could interrupt HYBRID OC or cause PBO2 settings to fail.
+* - Startup. Added clearer driver-startup diagnostics and optional recovery actions. Windows security changes require your explicit approval.
+* ----------------------------------------
 * HYDRA 2.3B PRO (2318) - what's new?
 * ---------------------------------------
 * - NVIDIA Compatibility. Added XOC support for drivers 616.64 and 616.86, plus improved RTX 40 Series Power Limit unlock on 610.88.
