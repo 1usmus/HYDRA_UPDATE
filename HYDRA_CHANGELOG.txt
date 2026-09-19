@@ -1,4 +1,30 @@
 * ----------------------------------------
+* HYDRA 2.3B PRO (23110) - what's new?
+* ---------------------------------------
+* - NVIDIA Compatibility. Improved XOC support for cards with different factory power and current limits. Power Limit unlock no longer depends on memory-clock control being available, and multi-GPU detection more reliably identifies the correct physical card.
+* - NVIDIA XOC. Added input-current presets for supported RTX 40 Series, RTX 50 Series and RTX PRO 6000 cards. Thresholds follow the selected XOC mode without lowering factory limits, with restoration of the original values when changing modes or disabling XOC.
+* - NVIDIA Recovery. Reworked XOC recovery at startup, after driver crashes and during diagnostics. HYDRA waits for the GPU to become ready, limits recovery attempts and avoids unnecessary repeated resets. STOP and shutdown interrupt further recovery work.
+* - NVIDIA G_CONTROL. Added Windows driver-crash notifications so recovery can start even when regular monitoring misses a TDR. After successful recovery, HYDRA restores XOC and reapplies the enabled RTX profile. Failed recovery stops G_CONTROL; API-only failures continue to disable automatic profile reactivation.
+* - NVIDIA Power Limit. Improved setting verification, recovery from rejected changes and detection of a lost XOC ceiling. Normal Power Limit adjustments no longer depend on outdated driver data. An OCP reset failure alone no longer triggers a graphics-driver restart.
+* - NVIDIA MCLK. HYDRA now recognizes an extended memory-clock range already active when it starts and preserves the current offset. Improved recovery when a driver reset returns Power or MCLK limits to stock.
+* - NVIDIA Driver Access. Added an experimental alternative access path for supported Windows configurations when normal XOC access is unavailable. It is enabled in this build and restricted to verified Windows kernel versions. Improved temporary-driver cleanup and recovery of recorded leftovers after an interrupted HYDRA session.
+* - NVIDIA Voltage Control. MSVDD controls now check whether the selected GPU actually exposes the voltage rail before making it available in RTX-TUNER or diagnostics.
+* - Phoenix. NVIDIA recovery now follows the saved physical GPU and restores its original diagnostic voltage points, even if the display adapter or startup settings changed. If the card or required XOC memory range is unavailable, HYDRA preserves the checkpoint and postpones recovery without applying another profile.
+* - Phoenix. Resuming after a CPU safety stop now preserves GPU offsets instead of treating the interruption as GPU instability. Genuine GPU crash recovery retains its frequency reduction.
+* - NVIDIA Diagnostics. CORE VID Min/Max now use 25 mV steps within the GPU's hardware limits. RTX 50 Series and RTX PRO 6000 presets start at 850 mV or the higher hardware minimum; lower manual values remain available when supported. Updated the related tooltips in all seven languages.
+* - NVIDIA Diagnostics. Increased the CORE workload-failure and final safety margins to 30 MHz, and the recovery margin to 60 MHz, while retaining the 15 MHz search step. Skipped voltage points no longer appear as the best result, and the final report shows the memory margin actually applied.
+* - NVIDIA VRAM Diagnostics. RTX 50 Series and RTX PRO 6000 now skip Vanta memory searching and use the permitted stock/XOC MEM limit. The log explicitly marks this value as not stress-tested.
+* - NVIDIA ECC. Improved detection of new corrected and uncorrected errors during diagnostics, including errors reported just after a workload ends. Historical counts, counter resets and unavailable readings are now distinguished, with separate error summaries for each test step.
+* - GPU Diagnostics. Failed workload launches or an unavailable test environment now pause NVIDIA diagnostics without reducing offsets or discarding the checkpoint. Elemental verification requires fresh load measurements from the selected GPU before accepting a result.
+* - Electric Dreams. Normal warmup resizing and differences between the requested window size and actual rendered frame no longer cause false failures. HYDRA logs the actual scanner resolution while retaining artifact detection and frame-coverage checks.
+* - GPU Profiles. Existing RTX profiles and backups are preserved when GPU detection or V/F data is temporarily incomplete. Shutdown now waits for active recovery before saving the final profile backup.
+* - CPU Monitoring. Improved coordination between NVIDIA recovery and CPU access. SMU commands and complete PM-table reads pause during XOC operations and resume only after all recovery work using the pause has finished.
+* - UI. Fixed window shrinking, lost position and clipped controls after graphics-driver resets. Improved restoration from a minimized state and handling of temporary desktop resolutions without applying DPI scaling twice.
+* - Diagnostic Logs. Added clearer per-GPU XOC progress, failure and recovery reports, Power Limit readiness changes and diagnostic stop reasons. XOC startup logs now include the hardware Resizable BAR state without making it a requirement for tuning.
+* - SPD Reports. Complete DDR4/DDR5 SPD read attempts now save raw data and validation details, including rejected reads and CRC warnings, separately from the validated SPD cache.
+* - Support Reports. Added a standalone read-only NVIDIA report collector with local encrypted output, plus more complete power-policy and current-limit information. Collection does not change tuning settings, restart the GPU or upload the report.
+* - Updates. Fixed extraction of update archives containing an explicit root folder. Improved backup preservation and rollback when removing obsolete files, and corrected handling of the no-restart option after a failed update.
+* ----------------------------------------
 * HYDRA 2.3B PRO (2319) - what's new?
 * ---------------------------------------
 * - NVIDIA Compatibility. Added support for driver 616.92 and improved XOC compatibility and recovery on supported RTX cards.
