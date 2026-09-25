@@ -1,5 +1,9 @@
 * ----------------------------------------
-* HYDRA 2.3B PRO (2320) - what's new?
+* HYDRA 2.3C PRO (2321) - what's new?
+* ---------------------------------------
+* - Radeon Direct Tuning. Fixed auxiliary driver deployment for supported Radeon GPUs.
+* ----------------------------------------
+* HYDRA 2.3C PRO (2320) - what's new?
 * ---------------------------------------
 * - RTSS Overlay. Showing or hiding the HYDRA OSD, including with Ctrl+Alt+F6, no longer interrupts monitoring, PresentMon or an active HGCI session.
 * - NVIDIA Reliability. Improved XOC compatibility and recovery on supported GPUs and Windows versions. HYDRA better distinguishes new driver crashes from old reports, avoids unnecessary resets and gives clearer recovery results.
