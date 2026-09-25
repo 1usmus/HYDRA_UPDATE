@@ -1,4 +1,16 @@
 * ----------------------------------------
+* HYDRA 2.3B PRO (2320) - what's new?
+* ---------------------------------------
+* - RTSS Overlay. Showing or hiding the HYDRA OSD, including with Ctrl+Alt+F6, no longer interrupts monitoring, PresentMon or an active HGCI session.
+* - NVIDIA Reliability. Improved XOC compatibility and recovery on supported GPUs and Windows versions. HYDRA better distinguishes new driver crashes from old reports, avoids unnecessary resets and gives clearer recovery results.
+* - Italian Localization. Added Italian as the eighth language for tooltips across tuning, diagnostics and monitoring.
+* - Monitoring. Reworked the monitoring UI to make sensor data easier to find and read. The tables have clearer groups, updated CPU and GPU readings, and independent CCD, CPU, DRAM or GPU views. Double-click a numeric sensor to open its history chart and statistics.
+* - CPU Control API. HYDRA now exposes a local API for building your own CPU OC sandbox, scripts and dashboards. You can read supported ranges and current settings, then apply live CO, PBO2, Manual OC, Curve Shaper, BCLK and eCLK changes. Per-core commands follow the detected CPU layout, and API changes do not edit saved profiles. A guide and examples are included.
+* - GPU Control API. HYDRA now exposes a local API for building your own NVIDIA or Radeon OC sandbox, scripts and dashboards. You can read supported controls and current values, then apply live changes to a selected physical GPU. API changes do not edit saved RTX-TUNER or RX-TUNER profiles.
+* - Radeon Direct Tuning. Added a profile editor for selected RDNA 3 and RDNA 4 Radeon GPUs, with voltage curves, power and clock limits, and memory timings. Settings are verified and saved per physical GPU.
+* - DRAM Diagnostics. DDR4 and DDR5 timing searches now run in groups with separate limits, restoration of previous values after a failed group and saved progress. Existing DDR4 Phoenix diagnostic sessions must be started again.
+* - PresentMon. Updated the bundled collector to version 2.6.0 with more frame, display, latency and shader-compilation data. HYDRA now reads the CSV header for each session so added or reordered columns do not distort FPS and latency measurements.
+* ----------------------------------------
 * HYDRA 2.3B PRO (23110) - what's new?
 * ---------------------------------------
 * - NVIDIA Compatibility. Improved XOC support for cards with different factory power and current limits. Power Limit unlock no longer depends on memory-clock control being available, and multi-GPU detection more reliably identifies the correct physical card.
