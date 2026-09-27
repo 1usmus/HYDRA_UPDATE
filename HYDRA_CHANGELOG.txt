@@ -1,4 +1,12 @@
 * ----------------------------------------
+* HYDRA 2.3C PRO (2322) - what's new?
+* ---------------------------------------
+* - Radeon Advanced Control. Improved support for RDNA 3 and RDNA 4.
+* - Radeon Monitoring. Improved memory-temperature reporting and supported sensor-range handling across Radeon GPU layouts.
+* - Telemetry. Added per-CCD L3 temperature sensors to compact CPU telemetry, Shared Memory, and CSV logging, including correct CCD mapping when only one CCD is active.
+* - Control Pipe. Removed routine success and connection messages from the log; rejected and failed requests retain diagnostic details.
+* - Radeon Diagnostics. NVIDIA XOC no longer attempts to interfere with diagnostics.
+* ----------------------------------------
 * HYDRA 2.3C PRO (2321) - what's new?
 * ---------------------------------------
 * - Radeon Direct Tuning. Fixed auxiliary driver deployment for supported Radeon GPUs.
