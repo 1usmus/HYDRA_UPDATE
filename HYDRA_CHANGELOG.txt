@@ -1,4 +1,13 @@
 * ----------------------------------------
+* HYDRA 2.3C PRO (2323) - what's new?
+* ---------------------------------------
+* - SQ AGENT 1.3. Added per-core N63 and SFTv4 curve tests, interactive V/F charts, CCD voltage and temperature comparisons, and saved scan history.
+* - NVIDIA XOC. Expanded the MCLK overclocking range for supported RTX 5000 Series GPUs, with limits derived from each card's VBIOS.
+* - HGCI. Added separate App/Present and Display FPS statistics and shader-compilation overlap markers for hitches. Improved handling of pauses and missing frame data.
+* - RTSS. Added separate App/Present and Display FPS and frame-time columns, plus a PSO overlap counter.
+* - NVIDIA Curve Editor. Added hover guides, exact voltage/frequency labels and persistent point tooltips.
+* - Fixes. Fixed other minor bugs.
+* ----------------------------------------
 * HYDRA 2.3C PRO (2322) - what's new?
 * ---------------------------------------
 * - Radeon Advanced Control. Improved support for RDNA 3 and RDNA 4.
