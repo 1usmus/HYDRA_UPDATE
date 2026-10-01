@@ -1,4 +1,10 @@
 * ----------------------------------------
+* HYDRA 2.3C PRO (2324) - what's new?
+* ---------------------------------------
+* - NVIDIA MCLK. Fixed range detection at high memory offsets on supported RTX 5000 Series GPUs. Added model-based ranges when VBIOS reads are unavailable and preserved saved offsets while limits are unknown.
+* - System Resume. HYDRA now checks existing NVIDIA XOC unlocks after sleep and restores only those lost, avoiding unnecessary graphics-driver restarts.
+* - RTSS. Improved alignment of HGCI scores, hitch counters and PSO overlap values, including large counts and missing readings.
+* ----------------------------------------
 * HYDRA 2.3C PRO (2323) - what's new?
 * ---------------------------------------
 * - SQ AGENT 1.3. Added per-core N63 and SFTv4 curve tests, interactive V/F charts, CCD voltage and temperature comparisons, and saved scan history.
