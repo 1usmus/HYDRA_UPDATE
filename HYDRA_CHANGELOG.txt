@@ -1,12 +1,28 @@
 * ----------------------------------------
+* HYDRA 2.3C PRO (2325) - what's new?
+* ----------------------------------------
+* - Authorization. Improved reuse of existing device keys during activation. 
+* - Radeon Compatibility. Improved tuning and monitoring compatibility with newer drivers. Monitoring remains available when tuning or profile loading is unavailable.
+* - Radeon Monitoring. Expanded sensors for supported RDNA 2/3/4 GPUs, including clocks, voltages, temperatures, power and performance limits. Added the new readings to Sensor History, Shared Memory and CSV.
+* - Monitoring UI. Improved sensor layout, readability and GPU display labels. Updated tooltips in all eight languages.
+* - Monitoring Interval. Added one interval for regular monitoring, telemetry and Sensor History, starting at 100 ms with a 1000 ms default.
+* - Control API. Added Monitoring interval control through the API and PowerShell.
+* - NVIDIA RTX 3000. Added CORE OCP control on supported GPUs.
+* - RTX-TUNER. Fixed rounding of default NVVDD/MSVDD values. Reset now restores the exact default values.
+* - NVIDIA MCLK. Corrected MCLK limits and preserved selected memory offsets in RTX 50 Series / RTX PRO 6000 diagnostics. Untested memory settings remain clearly marked.
+* - NVIDIA Recovery. After a driver crash, RTX-TUNER is disabled while XOC is restored. Profile settings are preserved; check the profile before re-enabling RTX-TUNER.
+* - PresentMon. Improved frame capture reliability, including when remote-access or streaming clients are open.
+* - Startup. Fixed startup crashes on RDNA 2 GPU's and improved startup reliability.
+* - RX Soft Power Play. Fixed loading and saving .pp files in paths containing non-Latin characters.
+* ----------------------------------------
 * HYDRA 2.3C PRO (2324) - what's new?
-* ---------------------------------------
+* ----------------------------------------
 * - NVIDIA MCLK. Fixed range detection at high memory offsets on supported RTX 5000 Series GPUs. Added model-based ranges when VBIOS reads are unavailable and preserved saved offsets while limits are unknown.
 * - System Resume. HYDRA now checks existing NVIDIA XOC unlocks after sleep and restores only those lost, avoiding unnecessary graphics-driver restarts.
 * - RTSS. Improved alignment of HGCI scores, hitch counters and PSO overlap values, including large counts and missing readings.
 * ----------------------------------------
 * HYDRA 2.3C PRO (2323) - what's new?
-* ---------------------------------------
+* ----------------------------------------
 * - SQ AGENT 1.3. Added per-core N63 and SFTv4 curve tests, interactive V/F charts, CCD voltage and temperature comparisons, and saved scan history.
 * - NVIDIA XOC. Expanded the MCLK overclocking range for supported RTX 5000 Series GPUs, with limits derived from each card's VBIOS.
 * - HGCI. Added separate App/Present and Display FPS statistics and shader-compilation overlap markers for hitches. Improved handling of pauses and missing frame data.
@@ -15,7 +31,7 @@
 * - Fixes. Fixed other minor bugs.
 * ----------------------------------------
 * HYDRA 2.3C PRO (2322) - what's new?
-* ---------------------------------------
+* ----------------------------------------
 * - Radeon Advanced Control. Improved support for RDNA 3 and RDNA 4.
 * - Radeon Monitoring. Improved memory-temperature reporting and supported sensor-range handling across Radeon GPU layouts.
 * - Telemetry. Added per-CCD L3 temperature sensors to compact CPU telemetry, Shared Memory, and CSV logging, including correct CCD mapping when only one CCD is active.
@@ -27,7 +43,7 @@
 * - Radeon Direct Tuning. Fixed auxiliary driver deployment for supported Radeon GPUs.
 * ----------------------------------------
 * HYDRA 2.3C PRO (2320) - what's new?
-* ---------------------------------------
+* ----------------------------------------
 * - RTSS Overlay. Showing or hiding the HYDRA OSD, including with Ctrl+Alt+F6, no longer interrupts monitoring, PresentMon or an active HGCI session.
 * - NVIDIA Reliability. Improved XOC compatibility and recovery on supported GPUs and Windows versions. HYDRA better distinguishes new driver crashes from old reports, avoids unnecessary resets and gives clearer recovery results.
 * - Italian Localization. Added Italian as the eighth language for tooltips across tuning, diagnostics and monitoring.
@@ -39,7 +55,7 @@
 * - PresentMon. Updated the bundled collector to version 2.6.0 with more frame, display, latency and shader-compilation data. HYDRA now reads the CSV header for each session so added or reordered columns do not distort FPS and latency measurements.
 * ----------------------------------------
 * HYDRA 2.3B PRO (23110) - what's new?
-* ---------------------------------------
+* ----------------------------------------
 * - NVIDIA Compatibility. Improved XOC support for cards with different factory power and current limits. Power Limit unlock no longer depends on memory-clock control being available, and multi-GPU detection more reliably identifies the correct physical card.
 * - NVIDIA XOC. Added input-current presets for supported RTX 40 Series, RTX 50 Series and RTX PRO 6000 cards. Thresholds follow the selected XOC mode without lowering factory limits, with restoration of the original values when changing modes or disabling XOC.
 * - NVIDIA Recovery. Reworked XOC recovery at startup, after driver crashes and during diagnostics. HYDRA waits for the GPU to become ready, limits recovery attempts and avoids unnecessary repeated resets. STOP and shutdown interrupt further recovery work.
@@ -65,7 +81,7 @@
 * - Updates. Fixed extraction of update archives containing an explicit root folder. Improved backup preservation and rollback when removing obsolete files, and corrected handling of the no-restart option after a failed update.
 * ----------------------------------------
 * HYDRA 2.3B PRO (2319) - what's new?
-* ---------------------------------------
+* ----------------------------------------
 * - NVIDIA Compatibility. Added support for driver 616.92 and improved XOC compatibility and recovery on supported RTX cards.
 * - RTX Fan Curves. Added custom hardware fan curves per GPU profile, with automatic point adjustment and factory reset. Use Save profiles to keep your changes.
 * - NVIDIA Diagnostics. Improved tuning accuracy, XBAR compatibility and handling of failed settings.
@@ -76,7 +92,7 @@
 * - Startup. Added clearer driver-startup diagnostics and optional recovery actions. Windows security changes require your explicit approval.
 * ----------------------------------------
 * HYDRA 2.3B PRO (2318) - what's new?
-* ---------------------------------------
+* ----------------------------------------
 * - NVIDIA Compatibility. Added XOC support for drivers 616.64 and 616.86, plus improved RTX 40 Series Power Limit unlock on 610.88.
 * - RTX-TUNER. Added XBAR Ratio control from 89.99% to 100% on supported Blackwell GPUs. SYSCLK offset is now available in Misc Control. Both settings are saved per profile.
 * - NVIDIA Diagnostics. Added CORE VID Min/Max, XBAR offset, CORE OCP, voltage-rail limits and an optional NVIDIA GWLS verification toggle for supported GPUs. MSVDD control is available on supported RTX 50 Series and RTX PRO 6000 cards.
@@ -104,7 +120,7 @@
 * - UI and Runtime. Improved PresentMon scheduling, GPU-only logging, monitoring response-time reporting and window-position saving. Updated tooltips and GPU diagnostic logs.
 * ----------------------------------------
 * HYDRA 2.3B PRO (2317) - what's new?
-* ---------------------------------------
+* ----------------------------------------
 * - System Resume. HYDRA now remembers active HYBRID OC, PBO2, and AMD/NVIDIA G_CONTROL before sleep and restores them after wake-up. It pauses GPU control during recovery, refreshes stale CPU, DRAM, and GPU data, rebuilds NVIDIA XOC when needed, and reapplies the full profile. A Resume event without a matching Suspend no longer restores old states.
 * - NVIDIA XOC Profiles. Temporary loss of Power or MCLK unlock no longer lowers or overwrites saved XOC values. HYDRA also keeps a higher stock Power maximum when the driver supports it, and shutdown restores stock hardware without changing the saved XOC mode or profiles.
 * - NVIDIA Monitoring. Core, XBAR, SYS, memory, and NVD now show effective clocks from one NVAPI sample, marked as EFreq. This replaces mixed measured and requested frequencies.
