@@ -1,4 +1,20 @@
 * ----------------------------------------
+* HYDRA 2.3C PRO (2326) - what's new?
+* ----------------------------------------
+* - APP PACK. New built-in installer for Cinebench R23, y-cruncher, Elemental2 and Electric Dreams with pause/resume downloads, integrity checks and required-update prompts.
+* - HYDRA LINK. New mobile web panel (link.1usmus-hydra.workers.dev): start and stop ANVIL, VANTA and GPU Diagnostic, view progress and logs, record telemetry, restart GPUs or the PC and resume interrupted GPU diagnostics with PHOENIX. Pairing does not use an activation slot.
+* - Electric Dreams. New Unreal Engine 5.8 GPU benchmark (score = frames rendered) with run history, comparison of charts and OC settings, an NVIDIA silicon map and moderated online leaderboards (overall, per GPU model, NVIDIA and AMD). Requires 12 GB of VRAM or more.
+* - VANTA. Added the XBAR preset for NVIDIA, new OC Stress sets for GDDR6X, GDDR7 (experimental) and Radeon GDDR6, and Radeon EDC error checks. Saved Custom schedules are migrated automatically.
+* - NVIDIA Curve Editor. Direct chart editing with zoom and keyboard shortcuts, NVIDIA silicon model, leakage and thermal model charts, LIMITED BY boost analysis, Curve Builder for all curves and a persistent Voltage Lock.
+* - NVIDIA XOC. Support for 621.xx drivers, an experimental branch for desktop RTX 30 Series with power limit unlock and XBAR Ratio up to 150%. MSI Afterburner is no longer treated as a conflicting tuner.
+* - GPU Diagnostics. New Elemental2 DirectX 12 test, automatic XBAR limit search, chip rating from NVIDIA factory data, per-GPU settings, optional VRAM stage and safer recovery after driver resets. Improved Radeon telemetry and diagnostics.
+* - DDR5. DCFR Safe/Fast presets are now calculated from the IC, data rate, target VDD and module SPD data, CHECK TIMINGS color-codes the result, and diagnostics start from these presets. Added 6600 MT/s and 2200 MHz FCLK.
+* - CPU. PMU counters no longer require AMD uProf. Improved eCLK reliability on boards with an external clock generator.
+* - Performance. Fewer background CPU wake-ups, event-based process tracking, instant UI transitions and faster, more reliable licensing, update and LINK servers.
+* - Activation. When the device limit is reached, previous installations on the same motherboard are offered first.
+* - UI. New update window with speed and pause/resume, clearer conflicting-apps list, thin scrollbars, SQ Agent 1.4, tooltips updated in all eight languages and dozens of fixes.
+* - Removed. Periodic standby-cache clearing, the GAME GPU trigger and the Global PCI mutex controls.
+* ----------------------------------------
 * HYDRA 2.3C PRO (2325) - what's new?
 * ----------------------------------------
 * - Authorization. Improved reuse of existing device keys during activation. 
